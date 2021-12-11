@@ -1,0 +1,21 @@
+h1, h2, h3 {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+body, .util, .display-lead, p, cite{
+    font-family: 'Inter', sans-serif;
+}
+
+// Font | Sizing
+$h1-font-sz: 9rem;
+$h2-font-sz: 3rem;
+$h3-font-sz: 1.5rem;
+$base-font-sz: 1rem;
+
+// Font | Tracking
+$h1-font-tk: -4.5%;
+$h2-font-tk: -2.5%;
+$h3-font-tk: -2.5%;
+$display-lead-tk: -2%;
+$p-font-tk: 1.5%;
+$sub-lead-tk: -2%;
