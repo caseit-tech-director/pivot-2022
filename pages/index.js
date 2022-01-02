@@ -1,7 +1,9 @@
+import LargeHeader from '../components/header/largeHeader'
+
 export default function Home() {
   return (
     <div>
-      <h1>test</h1>
+      <LargeHeader header={"Title"} overline={"Overline"}/>
     </div>
   )
 }

@@ -1,0 +1,78 @@
+$heading--font-family: 'IBM Plex Sans', sans-serif;
+$body--font-family: 'Inter', sans-serif;
+
+// Layout sizes
+$max--layout: 100vh;
+$large--layout: 50vh;
+$medium--layout: 33vh;
+$small--layout: 25vh;
+
+// Nav
+$nav--height--base: 4rem;
+$nav--height--small: 3rem; 
+
+// Font | Sizing
+$h1--font-sz: 6.125rem;
+$h2--font-sz: 3.813rem;
+$h3--font-sz: 3.063rem;
+$h4--font-sz: 2.188rem;
+$h5--font-sz: 1.5rem;
+$h6--font-sz: 1.25rem;
+$subtitle-1--font-sz: 1rem;
+$subtitle-2--font-sz: .875rem;
+$body-1--font-sz: .938rem;
+$body-2--font-sz: .813rem;
+$button--font-sz: .813rem;
+$caption--font-sz: .75rem;
+$overline--font-sz: .75rem;
+
+
+// Font | Tracking
+$h1--tk: -0.09375rem; //1.5px
+$h2--tk: -0.03125rem; //-0.5px
+$h3--tk: 0; // 0 
+$h4--tk: 0.015625; //0.25px
+$h5--tk: 0; // 0 
+$h6--tk: 0.009375rem; //0.15px
+$subtitle-1--tk: 0.009375rem; //0.15px
+$subtitle-2--tk: 0.00625rem; //0.1px
+$body-1--tk: 0.03125rem; //0.5px
+$body-2--tk: 0.015625rem; //0.25px
+$button--tk: 0.015625rem; //1.2px
+$caption--tk: 0.025rem; //0.4px
+$overline--tk: 0.09375rem; //1.5px
+
+// Margins
+$lrg-margin: 84px;
+$med-margin: 48px;
+$sm-margin: 24px;
+$xs-margin: 12px;
+
+// Buttons
+$button--height: 3rem;
+
+// Grid
+$grid--gap: 1.5rem;
+$column--count: repeat(12, 1fr);
+$max--width: 1440px;
+$grid--start: 1;
+$grid--end: -1;
+
+// Color
+$primary-color: #0449B0;
+$secondary-color: #012B69;
+$background-color: #EEE8E7;
+$accent-green: #5CE32D;
+$accent-yellow: #FFD600;
+$accent-orange: #FF9300;
+$accent-pink: #FF367A;
+$type-color: #141414;
+$secondary-type-color: #c4c4c4;
+
+// Greybox (Temporary)
+$gb-1: #000000d5; //Nav
+$gb-2: #000000a6; // Footer
+$gb-3: #0000006b; // Section
+$gb-4: #0000002d; // Images
+$gb--t--light: #ffffff; // text light
+$gb--t--dark: #000000; // text dark

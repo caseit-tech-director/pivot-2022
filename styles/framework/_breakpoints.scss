@@ -1,0 +1,19 @@
+$desktop-min-breakpoint: 1024px;
+$tablet-min-breakpoint: 768px;
+$tablet-max-breakpoint: 1023px;
+$phone-max-breakpoint: 767px;
+
+//Desktop
+@media screen and (min-width: $desktop-min-breakpoint){
+
+}
+
+//Tablet
+@media screen and (min-width: $tablet-min-breakpoint) and (max-width: $tablet-max-breakpoint){
+
+}
+
+//Phone
+@media screen and (max-width: $phone-max-breakpoint){
+    
+}

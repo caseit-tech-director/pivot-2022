@@ -4,24 +4,122 @@
 @import 'base/_variables.scss';
 @import 'base/_mixins.scss';
 
-
-/* MODULES - Re-usable site elements.
-========================================================================== */ 
-
-@import 'modules/_scrollbar.scss';
-@import 'modules/_buttons.scss';
-@import 'modules/_footer.scss';
-@import 'modules/_nav.scss';
-
-
 /* FRAMEWORK - Structure and layout files.
 ========================================================================== */
 
 @import 'framework/_grid.scss';
 @import 'framework/_breakpoints.scss';
 
-
 /* FONTS
-========================================================================== */ 
+========================================================================== */
 
 @import 'type/_type.scss';
+
+/* MODULES - Re-usable site elements.
+========================================================================== */
+
+@import 'modules/_scrollbar.scss';
+@import 'modules/_buttons.scss';
+@import 'modules/_footer.scss';
+
+// GLOBAL EXTRA
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: $body--font-family;
+  overflow: hidden;
+  background-color: $background-color;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.img--contain img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  transition-duration: 0.4s;
+  position: relative;
+  overflow: hidden;
+  vertical-align: top;
+  z-index: 1;
+}
+
+.icon--48 {
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  img {
+    margin: auto;
+    height: 36px !important;
+    width: 36px !important;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex--inherit {
+  display: flex;
+  > * {
+    margin: auto;
+  }
+}
+
+// Layout
+.max--layout {
+  height: -moz-calc(100vh - 100px); /* Firefox */
+  height: -webkit-calc(100vh - 100px); /* Chrome, Safari */
+  height: calc(100vh - 64px - 48px); /* IE9+ and future browsers */
+}
+
+.large--layout {
+  height: 50vh;
+}
+
+.medium--layout {
+  height: 33vh;
+}
+
+.small--layout {
+  height: 25vh;
+}
+
+// Margin
+.negative--margin--12--left {
+  margin-left: -$sm-margin;
+}
+
+.margin--flush--right {
+  margin-right: 0;
+}
+
+.margin--flush--left {
+  margin-left: 0;
+}
+
+// Temp
+.gb-3 {
+  background-color: $gb-3;
+}
+
+.max--height{
+  height: 100%;
+}

@@ -1,21 +1,75 @@
-h1, h2, h3 {
-    font-family: 'IBM Plex Mono', monospace;
+@import "../base/variables";
+
+h1, h2, h3, h4, h5, h6, .subtitle-1, .subtitle-2 {
+    font-family: $heading--font-family;
 }
 
-body, .util, .display-lead, p, cite{
-    font-family: 'Inter', sans-serif;
+.body-1, .body-2, button, caption, .overline{
+    font-family: $body--font-family;
 }
 
-// Font | Sizing
-$h1-font-sz: 9rem;
-$h2-font-sz: 3rem;
-$h3-font-sz: 1.5rem;
-$base-font-sz: 1rem;
+// Font | Previews
+h1{
+    letter-spacing: $h1--tk;
+    font-size: $h1--font-sz;
+}
 
-// Font | Tracking
-$h1-font-tk: -4.5%;
-$h2-font-tk: -2.5%;
-$h3-font-tk: -2.5%;
-$display-lead-tk: -2%;
-$p-font-tk: 1.5%;
-$sub-lead-tk: -2%;
+h2{
+    letter-spacing: $h2--tk;
+    font-size: $h2--font-sz; 
+}
+
+h3{
+    letter-spacing: $h3--tk;
+    font-size: $h3--font-sz; 
+}
+
+h4{
+    letter-spacing: $h4--tk;
+    font-size: $h4--font-sz; 
+}
+
+h5{
+    letter-spacing: $h5--tk;
+    font-size: $h5--font-sz; 
+}
+
+h6{
+    letter-spacing: $h6--tk;
+    font-size: $h6--font-sz; 
+}
+
+.subtitle-1{
+    letter-spacing: $subtitle-1--tk;
+    font-size: $subtitle-1--font-sz;
+}
+
+.subtitle-2{
+    letter-spacing: $subtitle-2--tk;
+    font-size: $subtitle-2--font-sz;
+}
+
+.body-1{
+    letter-spacing: $body-1--tk;
+    font-size: $body-1--font-sz;
+}
+
+.body-2{
+    letter-spacing: $body-2--tk;
+    font-size: $body-2--font-sz;
+}
+
+button{
+    letter-spacing: $button--tk;
+    font-size: $button--font-sz;
+}
+
+caption{
+    letter-spacing: $caption--tk;
+    font-size: $caption--font-sz;
+}
+
+.overline{
+    letter-spacing: $overline--tk;
+    font-size: $overline--font-sz;
+}

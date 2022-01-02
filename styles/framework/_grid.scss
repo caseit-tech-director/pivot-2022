@@ -1,0 +1,13 @@
+.grid--container{
+    padding: $lrg-margin;
+    display: grid;
+    grid-template-columns: $column--count;
+    max-width: $max--width;
+    column-gap: $grid--gap;
+    margin: 0 auto;
+}
+
+.grid--align--left{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}

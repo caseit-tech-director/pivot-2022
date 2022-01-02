@@ -1,0 +1,21 @@
+$button--tk: 0.015625rem; //1.2px
+
+$button--font-sz: 2.813rem;
+
+%center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link--button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @extend %center;
+  height: $button--height;
+  padding-left: $xs-margin;
+  padding-right: $xs-margin;
+  letter-spacing: $button--tk;
+  font-size: $button--font-sz;
+}
