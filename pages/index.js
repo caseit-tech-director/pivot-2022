@@ -3,6 +3,7 @@ import LocomotiveParagraph from '../components/locomotiveParagraph';
 import Testimonials from '../components/BannerComponents/testimonials';
 import SponsorshipBanner from '../components/BannerComponents/SponsorshipBanner';
 import DiscoverOpportunities from '../components/Home/DiscoverOpportunities';
+import CardsModule from '../components/Home/CardsModule';
 export default function Home() {
   const text =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
@@ -15,6 +16,7 @@ export default function Home() {
       <LocomotiveParagraph text={text} />
       <SponsorshipBanner/>
       <DiscoverOpportunities/>
+      <CardsModule/>
       <Testimonials/>
     </body>
   );
