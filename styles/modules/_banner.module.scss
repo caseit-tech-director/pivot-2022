@@ -1,0 +1,28 @@
+@import '../base/variables';
+
+.banner-wrapper{
+    background-color: tomato;
+    > div {
+        grid-column-start: $grid--start;
+        grid-column-end: 5;
+    }
+}
+
+.banner--header--wrapper{
+    grid-row-start: 1;
+    h5{
+        margin-top: $xs-margin;
+    }
+    border-top: 2px solid rgba(0, 0, 0, 0.25);
+    grid-column-start: $grid--start;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    > * {
+        margin-bottom: $xs-margin;
+    }
+}
+
+
+
+// .banner--header--border

@@ -20,6 +20,9 @@
   }
 }
 .footer--links--wrapper {
+  li{
+    margin-bottom: $xs-margin;
+  }
   width: fit-content;
 }
 .footer--links--h6 {
