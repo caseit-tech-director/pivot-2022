@@ -1,6 +1,6 @@
 import SmallLayout from '../Layout/SmallLayout';
 import style from '../../styles/modules/_banner.module.scss';
-import BannerHeader from '../SmallComponents/BannerHeader';
+import BannerHeader from './BannerHeader';
 import ArrowButton from '../ArrowButton';
 
 export default function Testimonials(props) {
