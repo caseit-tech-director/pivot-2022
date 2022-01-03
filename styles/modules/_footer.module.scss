@@ -1,0 +1,37 @@
+@import '../base/_variables.scss';
+
+// Footer base
+.footer--logo {
+  grid-column-start: $grid--start;
+  grid-column-end: 5;
+  h3 {
+    font-weight: bolder;
+    letter-spacing: -1.5px;
+  }
+}
+.footer--links--row {
+  grid-column-start: 5;
+  grid-column-end: $grid--end;
+  height: fit-content;
+  margin-bottom: $med-margin;
+  display: flex;
+  > div {
+    margin-right: $med-margin;
+  }
+}
+.footer--links--wrapper {
+  width: fit-content;
+}
+.footer--links--h6 {
+  margin-bottom: $sm-margin;
+}
+
+// Bottom bar
+.footer--bottom--bar--contents {
+  justify-content: center;
+  align-items: center;
+  grid-column-end: -1;
+  grid-column-start: 1;
+  display: flex;
+  justify-content: space-between;
+}

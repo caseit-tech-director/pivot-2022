@@ -1,10 +1,21 @@
 .grid--container{
-    padding: $lrg-margin;
+    padding-left: $lrg-margin;
+    padding-right: $lrg-margin;
     display: grid;
     grid-template-columns: $column--count;
     max-width: $max--width;
     column-gap: $grid--gap;
     margin: 0 auto;
+    height: 100%;
+    > div{
+        margin-top: $lrg-margin;
+        margin-bottom: $lrg-margin;
+    }
+}
+
+.grid--padding--lrg{
+    padding-top: $lrg-margin;
+    padding-bottom: $lrg-margin;
 }
 
 .grid--align--left{

@@ -1,4 +1,4 @@
-import SmallHeader from '../components/header/smallHeader'
+import SmallHeader from '../components/Header/smallHeader'
 
 export default function Home() {
   return (

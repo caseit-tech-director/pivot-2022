@@ -20,10 +20,8 @@
 
 @import 'modules/_scrollbar.scss';
 @import 'modules/_buttons.scss';
-@import 'modules/_footer.scss';
 
 // GLOBAL EXTRA
-
 html,
 body {
   margin: 0;
@@ -31,24 +29,23 @@ body {
   width: 100%;
   height: 100%;
   font-family: $body--font-family;
-  overflow: hidden;
   background-color: $background-color;
   box-sizing: border-box;
 }
-
 * {
   margin: 0;
   padding: 0;
 }
 
+// Lists
 li {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
 
+// Images
 .img--contain img {
   object-fit: contain;
   width: 100%;
@@ -59,7 +56,6 @@ a {
   vertical-align: top;
   z-index: 1;
 }
-
 .icon--48 {
   height: 48px;
   width: 48px;
@@ -72,10 +68,10 @@ a {
   }
 }
 
+// Flex
 .flex {
   display: flex;
 }
-
 .flex--inherit {
   display: flex;
   > * {
@@ -85,32 +81,37 @@ a {
 
 // Layout
 .max--layout {
-  height: -moz-calc(100vh - 100px); /* Firefox */
-  height: -webkit-calc(100vh - 100px); /* Chrome, Safari */
-  height: calc(100vh - 64px - 48px); /* IE9+ and future browsers */
+  height: -moz-calc($max--layout--height - 100px); /* Firefox */
+  height: -webkit-calc($max--layout--height - 100px); /* Chrome, Safari */
+  height: calc(
+    $max--layout--height - $nav--height--small - $nav--height--base -
+      $lrg-margin * 2
+  ); /* IE9+ and future browsers */
+  height: calc(100vh - (16px * 4)); /* I don't know why this fixes it...? */
 }
-
 .large--layout {
-  height: 50vh;
+  min-height: $large--layout--height;
 }
-
 .medium--layout {
-  height: 33vh;
+  min-height: $medium--layout--height;
 }
-
 .small--layout {
-  height: 25vh;
+  min-height: $small--layout--height;
+}
+.xs--layout {
+  min-height: $xs--layout--height;
+}
+.max--height {
+  height: 100vh;
 }
 
 // Margin
 .negative--margin--12--left {
   margin-left: -$sm-margin;
 }
-
 .margin--flush--right {
   margin-right: 0;
 }
-
 .margin--flush--left {
   margin-left: 0;
 }
@@ -120,6 +121,16 @@ a {
   background-color: $gb-3;
 }
 
-.max--height{
-  height: 100%;
+.gb-2 {
+  background-color: $gb-2;
+}
+
+footer {
+  color: $gb--t--light;
+  h3 {
+    color: $gb--t--dark;
+  }
+  a {
+    color: $gb--t--light;
+  }
 }

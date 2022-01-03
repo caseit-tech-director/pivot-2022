@@ -2,10 +2,11 @@ $heading--font-family: 'IBM Plex Sans', sans-serif;
 $body--font-family: 'Inter', sans-serif;
 
 // Layout sizes
-$max--layout: 100vh;
-$large--layout: 50vh;
-$medium--layout: 33vh;
-$small--layout: 25vh;
+$max--layout--height: 100vh;
+$large--layout--height: 66.6vh;
+$medium--layout--height: 50vh;
+$small--layout--height: 25vh;
+$xs--layout--height: 12.5vh;
 
 // Nav
 $nav--height--base: 4rem;
@@ -43,10 +44,10 @@ $caption--tk: 0.025rem; //0.4px
 $overline--tk: 0.09375rem; //1.5px
 
 // Margins
-$lrg-margin: 84px;
-$med-margin: 48px;
-$sm-margin: 24px;
-$xs-margin: 12px;
+$lrg-margin: 5.25rem;
+$med-margin: 3rem;
+$sm-margin: 1.5rem;
+$xs-margin: 0.75rem;
 
 // Buttons
 $button--height: 3rem;

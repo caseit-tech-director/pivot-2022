@@ -1,75 +1,111 @@
-@import "../base/variables";
+@import '../base/variables';
 
-h1, h2, h3, h4, h5, h6, .subtitle-1, .subtitle-2 {
-    font-family: $heading--font-family;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.subtitle-1,
+.subtitle-2 {
+  font-family: $heading--font-family;
 }
 
-.body-1, .body-2, button, caption, .overline{
-    font-family: $body--font-family;
+// Weights
+h1,
+h2 {
+  font-weight: 300;
+}
+
+h3,
+h4,
+h5,
+.subtitle-1,
+.subtitle-2 {
+  font-weight: 400;
+}
+
+.body-1,
+.body-2,
+caption,
+.overline {
+  font-weight: 400;
+}
+
+button {
+  font-weight: 500;
+}
+
+.body-1,
+.body-2,
+button,
+caption,
+.overline {
+  font-family: $body--font-family;
 }
 
 // Font | Previews
-h1{
-    letter-spacing: $h1--tk;
-    font-size: $h1--font-sz;
+h1 {
+  letter-spacing: $h1--tk;
+  font-size: $h1--font-sz;
 }
 
-h2{
-    letter-spacing: $h2--tk;
-    font-size: $h2--font-sz; 
+h2 {
+  letter-spacing: $h2--tk;
+  font-size: $h2--font-sz;
 }
 
-h3{
-    letter-spacing: $h3--tk;
-    font-size: $h3--font-sz; 
+h3 {
+  letter-spacing: $h3--tk;
+  font-size: $h3--font-sz;
 }
 
-h4{
-    letter-spacing: $h4--tk;
-    font-size: $h4--font-sz; 
+h4 {
+  letter-spacing: $h4--tk;
+  font-size: $h4--font-sz;
 }
 
-h5{
-    letter-spacing: $h5--tk;
-    font-size: $h5--font-sz; 
+h5 {
+  letter-spacing: $h5--tk;
+  font-size: $h5--font-sz;
 }
 
-h6{
-    letter-spacing: $h6--tk;
-    font-size: $h6--font-sz; 
+h6 {
+  letter-spacing: $h6--tk;
+  font-size: $h6--font-sz;
 }
 
-.subtitle-1{
-    letter-spacing: $subtitle-1--tk;
-    font-size: $subtitle-1--font-sz;
+.subtitle-1 {
+  letter-spacing: $subtitle-1--tk;
+  font-size: $subtitle-1--font-sz;
 }
 
-.subtitle-2{
-    letter-spacing: $subtitle-2--tk;
-    font-size: $subtitle-2--font-sz;
+.subtitle-2 {
+  letter-spacing: $subtitle-2--tk;
+  font-size: $subtitle-2--font-sz;
 }
 
-.body-1{
-    letter-spacing: $body-1--tk;
-    font-size: $body-1--font-sz;
+.body-1 {
+  letter-spacing: $body-1--tk;
+  font-size: $body-1--font-sz;
 }
 
-.body-2{
-    letter-spacing: $body-2--tk;
-    font-size: $body-2--font-sz;
+.body-2 {
+  letter-spacing: $body-2--tk;
+  font-size: $body-2--font-sz;
 }
 
-button{
-    letter-spacing: $button--tk;
-    font-size: $button--font-sz;
+button {
+  letter-spacing: $button--tk;
+  font-size: $button--font-sz;
 }
 
-caption{
-    letter-spacing: $caption--tk;
-    font-size: $caption--font-sz;
+caption {
+  letter-spacing: $caption--tk;
+  font-size: $caption--font-sz;
 }
 
-.overline{
-    letter-spacing: $overline--tk;
-    font-size: $overline--font-sz;
+.overline {
+  letter-spacing: $overline--tk;
+  font-size: $overline--font-sz;
 }
