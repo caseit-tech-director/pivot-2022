@@ -1,13 +1,5 @@
 @import '../base/variables';
 
-.banner-wrapper{
-    background-color: tomato;
-    > div {
-        grid-column-start: $grid--start;
-        grid-column-end: 5;
-    }
-}
-
 .banner--header--wrapper{
     grid-row-start: 1;
     h5{
@@ -23,6 +15,32 @@
     }
 }
 
+.testimonial--content{
+    grid-row-start: 1;
+    // grid-column-start: 5;
+    // grid-column-end: 11;
+    h2 {
+        margin-bottom: $xs-margin;
+    }
+}
+
+.testimonial--cta--wrapper{
+    grid-column-start: 11;
+    grid-row-start: 1;
+    display: flex;
+    align-items: center;
+}
+
+.sponsor--content{
+    background-color: tomato;
+    * {
+        margin-right: $xs-margin !important;
+        margin-bottom: $xs-margin !important;
+    }
+    .sponsor--content--row{
+        margin-bottom: $med-margin !important;
+    }
+}
 
 
 // .banner--header--border
