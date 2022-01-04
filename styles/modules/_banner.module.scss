@@ -41,5 +41,15 @@
     }
 }
 
-
-// .banner--header--border
+// RegistrationModule
+.registration--cta--wrapper{
+    display: flex;
+    grid-column-start: 4;
+    grid-column-end: 10;
+    -moz-box-pack: justify;
+    margin: 12px;
+    justify-content: center;
+    :first-child {
+        margin-left: -12px;
+    }
+}

@@ -24,9 +24,6 @@
   }
 }
 
-.header--content{
-
-}
 // LargeHeader.js
 .header--lrg {
   background-color: $gb-3;
@@ -54,4 +51,15 @@
 }
 
 
+// Branch Header
+.section--header--wrapper{
+  grid-column-start: $grid--start;
+  grid-column-end: 4;
+  grid-row-start: 1;
+}
 
+.branch--paragraph--wrapper{
+  grid-column-start: 5;
+  grid-row-start: 1;
+  grid-column-end: $grid--end - 2;
+}
