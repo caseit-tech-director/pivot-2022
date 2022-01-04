@@ -1,5 +1,5 @@
-import LargeLayout from './Layout/LargeLayout';
-import style from '../styles/modules/_locomotive.module.scss'
+import LargeLayout from '../Layout/LargeLayout';
+import style from '../../styles/modules/_locomotive.module.scss'
 
 export default function LocomotiveParagraph(props) {
   return (

@@ -1,0 +1,31 @@
+@import '/styles/base/variables';
+
+.organizer--section--wrapper {
+  padding-left: $lrg-margin;
+  padding-right: $lrg-margin;
+  display: grid;
+  grid-template-columns: $column--count;
+  max-width: $max--width;
+  column-gap: $grid--gap;
+  margin: 0 auto;
+  height: 100%;
+  > div {
+    margin-top: $lrg-margin;
+    margin-bottom: $lrg-margin;
+  }
+}
+
+.organizer--gallery--wrapper {
+  grid-column-start: $grid--start;
+  grid-column-end: $grid--end - 3;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    list-style: none;
+    flex: 0 0 25.333333%;
+    margin: 0 $med-margin $sm-margin 0;
+  }
+
+}

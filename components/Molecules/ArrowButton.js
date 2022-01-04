@@ -1,4 +1,4 @@
-import styles from '../styles/modules/_button.module.scss';
+import styles from '../../styles/modules/_button.module.scss';
 
 function ArrowButton(props) {
   return (

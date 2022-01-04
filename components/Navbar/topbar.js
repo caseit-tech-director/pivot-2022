@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 import styles from '../../styles/modules/_nav.module.scss';
-import DefaultButton from '../button';
+import DefaultButton from '../Molecules/button';
 import ZoomIcon from '../../public/images/icons8-zoom-48.png';
 
 export default function Layout({ children }) {

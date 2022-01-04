@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import SectionHeader from '../SectionHeader';
+import SectionHeader from '../Organisms/SectionHeader';
 import LargeLayout from '../Layout/LargeLayout';
 import TestImage from '../../public/images/rect-4x3.jpg';
 

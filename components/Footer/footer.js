@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import MediumLayout from '../Layout/MediumLayout';
 import style from '../../styles/modules/_footer.module.scss';
-import MenuItems from '../Footer/FooterMenuItems';
+import MenuItems from '../MenuItems/FooterMenuItems';
 
 export default function Footer() {
   const [isOpen, setIsOpen] = useState(false);

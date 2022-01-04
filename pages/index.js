@@ -1,5 +1,5 @@
 import LargeHeader from '../components/Header/largeHeader';
-import LocomotiveParagraph from '../components/locomotiveParagraph';
+import LocomotiveParagraph from '../components/Molecules/locomotiveParagraph';
 import Testimonials from '../components/BannerComponents/testimonials';
 import SponsorshipBanner from '../components/BannerComponents/SponsorshipBanner';
 import DiscoverOpportunities from '../components/Home/DiscoverOpportunities';

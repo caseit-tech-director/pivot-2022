@@ -1,6 +1,6 @@
-import MediumLayout from './Layout/MediumLayout';
-import style from '../styles/modules/_header.module.scss';
-import SectionHeader from '../components/SectionHeader';
+import MediumLayout from '../Layout/MediumLayout';
+import style from '../../styles/modules/_header.module.scss';
+import SectionHeader from './SectionHeader';
 
 export default function BranchHeader(props) {
   return (

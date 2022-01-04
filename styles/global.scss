@@ -43,6 +43,10 @@ li {
 }
 a {
   text-decoration: none;
+  color: $gb--t--dark;
+  &:hover{
+    color: $primary-color;
+  }
 }
 
 // Images
@@ -197,4 +201,12 @@ footer {
 .grid--simple--spread{
   grid-column-start: $grid--start;
   grid-column-end: $grid--end;
+}
+
+.scroll--menu {
+  grid-column-start: 10;
+  grid-column-end: $grid--end;
+* {
+  margin-bottom: $xs-margin !important;
+}
 }

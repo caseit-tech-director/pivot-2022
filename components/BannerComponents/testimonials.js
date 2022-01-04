@@ -1,7 +1,7 @@
 import SmallLayout from '../Layout/SmallLayout';
 import style from '../../styles/modules/_banner.module.scss';
 import BannerHeader from './BannerHeader';
-import ArrowButton from '../ArrowButton';
+import ArrowButton from '../Molecules/ArrowButton';
 
 export default function Testimonials(props) {
   return (

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '../styles/modules/_nav.module.scss';
+import styles from '../../styles/modules/_nav.module.scss';
 
 function DefaultButton(props) {
   return (

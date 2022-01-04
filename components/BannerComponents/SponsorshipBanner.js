@@ -1,7 +1,7 @@
 import MediumLayout from '../Layout/MediumLayout';
 import style from '../../styles/modules/_banner.module.scss';
 import BannerHeader from './BannerHeader';
-import ArrowButton from '../ArrowButton';
+import ArrowButton from '../Molecules/ArrowButton';
 import Image from 'next/image';
 import testIMG from '../../public/images/square.jpg';
 
