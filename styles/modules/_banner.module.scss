@@ -20,6 +20,9 @@
 
 .testimonial--content{
     grid-row-start: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     // grid-column-start: 5;
     // grid-column-end: 11;
     h2 {

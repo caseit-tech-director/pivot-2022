@@ -44,7 +44,7 @@ li {
 a {
   text-decoration: none;
   color: $gb--t--dark;
-  &:hover{
+  &:hover {
     color: $primary-color;
   }
 }
@@ -83,7 +83,7 @@ a {
   }
 }
 
-.center--text{
+.center--text {
   text-align: center;
 }
 
@@ -117,7 +117,7 @@ a {
 .negative--margin--12--left {
   margin-left: -$sm-margin;
 }
-.margin--bottom--xs{
+.margin--bottom--xs {
   margin-bottom: $xs-margin;
 }
 .margin--flush--right {
@@ -159,7 +159,7 @@ footer {
   }
 }
 
-.margin--top--xs{
+.margin--top--xs {
   margin-top: $xs-margin;
 }
 
@@ -193,20 +193,39 @@ footer {
   > * {
     margin-right: $sm-margin;
   }
-  >:last-child{
+  > :last-child {
     margin-right: 0;
   }
 }
 
-.grid--simple--spread{
+.grid--simple--spread {
   grid-column-start: $grid--start;
   grid-column-end: $grid--end;
 }
 
 .scroll--menu {
-  grid-column-start: 10;
+  grid-column-start: 12;
   grid-column-end: $grid--end;
-* {
-  margin-bottom: $xs-margin !important;
+  * {
+    margin-bottom: $xs-margin !important;
+  }
 }
+
+.flex--justify--center {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+.text--bold {
+  font-weight: bolder;
+}
+
+.items--flex--med--align {
+  display: flex;
+  > div {
+    margin-right: $med-margin;
+  }
 }

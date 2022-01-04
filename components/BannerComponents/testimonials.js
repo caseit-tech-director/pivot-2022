@@ -1,11 +1,11 @@
-import SmallLayout from '../Layout/SmallLayout';
+import ExtraSmallLayout from '../Layout/ExtraSmallLayout';
 import style from '../../styles/modules/_banner.module.scss';
 import BannerHeader from './BannerHeader';
 import ArrowButton from '../Molecules/ArrowButton';
 
 export default function Testimonials(props) {
   return (
-    <SmallLayout className="banner--wrapper">
+    <ExtraSmallLayout className="banner--wrapper">
         <BannerHeader title={"TESTIMONIALS"} overline={"PIVOT CASE COMPETITION"}/>
         <div className={style['testimonial--content']}>
           <h2 className="subtitle-2">NAME</h2>
@@ -14,6 +14,6 @@ export default function Testimonials(props) {
         <div className={style['testimonial--cta--wrapper']}>
           <ArrowButton/>
         </div>
-    </SmallLayout>
+    </ExtraSmallLayout>
   );
 }
