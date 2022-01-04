@@ -9,8 +9,8 @@ export default function Footer() {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
   return (
-    <footer>
-      <MediumLayout className="gb-2">
+    <footer className="gb-2">
+      <MediumLayout>
         <div className={style['footer--logo']}>
           <h3>pivot</h3>
         </div>

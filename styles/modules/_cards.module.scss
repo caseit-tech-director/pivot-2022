@@ -9,6 +9,13 @@
 .card--module{
     position: relative;
     text-align: center;
+    color: #ffffff;
+    margin: 0;
+    width: 100%;
+    background-color: tomato;
+    padding: 0;
+    height: fit-content;
+    text-align: center;
     color: $gb--t--light;
     h2{
         font-size: $subtitle-1--font-sz;

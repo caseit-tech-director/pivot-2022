@@ -13,7 +13,7 @@ export default function CardsModule() {
       </div>
       <div className={style['card--spread']}>
         <div className={style['card--module']}>
-          <a href="">
+          <a href="" className="display--block">
             <Image
               src={TestImage}
               width={200}
@@ -21,11 +21,13 @@ export default function CardsModule() {
               alt={'Opportunity Image'}
             />
             <h2 className={style['centered']}>Test</h2>
-            <p className={style['card--module--overline']}><em>asdf</em></p>
+            <p className={style['card--module--overline']}>
+              <em>asdf</em>
+            </p>
           </a>
         </div>
         <div className={style['card--module']}>
-          <a href="">
+          <a href="" className="display--block">
             <Image
               src={TestImage}
               width={200}
@@ -33,11 +35,13 @@ export default function CardsModule() {
               alt={'Opportunity Image'}
             />
             <h2 className={style['centered']}>Test</h2>
-            <p className={style['card--module--overline']}><em>asdf</em></p>
+            <p className={style['card--module--overline']}>
+              <em>asdf</em>
+            </p>
           </a>
         </div>
         <div className={style['card--module']}>
-          <a href="">
+          <a href="" className="display--block">
             <Image
               src={TestImage}
               width={200}
@@ -45,11 +49,13 @@ export default function CardsModule() {
               alt={'Opportunity Image'}
             />
             <h2 className={style['centered']}>Test</h2>
-            <p className={style['card--module--overline']}><em>asdf</em></p>
+            <p className={style['card--module--overline']}>
+              <em>asdf</em>
+            </p>
           </a>
         </div>
         <div className={style['card--module']}>
-          <a href="">
+          <a href="" className="display--block">
             <Image
               src={TestImage}
               width={200}
@@ -57,7 +63,9 @@ export default function CardsModule() {
               alt={'Opportunity Image'}
             />
             <h2 className={style['centered']}>Test</h2>
-            <p className={style['card--module--overline']}><em>asdf</em></p>
+            <p className={style['card--module--overline']}>
+              <em>asdf</em>
+            </p>
           </a>
         </div>
       </div>

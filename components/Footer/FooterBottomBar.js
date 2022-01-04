@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 export default function FooterBottomBar() {
   return (
-    <footer>
-      <ExtraSmallLayout className="gb-2">
+    <footer className="gb-2">
+      <ExtraSmallLayout>
         <div className={style['footer--bottom--bar--contents']}>
           <div className={style['footer--bottom--bar--policy']}>
             <Link href="">

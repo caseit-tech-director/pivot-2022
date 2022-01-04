@@ -15,6 +15,11 @@ export const MenuItems = [
     href: '/about/organizers',
   },
   {
+    title: 'SPONSORS',
+    url: '/',
+    href: '/sponsors',
+  },
+  {
     title: 'COMPETITION',
     url: '/',
     href: '/competition',

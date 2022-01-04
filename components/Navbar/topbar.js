@@ -9,7 +9,7 @@ export default function Layout({ children }) {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
   return (
-    <>
+    <div className={styles['nav--bg--extend']}>
       <nav
         className={[
           styles['nav'],
@@ -36,6 +36,6 @@ export default function Layout({ children }) {
         </div>
       </nav>
       {children}
-    </>
+    </div>
   );
 }

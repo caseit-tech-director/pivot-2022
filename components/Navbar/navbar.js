@@ -10,7 +10,7 @@ export default function Layout({ children }) {
   const openMenu = () => setIsOpen(!isOpen);
   
   return (
-    <>
+    <div className={styles['nav--bg--extend']}>
       <nav 
       className={[styles['nav'], 
       styles['nav--grid'], 
@@ -70,6 +70,6 @@ export default function Layout({ children }) {
         </button>
       </nav>
       {children}
-    </>
+    </div>
   );
 }
