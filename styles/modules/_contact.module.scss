@@ -1,0 +1,39 @@
+@import '../base/variables';
+
+.social--media--information--wrapper {
+}
+
+.contact--information--header {
+  margin-bottom: $med-margin;
+}
+
+.contact--information {
+  .contact--information--item {
+    margin-top: $xs-margin;
+  }
+  :first-child {
+    margin-top: 0;
+  }
+}
+
+.social--media--item--wrapper {
+  margin-top: $xs-margin;
+  display: flex;
+  .social--media--item {
+    margin-right: $xs-margin;
+  }
+}
+
+.social--media--title--wrapper {
+  margin-top: $med-margin;
+}
+
+.contact--section--information--gc {
+  grid-column-start: $grid--start;
+  grid-column-end: 6;
+}
+
+.contact--section--form--gc {
+  grid-column-start: 7;
+  grid-column-end: $grid--end;
+}
