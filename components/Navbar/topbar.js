@@ -19,7 +19,7 @@ export default function Layout({ children }) {
         ].join(' ')}
       >
         <div className="grid--align--left flex">
-          <div className="img--contain icon--48 negative--margin--12--left">
+          <div className="img--contain icon--48 margin--left--reset margin--right--xs">
             <Image src={ZoomIcon} alt="Zoom Logo" />
           </div>
           <Link href="/">

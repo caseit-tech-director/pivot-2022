@@ -89,13 +89,9 @@ a {
 
 // Layout
 .max--layout {
-  height: -moz-calc($max--layout--height - 100px); /* Firefox */
-  height: -webkit-calc($max--layout--height - 100px); /* Chrome, Safari */
-  height: calc(
-    $max--layout--height - $nav--height--small - $nav--height--base -
-      $lrg-margin * 2
-  ); /* IE9+ and future browsers */
-  height: calc(100vh - (16px * 4)); /* I don't know why this fixes it...? */
+  height: -moz-calc(100vh - 64px - 48px); /* Firefox */
+  height: -webkit-calc(100vh - 64px - 48px); /* Chrome, Safari */
+  height: calc(100vh - 64px - 48px); /* IE9+ and future browsers */
 }
 .large--layout {
   min-height: $large--layout--height;
@@ -114,9 +110,19 @@ a {
 }
 
 // Margin
+
+.margin--left--reset{
+  margin-left: 0 !important;
+}
+
+// delete this
 .negative--margin--12--left {
   margin-left: -$sm-margin;
 }
+
+
+
+
 .margin--bottom--xs {
   margin-bottom: $xs-margin !important;
 }
@@ -128,6 +134,9 @@ a {
 }
 .margin--flush--left {
   margin-left: 0;
+}
+.margin--right--xs {
+  margin-right: $xs-margin;
 }
 
 // Temp

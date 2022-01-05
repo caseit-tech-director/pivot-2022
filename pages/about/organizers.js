@@ -11,9 +11,11 @@ import style from '../../styles/modules/_organizer.module.scss';
 import SideMenu from '../../components/Molecules/SideMenu';
 
 export default function Orgaziners() {
+  // remove
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
   const test = '../../public/images';
+  
   return (
     <body>
       <LargeHeader header={'Title'} overline={'Overline'} />

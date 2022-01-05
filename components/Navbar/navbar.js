@@ -8,23 +8,26 @@ import ZoomIcon from '../../public/images/icons8-zoom-48.png';
 export default function Layout({ children }) {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
-  
-  return (
-    <div className={styles['nav--bg--extend']}>
-      <nav 
-      className={[styles['nav'], 
-      styles['nav--grid'], 
-      styles['base--nav']].join(' ')}
-      >
 
+  return (
+    <div
+      className={styles['nav--bg--extend']}
+    >
+      <nav
+        className={[
+          styles['nav'],
+          styles['nav--grid'],
+          styles['base--nav'],
+        ].join(' ')}
+      >
         <div className="grid--align--left flex--inherit">
-          <div className="img--contain icon--48 negative--margin--12--left margin--flush--right">
+          <div className="img--contain icon--48 margin--left--reset margin--right--xs">
             <Image src={ZoomIcon} alt="Zoom Logo" />
           </div>
           <Link href="/">
-              <div className="margin--flush--left flex--inherit">
-                <a className="top--bar--announcement">PIVOT CASE COMPETITION</a>
-              </div>
+            <div className="margin--flush--left flex--inherit">
+              <a className="top--bar--announcement">PIVOT CASE COMPETITION</a>
+            </div>
           </Link>
         </div>
         <ul

@@ -52,6 +52,7 @@
 }
 
 // Nav Styles
+
 .nav--logo {
   display: flex;
   margin-top: auto;
@@ -118,10 +119,17 @@
 @media only screen and (max-width: 768px) {
   // Nav Styles
   .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // padding: 1rem 1.5rem;
+    padding-left: $lrg-margin;
+    padding-right: $lrg-margin;
+    display: grid;
+    grid-template-columns: $column--count;
+    max-width: $max--width;
+    column-gap: $grid--gap;
+    margin: 0 auto;
   }
 
   .nav--menu {
@@ -144,7 +152,7 @@
   .hamburger {
     display: block;
     cursor: pointer;
-    grid-column-start: 16;
+    grid-column-end: -1;
   }
 
   .hamburger.active .bar:nth-child(2) {
