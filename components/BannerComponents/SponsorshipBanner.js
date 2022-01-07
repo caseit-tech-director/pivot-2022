@@ -7,7 +7,7 @@ import testIMG from '../../public/images/square.jpg';
 
 export default function SponsorshipBanner(props) {
   return (
-    <MediumLayout className="banner--wrapper center--banner">
+    <MediumLayout className="banner--wrapper center--banner gb-3">
       <BannerHeader title={'SPONSORS'} overline={'PIVOT CASE COMPETITION'} />
       <div className={style['sponsor--content']}>
         <div

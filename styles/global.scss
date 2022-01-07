@@ -88,10 +88,13 @@ a {
 }
 
 // Layout
+.extendable--layout{
+  height: auto;
+}
 .max--layout {
-  height: -moz-calc(100vh - 64px - 48px); /* Firefox */
-  height: -webkit-calc(100vh - 64px - 48px); /* Chrome, Safari */
-  height: calc(100vh - 64px - 48px); /* IE9+ and future browsers */
+  min-height: -moz-calc(100vh - 64px - 48px); /* Firefox */
+  min-height: -webkit-calc(100vh - 64px - 48px); /* Chrome, Safari */
+  min-height: calc(100vh - 64px - 48px); /* IE9+ and future browsers */
 }
 .large--layout {
   min-height: $large--layout--height;
