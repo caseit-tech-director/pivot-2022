@@ -1,20 +1,47 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from '../../styles/modules/_nav.module.scss';
 import { MenuItems } from '../MenuItems/NavMenuItems';
 import ZoomIcon from '../../public/images/icons8-zoom-48.png';
+import { debounce } from '../../utilities/helpers';
+import Topbar from './topbar';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
-  // new:
+  
+  
   const [prevScrollPos, setPrevScrollPos] = useState(0);
-  // new:
   const [visible, setVisible] = useState(true);
 
+  const handleScroll = debounce(() => {
+    const currentScrollPos = window.pageYOffset;
+
+    setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
+
+    setPrevScrollPos(currentScrollPos);
+  }, 100);
+
+
+  const navbarStyles = {
+    position: 'fixed',
+    width: '100%',
+    textAlign: 'center',
+    // new:
+    transition: 'top 0.6s'
+  }
+
+  // new useEffect:
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+
+  }, [prevScrollPos, visible, handleScroll]);
   return (
-    <div className={styles['nav--bg--extend']}>
+    <div style={{ ...navbarStyles, top: visible ? '0' : '-60px' }} className={styles['nav--bg--extend']}>
+      <Topbar/>
       <nav
         className={[
           styles['nav'],
