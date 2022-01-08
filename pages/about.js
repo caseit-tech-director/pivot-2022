@@ -1,4 +1,4 @@
-import SmallHeader from '../components/Header/smallHeader'
+import SmallHeader from '../components/header/smallHeader'
 import BranchHeader from '../components/Organisms/BranchHeader';
 import RegistrationModule from '../components/Organisms/RegistrationModule';
 import History from '../components/Organisms/About/History'

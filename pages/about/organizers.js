@@ -1,12 +1,11 @@
 import BranchHeader from '../../components/Organisms/BranchHeader';
 import dummyText from '../../components/DummyText';
 import RegistrationModule from '../../components/Organisms/RegistrationModule';
-import LargeHeader from '../../components/Header/largeHeader';
+import LargeHeader from '../../components/header/largeHeader';
 import Testimonials from '../../components/BannerComponents/testimonials';
 import Link from 'next/link';
 import { useState } from 'react';
 import Image from 'next/image';
-// import { MenuItems } from '../../components/MenuItems/OrganizerMenuItems';
 import MenuItems from '../../components/MenuItems/OrganizerMenuItems';
 
 import style from '../../styles/modules/_organizer.module.scss';
@@ -17,7 +16,7 @@ export default function Orgaziners() {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
   const test = '../../public/images';
-  
+
   return (
     <body>
       <LargeHeader header={'organizing committee'} overline={'Overline'} />
@@ -38,18 +37,21 @@ export default function Orgaziners() {
                     src={'/' + item.src}
                     alt="test"
                   />
-                  <h5>
-                    {item.name}
-                  </h5>
-                  <p className="overline">
-                    {item.title}
-                  </p>
+                  <h5>{item.name}</h5>
+                  <p className="overline">{item.title}</p>
                 </li>
               );
             })}
           </ul>
         </div>
-        <SideMenu subtitle={"All Years"} link1={"2022"} link2={"2021"} link3={"2020"} link4={"2019"} link5={"2018"}/>
+        <SideMenu
+          subtitle={'All Years'}
+          link1={'2022'}
+          link2={'2021'}
+          link3={'2020'}
+          link4={'2019'}
+          link5={'2018'}
+        />
       </section>
       <RegistrationModule header={'Title'} overline={'overline'} />
       <Testimonials />

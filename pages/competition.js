@@ -1,5 +1,5 @@
 import Testimonials from '../components/BannerComponents/testimonials';
-import SmallHeader from '../components/Header/smallHeader';
+import SmallHeader from '../components/header/smallHeader';
 import BranchHeader from '../components/Organisms/BranchHeader';
 import RegistrationModule from '../components/Organisms/RegistrationModule';
 import dummyText from '../components/DummyText';

@@ -1,4 +1,4 @@
-import SmallHeader from '../components/Header/smallHeader';
+import SmallHeader from '../components/header/smallHeader';
 import BranchHeader from '../components/Organisms/BranchHeader';
 import dummyText from '../components/DummyText';
 import ContactSection from '../components/Contact/ContactSection';
