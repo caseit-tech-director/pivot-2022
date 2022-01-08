@@ -4,7 +4,7 @@ import SectionHeader from '../Organisms/SectionHeader';
 import LargeLayout from '../Layout/LargeLayout';
 import TestImage from '../../public/images/rect-4x3.jpg';
 
-export default function DiscoverOpportunities() {
+export default function DiscoverOpportunities(props) {
   return (
     <LargeLayout>
       <SectionHeader
@@ -19,7 +19,7 @@ export default function DiscoverOpportunities() {
             height={306}
             alt={'Opportunity Image'}
           />
-          <caption className="margin--top--xs subtitle-1">Caption</caption>
+          <caption className="margin--top--xs subtitle-1 flex">{props.caption1}</caption>
         </div>
         <div className="opportunity--content">
           <Image
@@ -28,7 +28,7 @@ export default function DiscoverOpportunities() {
             height={306}
             alt={'Opportunity Image'}
           />
-          <caption className="margin--top--xs subtitle-1">Caption</caption>
+          <caption className="margin--top--xs subtitle-1 flex">{props.caption2}</caption>
         </div>
         <div className="opportunity--content">
           <Image
@@ -37,7 +37,7 @@ export default function DiscoverOpportunities() {
             height={306}
             alt={'Opportunity Image'}
           />
-          <caption className="margin--top--xs subtitle-1">Caption</caption>
+          <caption className="margin--top--xs subtitle-1 flex">{props.caption3}</caption>
         </div>
       </div>
     </LargeLayout>

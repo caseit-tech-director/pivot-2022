@@ -5,10 +5,10 @@ function LargeHeader(props) {
     <header className="max--layout gb-3">
       <div className="grid--container">
         <div className={styles['header--lrg--text--wrapper']}>
-            <div className={styles['header--content']}>
+          <div className={styles['header--content']}>
             <div className="overline">{props.overline}</div>
             <h1>{props.header}</h1>
-            </div>
+          </div>
         </div>
       </div>
     </header>

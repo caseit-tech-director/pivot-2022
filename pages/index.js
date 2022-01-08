@@ -1,4 +1,4 @@
-import LargeHeader from '../components/Header/largeHeader';
+import HomeBanner from '../components/Home/HomeBanner';
 import LocomotiveParagraph from '../components/Molecules/locomotiveParagraph';
 import Testimonials from '../components/BannerComponents/testimonials';
 import SponsorshipBanner from '../components/BannerComponents/SponsorshipBanner';
@@ -11,13 +11,13 @@ export default function Home() {
 
   return (
     <body>
-      <LargeHeader header={'Title'} overline={'Overline'} />
-      <LocomotiveParagraph text={text} />
-      <LocomotiveParagraph text={text} />
-      <LocomotiveParagraph text={text} />
-      <SponsorshipBanner/>
+      <HomeBanner header={'pivot'} overline={'Overline'} paragraph={"British Columbia based business technology management case competition built for future business leaders"}/>
+      <LocomotiveParagraph text={"The local rendition of CaseIT, the world’s premier MIS business case competition."} />
+      <LocomotiveParagraph text={"Since 2018, PIVOT has welcomed over 400 competitors representing British Columbia’s various universities to compete in this rigorous and engaging competition."} />
+      <LocomotiveParagraph text={"But this year we’re doing something different"} />
       <TextSwiper/>
-      <DiscoverOpportunities/>
+      <SponsorshipBanner/>
+      <DiscoverOpportunities caption1={"$1400 Prize Pool"} caption2={"Network with Industry Professionals"} caption3={"Virtual Events"}/>
       <CardsModule/>
       <Testimonials/>
     </body>

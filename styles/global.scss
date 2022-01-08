@@ -203,7 +203,7 @@ footer {
   grid-column-start: $grid--start;
   grid-column-end: $grid--end;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   > * {
     margin-right: $sm-margin;
   }

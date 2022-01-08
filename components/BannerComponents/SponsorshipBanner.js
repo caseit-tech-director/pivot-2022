@@ -7,47 +7,45 @@ import testIMG from '../../public/images/square.jpg';
 
 export default function SponsorshipBanner(props) {
   return (
-    <MediumLayout className="banner--wrapper center--banner gb-3">
-      <BannerHeader title={'SPONSORS'} overline={'PIVOT CASE COMPETITION'} />
-      <div className={style['sponsor--content']}>
-        <div
-          className={[
-            style['sponsor--content--row'],
-            style['banner--title--sponsors'],
-          ].join(' ')}
-        >
-          <Image src={testIMG} width={128} height={128} alt="Sponsor" />
-          <Image src={testIMG} width={128} height={128} alt="Sponsor" />
-          <Image src={testIMG} width={128} height={128} alt="Sponsor" />
-          <h2 className="subtitle-2">
-            Title Sponsors
-          </h2>
+    <div className="gb-3">
+      <MediumLayout className="banner--wrapper center--banner">
+        <BannerHeader title={'SPONSORS'} overline={'PIVOT CASE COMPETITION'} />
+        <div className={style['sponsor--content']}>
+          <div
+            className={[
+              style['sponsor--content--row'],
+              style['banner--title--sponsors'],
+            ].join(' ')}
+          >
+            <Image src={testIMG} width={128} height={128} alt="Sponsor" />
+            <Image src={testIMG} width={128} height={128} alt="Sponsor" />
+            <Image src={testIMG} width={128} height={128} alt="Sponsor" />
+            <h2 className="subtitle-2">Title Sponsors</h2>
+          </div>
+          <div
+            className={[
+              style['sponsor--content--row'],
+              style['banner--title--sponsors'],
+            ].join(' ')}
+          >
+            <Image src={testIMG} width={84} height={84} alt="Sponsor" />
+            <Image src={testIMG} width={84} height={84} alt="Sponsor" />
+            <Image src={testIMG} width={84} height={84} alt="Sponsor" />
+            <h2 className="subtitle-2">Title Sponsors</h2>
+          </div>
+          <div
+            className={[
+              style['sponsor--content--row'],
+              style['banner--in--kind--sponsors'],
+            ].join(' ')}
+          >
+            {/* <MyImage></MyImage> */}
+          </div>
         </div>
-        <div
-          className={[
-            style['sponsor--content--row'],
-            style['banner--title--sponsors'],
-          ].join(' ')}
-        >
-          <Image src={testIMG} width={84} height={84} alt="Sponsor" />
-          <Image src={testIMG} width={84} height={84} alt="Sponsor" />
-          <Image src={testIMG} width={84} height={84} alt="Sponsor" />
-          <h2 className="subtitle-2">
-            Title Sponsors
-          </h2>
+        <div className={style['testimonial--cta--wrapper']}>
+          <ArrowButton />
         </div>
-        <div
-          className={[
-            style['sponsor--content--row'],
-            style['banner--in--kind--sponsors'],
-          ].join(' ')}
-        >
-          {/* <MyImage></MyImage> */}
-        </div>
-      </div>
-      <div className={style['testimonial--cta--wrapper']}>
-        <ArrowButton />
-      </div>
-    </MediumLayout>
+      </MediumLayout>
+    </div>
   );
 }

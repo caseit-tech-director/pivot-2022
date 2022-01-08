@@ -1,60 +1,64 @@
 @import '../base/variables';
 
-.banner--header--wrapper{
-    .banner--header--content{
-        border-top: 2px solid rgba(0, 0, 0, 0.25);
-    }
-    grid-row-start: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    h5{
-        margin-top: $xs-margin;
-    }
-    grid-column-start: $grid--start;
-    grid-column-end: 4;
-    > * {
-        margin-bottom: $xs-margin;
-    }
+.banner--header--wrapper {
+  .banner--header--content {
+    border-top: 2px solid rgba(0, 0, 0, 0.25);
+  }
+  grid-row-start: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h5 {
+    margin-top: $xs-margin;
+  }
+  grid-column-start: $grid--start;
+  grid-column-end: 4;
+  > * {
+    margin-bottom: $xs-margin;
+  }
 }
 
-.testimonial--content{
-    grid-row-start: 1;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    // grid-column-start: 5;
-    // grid-column-end: 11;
-    h2 {
-        margin-bottom: $xs-margin;
-    }
+.testimonial--content {
+  grid-row-start: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  // grid-column-start: 5;
+  // grid-column-end: 11;
+  h2 {
+    margin-bottom: $xs-margin;
+  }
 }
 
-.testimonial--cta--wrapper{
-    grid-column-start: 11;
-    grid-row-start: 1;
-    display: flex;
-    align-items: center;
+.testimonial--cta--wrapper {
+  grid-column-start: 11;
+  grid-row-start: 1;
+  display: flex;
+  align-items: center;
 }
 
-.sponsor--content{
-    * {
-        margin-right: $xs-margin !important;
-        margin-bottom: $xs-margin !important;
-    }
-    .sponsor--content--row{
-        margin-bottom: $med-margin !important;
-    }
+.banner--title {
+  margin-bottom: $xs-margin;
+}
+
+.sponsor--content {
+  * {
+    margin-right: $xs-margin !important;
+    margin-bottom: $xs-margin !important;
+  }
+  .sponsor--content--row {
+    margin-bottom: $med-margin !important;
+  }
 }
 
 // RegistrationModule
-.registration--cta--wrapper{
-    margin-top: $lrg-margin;
-    display: flex;
-    -moz-box-pack: justify;
-    justify-content: center;
-    :first-child {
-        margin-left: $xs-margin;
-        margin-right: $xs-margin;
-    }
+.registration--cta--wrapper {
+  margin-top: $lrg-margin;
+  display: flex;
+  -moz-box-pack: justify;
+  justify-content: center;
+  :first-child {
+    margin-left: $xs-margin;
+    margin-right: $xs-margin;
+  }
 }

@@ -66,3 +66,20 @@
 .branch--grid--container{
   @extend %grid--container;
 }
+
+.home--banner--text--wrapper{
+  grid-column-start: $grid--start;
+  grid-column-end: $grid--end;
+  display: flex;
+  justify-content: center;
+  p {
+    margin-left: $sm-margin;
+    width: 17rem;
+    align-self: center;
+  }
+}
+
+.logo--heading{
+  letter-spacing: -0.094rem;
+  font-weight: bolder;
+}
