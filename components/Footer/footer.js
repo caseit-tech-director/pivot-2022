@@ -4,6 +4,7 @@ import { useState } from 'react';
 import MediumLayout from '../Layout/MediumLayout';
 import style from '../../styles/modules/_footer.module.scss';
 import MenuItems from '../MenuItems/FooterMenuItems';
+import { SocialMenuItems } from '../MenuItems/SocialMenuItems';
 
 export default function Footer() {
   const [isOpen, setIsOpen] = useState(false);
@@ -67,9 +68,22 @@ export default function Footer() {
         <div className={style['footer--links--row']}>
           <div className={style['footer--links--wrapper']}>
             <div className={style['footer--links--h6']}>Follow Us!</div>
-            <div className={style['footer--links']}>
-              {/* Insert Social Media Here */}
-            </div>
+            <ul className={style['social--media--item--wrapper']}>
+              {SocialMenuItems.map((item, index) => {
+                return (
+                  <li className={style['social--media--item']} key={index}>
+                    <a href={item.href}>
+                      <Image
+                        width={24}
+                        height={24}
+                        src={'/' + item.src}
+                        alt="test"
+                      />
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         </div>
       </MediumLayout>

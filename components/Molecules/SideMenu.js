@@ -2,7 +2,7 @@ export default function SideMenu(props) {
   return (
     <div className="scroll--menu">
       <div className="scroll--menu--title">
-        <h6 className="subtitle-1">Subtitle</h6>
+        <h6 className="subtitle-1">{props.subtitle}</h6>
       </div>
       <ul>
         <li>

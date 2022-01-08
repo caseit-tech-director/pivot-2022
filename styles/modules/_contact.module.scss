@@ -1,5 +1,9 @@
 @import '../base/variables';
 
+.contact--icon{
+  margin-right: $xs-margin;
+}
+
 .social--media--information--wrapper {
 }
 
@@ -9,7 +13,13 @@
 
 .contact--information {
   .contact--information--item {
+    display: flex;
     margin-top: $xs-margin;
+    a{
+      margin-left: $xs-margin;
+      align-items: center;
+      display: flex;
+    }
   }
   :first-child {
     margin-top: 0;

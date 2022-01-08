@@ -1,9 +1,9 @@
-/**
- * interface ProjectMessages
- * @param {string} title
- * @param {string} url
- * @param {string} href
- */
+// /**
+//  * interface ProjectMessages
+//  * @param {string} title
+//  * @param {string} url
+//  * @param {string} href
+//  */
 
 const CompetitionMenuItems = [
     {

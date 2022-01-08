@@ -12,12 +12,9 @@ export default function Testimonials(props) {
           overline={'PIVOT CASE COMPETITION'}
         />
         <div className={style['testimonial--content']}>
-          <h2 className="subtitle-2">NAME</h2>
+          <h2 className="subtitle-2">DORSA YOUSSEFI</h2>
           <p className="body-2">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
-            odio consequuntur rerum velit, beatae a eaque quos iure est totam
-            tempora nostrum labore numquam sit, ipsam libero suscipit,
-            voluptates nihil.
+          As a transfer student, Pivot was one of my first and most rewarding case competition experiences as I was able to test my BTM knowledge while learning about industry trends.
           </p>
         </div>
         <div className={style['testimonial--cta--wrapper']}>

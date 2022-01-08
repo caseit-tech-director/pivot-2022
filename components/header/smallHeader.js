@@ -9,7 +9,7 @@ function SmallHeader(props) {
           <div className={styles['header--text--wrapper']}>
             <div className={styles['header--content']}>
               <div className="overline">{props.overline}</div>
-              <h1>{props.header}</h1>
+              <h1 className={styles['logo--heading']}>{props.header}</h1>
             </div>
           </div>
         </header>

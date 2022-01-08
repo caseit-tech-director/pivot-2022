@@ -38,3 +38,10 @@
   display: flex;
   justify-content: space-between;
 }
+
+.social--media--item--wrapper{
+  display: flex;
+  > *{
+    margin-right: $xs-margin;
+  }
+}

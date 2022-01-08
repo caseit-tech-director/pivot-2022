@@ -6,12 +6,7 @@ import ContactSection from '../components/Contact/ContactSection';
 export default function Contact() {
   return (
     <body>
-      <SmallHeader header={'Title'} overline={'Overline'} />
-      <BranchHeader
-        header={'Title'}
-        overline={'Overline'}
-        paragraph={dummyText}
-      />
+      <SmallHeader header={'contact'} overline={'Overline'} />
       <ContactSection/>
     </body>
   );

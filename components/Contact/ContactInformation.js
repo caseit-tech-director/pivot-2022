@@ -12,7 +12,13 @@ export default function ContactInformation() {
           {ContactMenuItems.map((item, index) => {
             return (
               <li className={style['contact--information--item']} key={index}>
-                <Image width={24} height={24} src={'/' + item.src} alt="test" />
+                <Image
+                  className={['contact--icon']}
+                  width={24}
+                  height={24}
+                  src={'/' + item.src}
+                  alt="test"
+                />
                 <a href={item.href}>
                   <caption>{item.contactInfo}</caption>
                 </a>
@@ -29,9 +35,13 @@ export default function ContactInformation() {
           {SocialMenuItems.map((item, index) => {
             return (
               <li className={style['social--media--item']} key={index}>
-                <Image width={24} height={24} src={'/' + item.src} alt="test" />
                 <a href={item.href}>
-                  <caption>{item.contactInfo}</caption>
+                  <Image
+                    width={24}
+                    height={24}
+                    src={'/' + item.src}
+                    alt="test"
+                  />
                 </a>
               </li>
             );

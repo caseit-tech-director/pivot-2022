@@ -7,7 +7,7 @@ import dummyText from '../components/DummyText';
 export default function Competition() {
   return (
     <body>
-      <SmallHeader header={'Title'} overline={'Overline'} />
+      <SmallHeader header={'competition'} overline={'Overline'} />
       <BranchHeader
         header={'Title'}
         overline={'Overline'}

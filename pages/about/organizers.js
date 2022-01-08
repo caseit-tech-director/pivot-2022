@@ -6,7 +6,9 @@ import Testimonials from '../../components/BannerComponents/testimonials';
 import Link from 'next/link';
 import { useState } from 'react';
 import Image from 'next/image';
-import { MenuItems } from '../../components/MenuItems/OrganizerMenuItems';
+// import { MenuItems } from '../../components/MenuItems/OrganizerMenuItems';
+import MenuItems from '../../components/MenuItems/OrganizerMenuItems';
+
 import style from '../../styles/modules/_organizer.module.scss';
 import SideMenu from '../../components/Molecules/SideMenu';
 
@@ -18,7 +20,7 @@ export default function Orgaziners() {
   
   return (
     <body>
-      <LargeHeader header={'Title'} overline={'Overline'} />
+      <LargeHeader header={'organizing committee'} overline={'Overline'} />
       <BranchHeader
         header={'Title'}
         overline={'Overline'}
@@ -27,7 +29,7 @@ export default function Orgaziners() {
       <section className={style['organizer--section--wrapper']}>
         <div className={style['organizer--gallery--wrapper']}>
           <ul>
-            {MenuItems.map((item, index) => {
+            {MenuItems.Team2022.map((item, index) => {
               return (
                 <li key={index}>
                   <Image
@@ -47,7 +49,7 @@ export default function Orgaziners() {
             })}
           </ul>
         </div>
-        <SideMenu link1={"test"} link2={"test"} link3={"test"}/>
+        <SideMenu subtitle={"All Years"} link1={"2022"} link2={"2021"} link3={"2020"} link4={"2019"} link5={"2018"}/>
       </section>
       <RegistrationModule header={'Title'} overline={'overline'} />
       <Testimonials />

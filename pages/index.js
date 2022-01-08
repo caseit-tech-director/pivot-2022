@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <body>
-      <HomeBanner header={'pivot'} overline={'Overline'} paragraph={"British Columbia based business technology management case competition built for future business leaders"}/>
+      <HomeBanner header={'pivot'} overline={'05 year anniversary'} paragraph={"British Columbia based business technology management case competition built for future business leaders"}/>
       <LocomotiveParagraph text={"The local rendition of CaseIT, the world’s premier MIS business case competition."} />
       <LocomotiveParagraph text={"Since 2018, PIVOT has welcomed over 400 competitors representing British Columbia’s various universities to compete in this rigorous and engaging competition."} />
       <LocomotiveParagraph text={"But this year we’re doing something different"} />
