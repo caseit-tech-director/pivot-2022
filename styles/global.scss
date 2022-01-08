@@ -176,6 +176,11 @@ footer {
 
 .center--banner {
   align-items: center;
+  padding-top: calc(48px + 64px);
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 .arrow {

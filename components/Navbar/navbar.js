@@ -10,38 +10,42 @@ import Topbar from './topbar';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
-  
-  
+
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
   const handleScroll = debounce(() => {
     const currentScrollPos = window.pageYOffset;
 
-    setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
+    setVisible(
+      (prevScrollPos > currentScrollPos &&
+        prevScrollPos - currentScrollPos > 70) ||
+        currentScrollPos < 10
+    );
 
     setPrevScrollPos(currentScrollPos);
   }, 100);
-
 
   const navbarStyles = {
     position: 'fixed',
     width: '100%',
     textAlign: 'center',
     // new:
-    transition: 'top 0.6s'
-  }
+    transition: 'top 0.6s',
+  };
 
   // new useEffect:
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
     return () => window.removeEventListener('scroll', handleScroll);
-
   }, [prevScrollPos, visible, handleScroll]);
   return (
-    <div style={{ ...navbarStyles, top: visible ? '0' : '-60px' }} className={styles['nav--bg--extend']}>
-      <Topbar/>
+    <div
+      style={{ ...navbarStyles, top: visible ? '0' : '-48px' }}
+      className={styles['nav--bg--extend']}
+    >
+      <Topbar />
       <nav
         className={[
           styles['nav'],
@@ -53,7 +57,7 @@ const Navbar = () => {
           <div className="img--contain icon--48 margin--left--reset margin--right--xs">
             <Image src={ZoomIcon} alt="Zoom Logo" />
           </div>
-          <Link href="/">
+          <Link passHref={true} href="/">
             <div className="margin--flush--left flex--inherit">
               <a className="top--bar--announcement">PIVOT CASE COMPETITION</a>
             </div>
@@ -72,6 +76,7 @@ const Navbar = () => {
                 <Link
                   to={'/' + item.href}
                   href={item.href}
+                  passHref={true}
                   smooth={true}
                   spy={true}
                   className={

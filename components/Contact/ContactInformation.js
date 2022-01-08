@@ -19,9 +19,7 @@ export default function ContactInformation() {
                   src={'/' + item.src}
                   alt="test"
                 />
-                <a href={item.href}>
-                  <caption>{item.contactInfo}</caption>
-                </a>
+                <caption>{item.contactInfo}</caption>
               </li>
             );
           })}

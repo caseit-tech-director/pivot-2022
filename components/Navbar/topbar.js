@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/link-passhref */
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -22,10 +23,15 @@ export default function Layout({ children }) {
           <div className="img--contain icon--48 margin--left--reset margin--right--xs">
             <Image src={ZoomIcon} alt="Zoom Logo" />
           </div>
-          <Link href="/">
-              <div className="announcement--wrapper flex--inherit">
-                <a className="overline">pivots going online</a>
-              </div>
+          <Link
+            href={{
+              pathname: '/',
+              query: { name: 'test' },
+            }}
+          >
+            <div className="announcement--wrapper flex--inherit">
+              <a className="overline">pivots going online</a>
+            </div>
           </Link>
         </div>
         <div className={[styles['nav--menu--grid']].join(' ')}>

@@ -7,13 +7,9 @@ export default function TextSwiper() {
   return (
     <MaxLayout>
       <div className={style['container']}>
-        {/* 
-                  Width: 50% of container
-                  Height: 100% of container
-          */}
         <div className={style['image--content']}>
           <div className={style['image--container']}>
-            <Image src={testImage}></Image>
+            <Image alt={"test"} src={testImage}></Image>
           </div>
         </div>
         <div className={style['text--content--wrapper']}>
