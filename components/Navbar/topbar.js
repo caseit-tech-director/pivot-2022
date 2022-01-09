@@ -31,7 +31,7 @@ export default function Layout({ children }) {
             }}
           >
             <div className="announcement--wrapper flex--inherit ">
-              <a className="overline">PIVOT'S GOING ONLINE</a>
+              <a className="overline">PIVOT&apos;s GOING ONLINE</a>
             </div>
           </Link>
         </div>
