@@ -2,7 +2,7 @@ import styles from '../../styles/modules/_header.module.scss';
 
 function LargeHeader(props) {
   return (
-    <header className="max--layout gb-3">
+    <header className="max--layout text-color--white bg-color--primary">
       <div className="center--banner max--layout grid--container">
         <div className={styles['header--lrg--text--wrapper']}>
           <div className={styles['header--content']}>

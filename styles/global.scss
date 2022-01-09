@@ -140,21 +140,32 @@ a {
 }
 
 // Temp
-.gb-3 {
-  background-color: $gb-3;
+.bg-color--primary {
+  background-color: $bg-color--primary;
 }
 
-.gb-2 {
-  background-color: $gb-2;
+.text-color--white{
+  color: $primary-color--white;
 }
+
+.bg-color--primary {
+  background-color: $bg-color--primary;
+}
+
+.bg-color--black {
+  background-color: $bg-color--black;
+  color: $primary-color--white;
+}
+
+// Clean up below
 
 footer {
-  color: $gb--t--light;
+  color: $primary-color--white;
   h3 {
-    color: $gb--t--dark;
+    color: $primary-color--white;
   }
   a {
-    color: $gb--t--light;
+    color: $primary-color--white;
   }
 }
 
@@ -300,4 +311,3 @@ input[type='submit']:hover {
   top: 0;
   z-index: 10;
 }
-

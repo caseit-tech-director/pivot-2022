@@ -4,6 +4,8 @@
 //  * @param {string} url
 //  * @param {string} href
 //  */
+import { FaInstagram, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
+
 
 const CompetitionMenuItems = [
     {
@@ -30,6 +32,19 @@ const CompetitionMenuItems = [
 
 const AboutMenuItems = [
     {
+        title: 'Contact Info',
+        url: '/',
+        href: '/'
+    },
+    {
+        title: 'FAQ',
+        url: '/',
+        href: '/'
+    }
+];
+
+const SponsorshipMenuItems = [
+    {
         title: 'Benefits',
         url: '/',
         href: '/'
@@ -46,21 +61,9 @@ const AboutMenuItems = [
     }
 ];
 
-const SponsorshipMenuItems = [
-    {
-        title: 'Contact Info',
-        url: '/',
-        href: '/'
-    },
-    {
-        title: 'FAQ',
-        url: '/',
-        href: '/'
-    }
-];
-
 const SocialMediaItems = [
     {
+        icon: '',
         title: 'Contact Info',
         url: '/',
         href: '/',

@@ -4,7 +4,7 @@ import ExtraSmallLayout from '../Layout/ExtraSmallLayout';
 function SmallHeader(props) {
   return (
     <div className={styles['sm--header--bg--extend']}>
-      <ExtraSmallLayout>
+      <ExtraSmallLayout className="text-color--white">
         <header className={styles['header--sm']}>
           <div className={styles['header--text--wrapper']}>
             <div className={styles['header--content']}>

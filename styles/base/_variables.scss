@@ -10,9 +10,9 @@ $xs--layout--height: 12.5vh;
 
 // Nav
 $nav--height--base: 4rem;
-$nav--height--small: 3rem; 
+$nav--height--small: 3rem;
 $nav--height--base--px: 64px;
-$nav--height--small--px: 48px; 
+$nav--height--small--px: 48px;
 
 // Font | Sizing
 $h1--font-sz: 6.125rem;
@@ -22,20 +22,19 @@ $h4--font-sz: 2.188rem;
 $h5--font-sz: 1.5rem;
 $h6--font-sz: 1.25rem;
 $subtitle-1--font-sz: 1rem;
-$subtitle-2--font-sz: .875rem;
-$body-1--font-sz: .938rem;
-$body-2--font-sz: .813rem;
-$button--font-sz: .813rem;
-$caption--font-sz: .75rem;
-$overline--font-sz: .75rem;
-
+$subtitle-2--font-sz: 0.875rem;
+$body-1--font-sz: 0.938rem;
+$body-2--font-sz: 0.813rem;
+$button--font-sz: 0.813rem;
+$caption--font-sz: 0.75rem;
+$overline--font-sz: 0.75rem;
 
 // Font | Tracking
 $h1--tk: -0.09375rem; //1.5px
 $h2--tk: -0.03125rem; //-0.5px
-$h3--tk: 0; // 0 
+$h3--tk: 0; // 0
 $h4--tk: 0.015625; //0.25px
-$h5--tk: 0; // 0 
+$h5--tk: 0; // 0
 $h6--tk: 0.009375rem; //0.15px
 $subtitle-1--tk: 0.009375rem; //0.15px
 $subtitle-2--tk: 0.00625rem; //0.1px
@@ -51,7 +50,6 @@ $med-margin: 3rem;
 $sm-margin: 1.5rem;
 $xs-margin: 0.75rem;
 
-
 // Buttons
 $button--height: 3rem;
 
@@ -65,22 +63,21 @@ $grid--start: 1;
 $grid--end: -1;
 
 // Color
-$primary-color: #0449B0;
-$secondary-color: #012B69;
-$background-color: #EEE8E7;
-$accent-green: #5CE32D;
-$accent-yellow: #FFD600;
-$accent-orange: #FF9300;
-$accent-pink: #FF367A;
+$primary-color: #0449b0;
+$secondary-color: #012b69;
+$background-color: #eee8e7;
+$accent-green: #5ce32d;
+$accent-yellow: #ffd600;
+$accent-orange: #ff9300;
+$accent-pink: #ff367a;
 $type-color: #141414;
 $secondary-type-color: #c4c4c4;
 
 // Greybox (Temporary)
-$gb-1: #000000d5; //Nav
-$gb-2: #000000a6; // Footer
-$gb-3: #0000006b; // Section
+$bg-color--black: #151515; //Nav
+$bg-color--primary: #0449b0; // Section
 $gb-4: #0000002d; // Images
-$gb--t--light: #ffffff; // text light
+$primary-color--white: #eee8e7; // text light
 $gb--t--dark: #000000; // text dark
 
 $largeQuery: 1281px;

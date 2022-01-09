@@ -1,6 +1,6 @@
 @import '../base/variables';
 
-%grid--container{
+%grid--container {
   padding: $lrg-margin;
   display: grid;
   grid-template-columns: $column--count;
@@ -25,14 +25,14 @@
   }
 }
 
-.sm--header--bg--extend{
-  background-color: $gb-3;
+.sm--header--bg--extend {
+  background-color: $bg-color--primary;
   padding-top: calc(48px + 64px);
 }
 
 // LargeHeader.js
 .header--lrg {
-  background-color: $gb-3;
+  background-color: $bg-color--primary;
   @extend %grid--container;
   .header--text--wrapper {
     grid-column-start: $grid--start;
@@ -47,28 +47,29 @@
   align-items: center;
 }
 
-
 .header--lrg--text--wrapper {
   grid-column-start: $grid--start;
   grid-column-end: $grid--end;
   display: flex;
   align-items: center;
-  // height: calc(100% - 84px*2);  
+  // height: calc(100% - 84px*2);
 }
 
-
 // Branch Header
-.section--header--wrapper{
+.section--header--wrapper {
   grid-column-start: $grid--start;
   grid-column-end: 4;
   grid-row-start: 1;
 }
 
-.branch--grid--container{
+.branch--grid--container {
   @extend %grid--container;
 }
 
-.home--banner--text--wrapper{
+.home--banner--text--wrapper {
+  .header--text, p{
+    color: $primary-color--white;
+  }
   grid-column-start: $grid--start;
   grid-column-end: $grid--end;
   display: flex;
@@ -80,7 +81,7 @@
   }
 }
 
-.logo--heading{
+.logo--heading {
   letter-spacing: -0.094rem;
   font-weight: bolder;
 }

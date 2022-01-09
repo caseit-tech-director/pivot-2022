@@ -40,8 +40,8 @@
 
 .social--media--item--wrapper {
   display: flex;
-  > * {
-    margin-right: $xs-margin;
+  * {
+    margin-right: $xs-margin/2;
   }
 }
 

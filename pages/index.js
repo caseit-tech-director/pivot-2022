@@ -16,8 +16,8 @@ export default function Home() {
       <LocomotiveParagraph text={"Since 2018, PIVOT has welcomed over 400 competitors representing British Columbia’s various universities to compete in this rigorous and engaging competition."} />
       <LocomotiveParagraph text={"But this year we’re doing something different"} />
       <TextSwiper/>
-      <SponsorshipBanner/>
       <DiscoverOpportunities caption1={"$1400 Prize Pool"} caption2={"Network with Industry Professionals"} caption3={"Virtual Events"}/>
+      <SponsorshipBanner/>
       <CardsModule/>
       <Testimonials/>
     </body>

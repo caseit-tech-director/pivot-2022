@@ -8,6 +8,10 @@ import { debounce } from '../../utilities/helpers';
 import Topbar from './topbar';
 import { useRouter } from 'next/router';
 import Router from 'next/router';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FaInstagram } from '@fortawesome/free-solid-svg-icons';
+import { FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,7 +66,9 @@ const Navbar = () => {
       >
         <div className="grid--align--left flex--inherit">
           <div className="img--contain icon--48 margin--left--reset margin--right--xs">
-            <Image src={ZoomIcon} alt="Zoom Logo" />
+          {/* <div className="img--contain margin--left--reset margin--right--xs"> */}
+            <FaInstagram size={48}/>
+            {/* <Image src={ZoomIcon} alt="Zoom Logo" /> */}
           </div>
           <Link passHref={true} href="/">
             <div className="margin--flush--left flex--inherit">
@@ -80,7 +86,11 @@ const Navbar = () => {
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
-                <a className={router.pathname == item.pName ? styles['active'] : ''}>
+                <a
+                  className={
+                    router.pathname == item.pName ? styles['active'] : ''
+                  }
+                >
                   <Link
                     to={'/' + item.href}
                     href={item.href}

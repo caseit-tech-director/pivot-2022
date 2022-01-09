@@ -1,40 +1,40 @@
-@import '../base/variables'; 
+@import '../base/variables';
 
 .card--spread {
-    display: flex;
-    grid-column-start: 3;
-    grid-column-end: 11;
+  display: flex;
+  grid-column-start: 3;
+  grid-column-end: 11;
 }
 
-.card--module{
-    position: relative;
-    text-align: center;
-    color: #ffffff;
-    margin: 0;
-    width: 100%;
-    background-color: tomato;
-    padding: 0;
-    height: fit-content;
-    text-align: center;
-    color: $gb--t--light;
-    h2{
-        font-size: $subtitle-1--font-sz;
-        letter-spacing: $subtitle-1--tk;
-        position: absolute;
-        z-index: 999;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        top: 75%;     
-    }
-    p.card--module--overline{
-        font-size: $overline--font-sz;
-        letter-spacing: $overline--tk;
-        position: absolute;
-        z-index: 999;
-        margin: 0 auto;
-        left: 0;
-        right: 0;
-        top: 85%;    
-    }
+.card--module {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+  width: 100%;
+  background-color: tomato;
+  padding: 0;
+  height: fit-content;
+  text-align: center;
+  color: $primary-color--white;
+  h2 {
+    font-size: $subtitle-1--font-sz;
+    letter-spacing: $subtitle-1--tk;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 75%;
+  }
+  p.card--module--overline {
+    font-size: $overline--font-sz;
+    letter-spacing: $overline--tk;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 85%;
+  }
 }

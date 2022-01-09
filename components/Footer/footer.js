@@ -5,12 +5,13 @@ import MediumLayout from '../Layout/MediumLayout';
 import style from '../../styles/modules/_footer.module.scss';
 import MenuItems from '../MenuItems/FooterMenuItems';
 import { SocialMenuItems } from '../MenuItems/SocialMenuItems';
+import { FaInstagram, FaFacebookSquare, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
   return (
-    <footer className="gb-2">
+    <footer className="bg-color--primary">
       <MediumLayout>
         <div className={style['footer--logo']}>
           <h3>pivot</h3>
@@ -69,20 +70,35 @@ export default function Footer() {
           <div className={style['footer--links--wrapper']}>
             <div className={style['footer--links--h6']}>Follow Us!</div>
             <ul className={style['social--media--item--wrapper']}>
-              {SocialMenuItems.map((item, index) => {
-                return (
-                  <li className={style['social--media--item']} key={index}>
-                    <a href={item.href}>
-                      <Image
+              <li className={style['social--media--item']}>
+                <a>
+                  {/* <Image
                         width={24}
                         height={24}
                         src={'/' + item.src}
                         alt="test"
-                      />
-                    </a>
-                  </li>
-                );
-              })}
+                      /> */}
+                  <FaInstagram size={24} />
+                </a>
+                <a>
+                  {/* <Image
+                        width={24}
+                        height={24}
+                        src={'/' + item.src}
+                        alt="test"
+                      /> */}
+                  <FaLinkedin size={24} />
+                </a>
+                <a>
+                  {/* <Image
+                        width={24}
+                        height={24}
+                        src={'/' + item.src}
+                        alt="test"
+                      /> */}
+                  <FaFacebookSquare size={24} />
+                </a>
+              </li>
             </ul>
           </div>
         </div>
