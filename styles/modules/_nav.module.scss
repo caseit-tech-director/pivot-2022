@@ -37,6 +37,13 @@
 }
 .nav {
   color: $gb--t--light;
+  li {
+    .active {
+      a {
+        color: tomato !important;
+      }
+    }
+  }
 }
 
 // Grid
@@ -116,7 +123,7 @@
 }
 
 @media only screen and (min-width: $largeQuery) {
-  .display--none--nav--desktop{
+  .display--none--nav--desktop {
     display: none;
   }
   .nav {
@@ -127,8 +134,8 @@
 }
 
 @media only screen and (max-width: $medQuery) {
-  .display--none--desktop-nav--mobile{
-    display: none; 
+  .display--none--desktop-nav--mobile {
+    display: none;
   }
   // Nav Styles
   .nav {
@@ -201,11 +208,11 @@
 }
 
 @media only screen and (max-width: $minQuery) {
-  .display--none--topbar--mobile{
-    display: none; 
+  .display--none--topbar--mobile {
+    display: none;
   }
-  .display--none--desktop-nav--mobile{
-    display: none; 
+  .display--none--desktop-nav--mobile {
+    display: none;
   }
   // Nav Styles
   .nav {
