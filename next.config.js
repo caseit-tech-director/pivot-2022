@@ -1,4 +1,4 @@
 module.exports = {
-  basePath: './src',
+  basePath: '/docs',
   reactStrictMode: true,
 }
