@@ -116,6 +116,9 @@
 }
 
 @media only screen and (min-width: $largeQuery) {
+  .display--none--nav--desktop{
+    display: none;
+  }
   .nav {
     padding-left: $lrg-margin;
     padding-right: $lrg-margin;
@@ -128,10 +131,84 @@
     padding-left: $lrg-margin;
     padding-right: $lrg-margin;
   }
+  .display--none--desktop-nav--mobile{
+    display: none; 
+  }
+  // Nav Styles
+  .nav {
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // padding: 1rem 1.5rem;
+    padding-left: $sm-margin;
+    padding-right: $sm-margin;
+    display: grid;
+    grid-template-columns: $column--count;
+    max-width: $mobile--max--width;
+    column-gap: $grid--gap;
+    margin: 0 auto;
+  }
+
+  .nav--menu {
+    position: fixed;
+    left: -100%;
+    // top: calc(64px + 48px);
+    top: 64px;
+    flex-direction: column;
+    background-color: $gb--t--light;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    height: 50vh;
+    background-color: $gb-2;
+    display: flex;
+  }
+
+  .nav--menu.active {
+    justify-content: space-around;
+    display: flex;
+    left: 0;
+  }
+  .nav--menu {
+    justify-content: space-around !important;
+    display: flex !important;
+  }
+  .nav--menu--grid {
+    justify-content: space-around !important;
+    display: flex !important;
+  }
+
+  // Hamburger menu
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    grid-column-end: -1;
+    background-color: transparent;
+    border: none;
+    height: inherit;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }
 
 @media only screen and (max-width: $minQuery) {
-  .display--none--mobile{
+  .display--none--topbar--mobile{
+    display: none; 
+  }
+  .display--none--desktop-nav--mobile{
     display: none; 
   }
   // Nav Styles

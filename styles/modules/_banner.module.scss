@@ -113,6 +113,10 @@
       margin-bottom: $xs-margin;
     }
   }
+  .testimonial-wrapper{
+    flex-wrap: wrap;
+    display: flex;
+  }
 }
 
 @media only screen and (max-width: $minQuery) {

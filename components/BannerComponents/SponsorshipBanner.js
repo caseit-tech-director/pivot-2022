@@ -8,7 +8,7 @@ import testIMG from '../../public/images/square.jpg';
 export default function SponsorshipBanner(props) {
   return (
     <div className="gb-3">
-      <MediumLayout className="banner--wrapper center--banner">
+      <MediumLayout className="banner--wrapper">
         <BannerHeader title={'SPONSORS'} overline={'PIVOT CASE COMPETITION'} />
         <div className={style['sponsor--content']}>
           <div
@@ -42,9 +42,9 @@ export default function SponsorshipBanner(props) {
             {/* <MyImage></MyImage> */}
           </div>
         </div>
-        <div className={style['testimonial--cta--wrapper']}>
+        {/* <div className={style['testimonial--cta--wrapper']}>
           <ArrowButton />
-        </div>
+        </div> */}
       </MediumLayout>
     </div>
   );

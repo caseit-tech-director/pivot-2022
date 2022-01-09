@@ -5,9 +5,8 @@ import styles from '../../styles/modules/_nav.module.scss';
 import { MenuItems } from '../MenuItems/NavMenuItems';
 import ZoomIcon from '../../public/images/icons8-zoom-48.png';
 import { debounce } from '../../utilities/helpers';
-import Topbar from './topbar';
 
-const Navbar = () => {
+const MobileNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
 
@@ -35,17 +34,16 @@ const Navbar = () => {
   };
 
   // new useEffect:
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+//   useEffect(() => {
+//     window.addEventListener('scroll', handleScroll);
 
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [prevScrollPos, visible, handleScroll]);
+//     return () => window.removeEventListener('scroll', handleScroll);
+//   }, [prevScrollPos, visible, handleScroll]);
   return (
     <div
-      style={{ ...navbarStyles, top: visible ? '0' : '-48px' }}
-      className={[styles['nav--bg--extend'], styles['display--none--desktop-nav--mobile']].join(' ')}
+      style={{ ...navbarStyles, top: visible ? '0' : '-64px' }}
+      className={[styles['nav--bg--extend'], styles['display--none--nav--desktop']].join(' ')}
     >
-      <Topbar />
       <nav
         className={[
           styles['nav'],
@@ -110,4 +108,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default MobileNavbar;
