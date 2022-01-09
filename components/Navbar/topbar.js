@@ -10,7 +10,8 @@ export default function Layout({ children }) {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
   return (
-    <div className={styles['nav--bg--extend']}>
+    <div className={[styles['nav--bg--extend'],
+    styles['display--none--mobile']].join(' ')}>
       <nav
         className={[
           styles['nav'],

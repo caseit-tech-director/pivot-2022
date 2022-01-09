@@ -1,9 +1,7 @@
 .grid--container {
-  padding-left: $lrg-margin;
-  padding-right: $lrg-margin;
   display: grid;
   grid-template-columns: $column--count;
-  max-width: $max--width;
+  // max-width: $max--width;
   column-gap: $grid--gap;
   margin: 0 auto;
   height: 100%;
@@ -54,4 +52,35 @@
 .grid--gc--s7--end {
   grid-column-start: 7;
   grid-column-end: $grid--end;
+}
+
+@media only screen and (min-width: $largeQuery) {
+  .grid--container {
+    max-width: $max--width;
+    padding-left: $lrg-margin;
+    padding-right: $lrg-margin;
+  }
+}
+
+@media only screen and (max-width: $medQuery) {
+  .grid--container {
+    max-width: $max--width;
+    padding-left: $lrg-margin;
+    padding-right: $lrg-margin;
+  }
+}
+
+@media only screen and (max-width: $minQuery) {
+  .grid--container {
+    max-width: 600px;
+    padding-left: $sm-margin;
+    padding-right: $sm-margin;
+  }
+  // hide announcement date
+  // top bar set 7
+  .grid--align--left {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+  // bottom bar set 8
 }

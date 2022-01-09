@@ -23,15 +23,15 @@
 .announcement--date {
   margin-right: 0;
 }
-.top--bar--announcement{
-    margin-left: 0;
+.top--bar--announcement {
+  margin-left: 0;
 }
 
 // Color
 .link--button {
   background-color: green;
 }
-.nav--bg--extend{
+.nav--bg--extend {
   // background-color: $gb-1;
   background-color: rgb(32, 32, 32);
 }
@@ -71,8 +71,6 @@
 }
 
 .nav {
-  padding-left: $lrg-margin;
-  padding-right: $lrg-margin;
   display: grid;
   grid-template-columns: $column--count;
   max-width: $max--width;
@@ -91,7 +89,7 @@
     margin-top: auto;
     margin-bottom: auto;
     * {
-        margin-left: $xs-margin;
+      margin-left: $xs-margin;
     }
   }
 }
@@ -117,18 +115,33 @@
   grid-column-start: 5;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: $largeQuery) {
+  .nav {
+    padding-left: $lrg-margin;
+    padding-right: $lrg-margin;
+  }
+}
+
+@media only screen and (max-width: $medQuery) {
+  .nav {
+    max-width: $max--width;
+    padding-left: $lrg-margin;
+    padding-right: $lrg-margin;
+  }
+}
+
+@media only screen and (max-width: $minQuery) {
   // Nav Styles
   .nav {
     // display: flex;
     // justify-content: space-between;
     // align-items: center;
     // padding: 1rem 1.5rem;
-    padding-left: $lrg-margin;
-    padding-right: $lrg-margin;
+    padding-left: $sm-margin;
+    padding-right: $sm-margin;
     display: grid;
     grid-template-columns: $column--count;
-    max-width: $max--width;
+    max-width: $mobile--max--width;
     column-gap: $grid--gap;
     margin: 0 auto;
   }
@@ -154,6 +167,9 @@
     display: block;
     cursor: pointer;
     grid-column-end: -1;
+    background-color: transparent;
+    border: none;
+    height: inherit;
   }
 
   .hamburger.active .bar:nth-child(2) {
