@@ -1,21 +1,13 @@
 @import '../framework/breakpoints.scss';
 
 .grid--container {
-  @include viewportLargerThan($phone-max-breakpoint) {
+  @include viewportLargerThan($tablet-max-breakpoint) {
     display: grid;
   }
   grid-template-columns: $column--count;
-  // max-width: $max--width;
   column-gap: $grid--gap;
   margin: 0 auto;
   height: 100%;
-
-  // > div,
-  // > header,
-  // > article {
-  //   margin-top: $lrg-margin;
-  //   margin-bottom: $lrg-margin;
-  // }
 }
 
 .grid--padding--lrg {
@@ -28,10 +20,16 @@
   grid-column-end: 5;
 }
 
-.grid--anchor--right--s5--e2 {
+.grid--anchor--right--s5--e--m2 {
   grid-column-start: 5;
   grid-row-start: $grid--start;
   grid-column-end: $grid--end - 2;
+}
+
+.grid--gc--s7--end{
+  grid-column-start: 7;
+  grid-column-end: $grid--end;
+  grid-row-start: $grid--start;
 }
 
 .grid--gc--s1--e5 {
@@ -102,11 +100,8 @@
       padding-bottom: $med-margin;
     }
   }
-  // hide announcement date
-  // top bar set 7
   .grid--align--left {
     grid-column-start: 1;
     grid-column-end: 7;
   }
-  // bottom bar set 8
 }

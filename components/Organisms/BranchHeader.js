@@ -8,7 +8,7 @@ export default function BranchHeader(props) {
         <h2>{props.header}</h2>
         <p className="overline">{props.overline}</p>
       </div>
-      <div className="grid--anchor--right--s5--e2 flex--justify--center">
+      <div className="grid--gc--s7--end flex--justify--center">
         {props.paragraph}
       </div>
     </MediumLayout>
