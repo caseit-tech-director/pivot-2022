@@ -57,8 +57,10 @@ $button--height: 3rem;
 
 // Grid
 $grid--gap: 1.5rem;
+$mobile--grid--gap: 0.5rem;
 $column--count: repeat(12, 1fr);
 $max--width: 1440px;
+$mobile--max--width: 600px;
 $grid--start: 1;
 $grid--end: -1;
 
@@ -80,3 +82,8 @@ $gb-3: #0000006b; // Section
 $gb-4: #0000002d; // Images
 $gb--t--light: #ffffff; // text light
 $gb--t--dark: #000000; // text dark
+
+$largeQuery: 1281px;
+$medQuery: 1280px;
+$minQuery: 961px;
+// $minQuery: 768px;
