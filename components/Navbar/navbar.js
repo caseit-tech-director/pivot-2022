@@ -65,9 +65,9 @@ const Navbar = () => {
         ].join(' ')}
       >
         <div className="grid--align--left flex--inherit">
-          <div className="img--contain icon--48 margin--left--reset margin--right--xs">
+          <div className="img--contain icon--48 icon--48--text margin--left--reset margin--flush--right">
           {/* <div className="img--contain margin--left--reset margin--right--xs"> */}
-            <FaInstagram size={48}/>
+            p
             {/* <Image src={ZoomIcon} alt="Zoom Logo" /> */}
           </div>
           <Link passHref={true} href="/">
