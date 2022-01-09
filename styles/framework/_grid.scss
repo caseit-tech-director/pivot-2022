@@ -1,4 +1,4 @@
-@import "../framework/breakpoints.scss";
+@import '../framework/breakpoints.scss';
 
 .grid--container {
   @include viewportLargerThan($phone-max-breakpoint) {
@@ -10,12 +10,12 @@
   margin: 0 auto;
   height: 100%;
 
-  > div,
-  > header,
-  > article {
-    margin-top: $lrg-margin;
-    margin-bottom: $lrg-margin;
-  }
+  // > div,
+  // > header,
+  // > article {
+  //   margin-top: $lrg-margin;
+  //   margin-bottom: $lrg-margin;
+  // }
 }
 
 .grid--padding--lrg {
@@ -59,11 +59,20 @@
   grid-column-end: $grid--end;
 }
 
+
+// Change the media query to breakpoints
 @media only screen and (min-width: $largeQuery) {
   .grid--container {
     max-width: $max--width;
     padding-left: $lrg-margin;
     padding-right: $lrg-margin;
+
+    > div,
+    > header,
+    > article {
+      margin-top: $lrg-margin;
+      margin-bottom: $lrg-margin;
+    }
   }
 }
 
@@ -72,6 +81,12 @@
     max-width: $max--width;
     padding-left: $lrg-margin;
     padding-right: $lrg-margin;
+    > div,
+    > header,
+    > article {
+      padding-top: $med-margin;
+      padding-bottom: $med-margin;
+    }
   }
 }
 
@@ -80,6 +95,12 @@
     max-width: 600px;
     padding-left: $sm-margin;
     padding-right: $sm-margin;
+    > div,
+    > header,
+    > article {
+      padding-top: $med-margin;
+      padding-bottom: $med-margin;
+    }
   }
   // hide announcement date
   // top bar set 7

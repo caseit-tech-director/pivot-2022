@@ -6,12 +6,12 @@ import ArrowButton from '../Molecules/ArrowButton';
 export default function Testimonials(props) {
   return (
     <div className="gb-3">
-      <ExtraSmallLayout className="banner--wrapper">
+      <ExtraSmallLayout className={style['testimonial--wrapper']}>
         <BannerHeader
           title={'TESTIMONIALS'}
           overline={'PIVOT CASE COMPETITION'}
         />
-        <div className={style['testimonial--content']}>
+        <div id="testimonial" className={style['testimonial--content']}>
           <h2 className="subtitle-2">DORSA YOUSSEFI</h2>
           <p className="body-2">
           As a transfer student, Pivot was one of my first and most rewarding case competition experiences as I was able to test my BTM knowledge while learning about industry trends.

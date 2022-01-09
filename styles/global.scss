@@ -159,6 +159,7 @@ footer {
 }
 
 // Temp
+// remove
 .banner--wrapper {
   > :first-child {
     grid-column-start: $grid--start;
@@ -174,9 +175,13 @@ footer {
   margin-top: $xs-margin;
 }
 
+// migrated over to banner module
+// other use cases must abide by module styling
 .center--banner {
   align-items: center;
   padding-top: calc(48px + 64px);
+  justify-content: center;
+  display: flex;
 }
 
 a:hover {
@@ -290,7 +295,7 @@ input[type='submit']:hover {
   padding: 20px;
 }
 
-.nav--wrapper{
+.nav--wrapper {
   position: sticky;
   top: 0;
   z-index: 10;

@@ -1,20 +1,11 @@
 @import '../base/variables';
+@import '../framework/breakpoints';
 
-.testimonial--content{
-    grid-row-start: 1;
-    grid-column-start: 5;
-    grid-column-end: 11;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    h2 {
-        margin-bottom: $xs-margin;
-    }
-}
+// All styles are on banner module, transfer over
 
-.testimonial--cta--wrapper{
-    grid-column-start: 11;
-    grid-row-start: 1;
-    display: flex;
-    align-items: center;
+.testimonial--cta--wrapper {
+  grid-column-start: 11;
+  grid-row-start: 1;
+  display: flex;
+  align-items: center;
 }

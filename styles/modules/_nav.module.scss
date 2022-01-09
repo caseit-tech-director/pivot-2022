@@ -131,6 +131,9 @@
 }
 
 @media only screen and (max-width: $minQuery) {
+  .display--none--mobile{
+    display: none; 
+  }
   // Nav Styles
   .nav {
     // display: flex;
@@ -149,17 +152,31 @@
   .nav--menu {
     position: fixed;
     left: -100%;
-    top: 5rem;
+    // top: calc(64px + 48px);
+    top: 64px;
     flex-direction: column;
     background-color: $gb--t--light;
     width: 100%;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    height: 50vh;
+    background-color: $gb-2;
+    display: flex;
   }
 
   .nav--menu.active {
+    justify-content: space-around;
+    display: flex;
     left: 0;
+  }
+  .nav--menu {
+    justify-content: space-around !important;
+    display: flex !important;
+  }
+  .nav--menu--grid {
+    justify-content: space-around !important;
+    display: flex !important;
   }
 
   // Hamburger menu

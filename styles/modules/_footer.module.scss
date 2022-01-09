@@ -13,14 +13,13 @@
   grid-column-start: 5;
   grid-column-end: $grid--end;
   height: fit-content;
-  margin-bottom: $med-margin;
   display: flex;
   > div {
     margin-right: $med-margin;
   }
 }
 .footer--links--wrapper {
-  li{
+  li {
     margin-bottom: $xs-margin;
   }
   width: fit-content;
@@ -39,19 +38,22 @@
   justify-content: space-between;
 }
 
-.social--media--item--wrapper{
+.social--media--item--wrapper {
   display: flex;
-  > *{
+  > * {
     margin-right: $xs-margin;
   }
 }
 
-// @media only screen and (min-width: 1281px) {
-//   .grid--container{
-//     max-width: $max--width;
-//   }
-// }
+@media only screen and (min-width: $largeQuery) {
+  .grid--container {
+    max-width: $max--width;
+  }
 
+  .footer--links--row {
+    margin-bottom: $med-margin;
+  }
+}
 
 @media only screen and (max-width: $minQuery) {
   .footer--links--row {
