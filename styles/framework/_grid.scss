@@ -1,12 +1,18 @@
+@import "../framework/breakpoints.scss";
+
 .grid--container {
   padding-left: $lrg-margin;
   padding-right: $lrg-margin;
-  display: grid;
+
+  @include viewportLargerThan($phone-max-breakpoint) {
+    display: grid;
+  }
   grid-template-columns: $column--count;
   max-width: $max--width;
   column-gap: $grid--gap;
   margin: 0 auto;
   height: 100%;
+
   > div,
   > header,
   > article {
