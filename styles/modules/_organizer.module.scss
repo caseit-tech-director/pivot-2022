@@ -1,14 +1,24 @@
-@import '/styles/base/variables';
+@import "/styles/base/variables";
+@import "/styles/framework/breakpoints";
 
 .organizer--section--wrapper {
-  padding-left: $lrg-margin;
-  padding-right: $lrg-margin;
-  display: grid;
-  grid-template-columns: $column--count;
+  display: flex;
+  flex-direction: column-reverse;
+
+  padding-left: $sm-margin;
+  padding-right: $sm-margin;
+
+  @include viewportLargerThan($phone-max-breakpoint) {
+    display: grid;
+    padding-left: $lrg-margin;
+    padding-right: $lrg-margin;
+    grid-template-columns: $column--count;
+    column-gap: $grid--gap;
+  }
+
   max-width: $max--width;
-  column-gap: $grid--gap;
   margin: 0 auto;
-  height: 100%;
+
   > div {
     margin-top: $lrg-margin;
     margin-bottom: $lrg-margin;
@@ -16,19 +26,30 @@
 }
 
 .organizer--gallery--wrapper {
-  grid-column-start: $grid--start;
-  grid-column-end: $grid--end - 3;
-  ul {
-    display: flex;
-    flex-wrap: wrap;
+  // grid only applies after the mobile breakpoint
+  @include viewportLargerThan($phone-max-breakpoint) {
+    grid-column-start: $grid--start;
+    grid-column-end: $grid--end - 3;
   }
-  li {
-    list-style: none;
-    flex: 0 0 25.333333%;
-    margin: 0 $med-margin $lrg-margin 0;
-    h5{
-      margin-top: $xs-margin;
+
+  ul {
+    display: grid;
+    // width: 100vw;
+    column-gap: $grid--gap;
+
+    grid-template-columns: repeat(2, 1fr);
+    @include viewportLargerThan($tablet-max-breakpoint) {
+      grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
     }
   }
 
+  li {
+    display: block;
+    list-style: none;
+    // flex: 0 0 25.333333%;
+    margin: 0 0 $lrg-margin 0;
+    h5 {
+      margin-top: $xs-margin;
+    }
+  }
 }
