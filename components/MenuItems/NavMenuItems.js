@@ -20,10 +20,10 @@ export const MenuItems = [
     href: '/about/organizers',
   },
   {
-    pName: '/sponsors',
-    title: 'SPONSORS',
+    pName: '/schedule',
+    title: 'SCHEDULE',
     url: '/',
-    href: '/sponsors',
+    href: '/schedule',
   },
   {
     pName: '/competition',

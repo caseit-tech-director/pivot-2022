@@ -7,7 +7,7 @@ import dummyText from '../components/DummyText';
 export default function Sponsors() {
   return (
     <body>
-      <LargeHeader header={'competition sponsors'} overline={'Overline'} />
+      <LargeHeader header={'competition schedule'} overline={'Overline'} />
       <BranchHeader
         header={'Title'}
         overline={'Overline'}

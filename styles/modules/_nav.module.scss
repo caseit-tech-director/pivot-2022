@@ -1,5 +1,4 @@
 @import '../base/variables';
-
 %center {
   display: flex;
   justify-content: center;
@@ -40,7 +39,12 @@
   li {
     .active {
       a {
-        color: tomato !important;
+        font-weight: bolder;
+        background: $accent-yellow;
+        height: 2px;
+        bottom: 0;
+        display: block;
+        content: "";
       }
     }
   }
@@ -86,9 +90,6 @@
   a {
     text-decoration: none;
     color: $primary-color--white;
-  }
-  a:hover {
-    color: $primary-color;
   }
   .nav--menu {
     display: flex;

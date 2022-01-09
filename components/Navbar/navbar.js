@@ -86,7 +86,7 @@ const Navbar = () => {
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
-                <a
+                <div
                   className={
                     router.pathname == item.pName ? styles['active'] : ''
                   }
@@ -101,7 +101,7 @@ const Navbar = () => {
                   >
                     {item.title}
                   </Link>
-                </a>
+                </div>
               </li>
             );
           })}

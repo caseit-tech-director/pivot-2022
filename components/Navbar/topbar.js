@@ -30,8 +30,8 @@ export default function Layout({ children }) {
               query: { name: 'test' },
             }}
           >
-            <div className="announcement--wrapper flex--inherit">
-              <a className="overline">pivots going online</a>
+            <div className="announcement--wrapper flex--inherit ">
+              <a className="overline">PIVOT'S GOING ONLINE</a>
             </div>
           </Link>
         </div>
