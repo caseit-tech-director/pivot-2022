@@ -97,6 +97,18 @@
 }
 
 @media only screen and (max-width: $medQuery) {
+  .testimonial--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    > :first-child {
+      grid-column-start: $grid--start;
+      grid-column-end: 4;
+    }
+    > :nth-child(2) {
+      grid-column-start: 5;
+      grid-column-end: 11;
+    }
+  }
   .banner--wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -104,18 +116,11 @@
   .banner--header--wrapper {
     width: 100%;
   }
-  #testimonial {
-    width: 66%;
-  }
   .testimonial--content {
     width: 66%;
     h2 {
       margin-bottom: $xs-margin;
     }
-  }
-  .testimonial-wrapper{
-    flex-wrap: wrap;
-    display: flex;
   }
 }
 
