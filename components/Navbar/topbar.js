@@ -3,15 +3,18 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 import styles from '../../styles/modules/_nav.module.scss';
-import DefaultButton from '../Molecules/button';
 import ZoomIcon from '../../public/images/icons8-zoom-48.png';
 
 export default function Layout({ children }) {
   const [isOpen, setIsOpen] = useState(false);
   const openMenu = () => setIsOpen(!isOpen);
   return (
-    <div className={[styles['nav--bg--extend'],
-    styles['display--none--topbar--mobile']].join(' ')}>
+    <div
+      className={[
+        styles['nav--bg--extend'],
+        styles['display--none--topbar--mobile'],
+      ].join(' ')}
+    >
       <nav
         className={[
           styles['nav'],
@@ -38,7 +41,9 @@ export default function Layout({ children }) {
         <div className={[styles['nav--menu--grid']].join(' ')}>
           <div className="flex--inherit">
             <p className="announcement--date overline">FEB 12 - FEB 13</p>
-            <DefaultButton text={'SIGN UP'}></DefaultButton>
+            <Link href="https://bit.ly/3G8pjJc">
+              <a className={[styles['link--button']]}>SIGN UP</a>
+            </Link>
           </div>
         </div>
       </nav>

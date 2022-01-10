@@ -11,6 +11,10 @@
   margin-bottom: $med-margin;
 }
 
+.inactive{
+  display: none;
+}
+
 .contact--information {
   .contact--information--item {
     display: flex;
@@ -27,6 +31,9 @@
 }
 
 .social--media--item--wrapper {
+  a{
+    color: $bg-color--black;
+  }
   margin-top: $xs-margin;
   display: flex;
   .social--media--item {
@@ -47,3 +54,4 @@
   grid-column-start: 7;
   grid-column-end: $grid--end;
 }
+

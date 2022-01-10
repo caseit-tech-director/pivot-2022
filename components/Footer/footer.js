@@ -4,8 +4,7 @@ import { useState } from 'react';
 import MediumLayout from '../Layout/MediumLayout';
 import style from '../../styles/modules/_footer.module.scss';
 import MenuItems from '../MenuItems/FooterMenuItems';
-import { SocialMenuItems } from '../MenuItems/SocialMenuItems';
-import { FaInstagram, FaFacebookSquare, FaLinkedin } from 'react-icons/fa';
+import { FaInstagram, FaFacebookSquare } from 'react-icons/fa';
 
 export default function Footer() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +32,7 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-          <div className={style['footer--links--wrapper']}>
+          {/* <div className={style['footer--links--wrapper']}>
             <div className={style['footer--links--h6']}>Sponsorship</div>
             <div className={style['footer--links']}>
               <ul>
@@ -48,7 +47,7 @@ export default function Footer() {
                 })}
               </ul>
             </div>
-          </div>
+          </div> */}
           <div className={style['footer--links--wrapper']}>
             <div className={style['footer--links--h6']}>About Us</div>
             <div className={style['footer--links']}>
@@ -71,7 +70,7 @@ export default function Footer() {
             <div className={style['footer--links--h6']}>Follow Us!</div>
             <ul className={style['social--media--item--wrapper']}>
               <li className={style['social--media--item']}>
-                <a>
+                <a href="https://www.instagram.com/pivotcasecompetition/">
                   {/* <Image
                         width={24}
                         height={24}
@@ -80,16 +79,7 @@ export default function Footer() {
                       /> */}
                   <FaInstagram size={24} />
                 </a>
-                <a>
-                  {/* <Image
-                        width={24}
-                        height={24}
-                        src={'/' + item.src}
-                        alt="test"
-                      /> */}
-                  <FaLinkedin size={24} />
-                </a>
-                <a>
+                <a href="https://www.facebook.com/PIVOTCaseCompetition/">
                   {/* <Image
                         width={24}
                         height={24}

@@ -66,7 +66,7 @@ const SocialMediaItems = [
         icon: '',
         title: 'Contact Info',
         url: '/',
-        href: '/',
+        href: '',
         src: '/'
     },
     {

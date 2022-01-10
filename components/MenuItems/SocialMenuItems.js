@@ -1,22 +1,12 @@
 export const SocialMenuItems = [
   {
-    src: 'images/icons8-zoom-48.png',
+    name: 'instagram',
     href: '/',
     alt: 'temp',
   },
   {
-    src: 'images/icons8-zoom-48.png',
+    name: 'facebook',
     href: '/',
     alt: 'temp',
-  },
-  {
-    src: 'images/icons8-zoom-48.png',
-    href: '/',
-    alt: 'temp',
-  },
-  {
-    src: 'images/icons8-zoom-48.png',
-    href: '/',
-    alt: 'temp',
-  },
+  }
 ];

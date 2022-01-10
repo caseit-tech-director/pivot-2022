@@ -1,16 +1,12 @@
 export const ContactMenuItems = [
   {
-    name: 'Temp',
-    src:  'images/icons8-zoom-48.png' ,
+    name: 'location',
     href: '/',
-    alt: 'temp',
     contactInfo: 'VANCOUVER, BC CANADA',
   },
   {
-    name: 'Temp',
-    src:  'images/icons8-zoom-48.png' ,
+    name: 'mail',
     href: '/',
-    alt: 'temp',
     contactInfo: 'pivot_btm@sfu.ca',
   },
 ];

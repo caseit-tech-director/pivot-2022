@@ -1,17 +1,10 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import styles from '../../styles/modules/_nav.module.scss';
 import { MenuItems } from '../MenuItems/NavMenuItems';
-import ZoomIcon from '../../public/images/icons8-zoom-48.png';
 import { debounce } from '../../utilities/helpers';
 import Topbar from './topbar';
 import { useRouter } from 'next/router';
-import Router from 'next/router';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { FaInstagram } from '@fortawesome/free-solid-svg-icons';
-import { FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -66,9 +59,7 @@ const Navbar = () => {
       >
         <div className="grid--align--left flex--inherit">
           <div className="img--contain icon--48 icon--48--text margin--left--reset margin--flush--right">
-          {/* <div className="img--contain margin--left--reset margin--right--xs"> */}
-            p
-            {/* <Image src={ZoomIcon} alt="Zoom Logo" /> */}
+            <Link href="/">p</Link>
           </div>
           <Link passHref={true} href="/">
             <div className="margin--flush--left flex--inherit">

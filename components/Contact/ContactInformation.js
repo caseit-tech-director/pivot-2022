@@ -2,6 +2,9 @@ import Image from 'next/image';
 import { ContactMenuItems } from '../MenuItems/ContactMenuItems';
 import { SocialMenuItems } from '../MenuItems/SocialMenuItems';
 import style from '../../styles/modules/_contact.module.scss';
+import { FaMapMarkerAlt, FaInstagram, FaFacebookSquare } from 'react-icons/fa';
+
+import { FiMail } from 'react-icons/fi';
 
 export default function ContactInformation() {
   return (
@@ -12,13 +15,22 @@ export default function ContactInformation() {
           {ContactMenuItems.map((item, index) => {
             return (
               <li className={style['contact--information--item']} key={index}>
-                <Image
-                  className={['contact--icon']}
-                  width={24}
-                  height={24}
-                  src={'/' + item.src}
-                  alt="test"
-                />
+                <div
+                  className={
+                    'location' == item.name
+                      ? style['active']
+                      : style['inactive']
+                  }
+                >
+                  <FaMapMarkerAlt className="flex" />
+                </div>
+                <div
+                  className={
+                    'mail' == item.name ? style['active'] : style['inactive']
+                  }
+                >
+                  <FiMail className="flex" />
+                </div>
                 <caption>{item.contactInfo}</caption>
               </li>
             );
@@ -34,12 +46,22 @@ export default function ContactInformation() {
             return (
               <li className={style['social--media--item']} key={index}>
                 <a href={item.href}>
-                  <Image
-                    width={24}
-                    height={24}
-                    src={'/' + item.src}
-                    alt="test"
-                  />
+                  <div
+                    className={
+                      'instagram' == item.name
+                        ? style['active']
+                        : style['inactive']
+                    }
+                  >
+                    <FaInstagram/>
+                  </div>
+                  <div
+                    className={
+                      'facebook' == item.name ? style['active'] : style['inactive']
+                    }
+                  >
+                    <FaFacebookSquare/>
+                  </div>
                 </a>
               </li>
             );
