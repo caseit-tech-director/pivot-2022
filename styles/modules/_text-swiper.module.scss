@@ -32,7 +32,7 @@
     > div {
       margin-top: $sm-margin;
     }
-    :first-child{
+    :first-child {
       margin-top: 0;
     }
   }
@@ -43,5 +43,33 @@
   }
 }
 
-@media only screen and (max-width: $minQuery) {
+@media only screen and (min-width: $largeQuery) {
+  .text--content--wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    > div:first-child {
+      border-left: 2px solid $accent-orange;
+    }
+    > div:nth-child(2) {
+      border-left: 2px solid $accent-pink;
+    }
+    > div:nth-child(3) {
+      border-left: 2px solid $accent-yellow;
+    }
+    > div:nth-child(4) {
+      border-left: 2px solid $accent-green;
+    }
+    > div {
+      margin-bottom: $sm-margin;
+      height: 15%;
+      h4 {
+        margin-bottom: $xs-margin;
+      }
+      h4,
+      p {
+        margin-left: $xs-margin;
+      }
+    }
+  }
 }
