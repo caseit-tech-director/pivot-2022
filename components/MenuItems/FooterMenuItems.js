@@ -33,18 +33,18 @@ const CompetitionMenuItems = [
 const AboutMenuItems = [
     {
         title: 'Contact Info',
-        url: '/',
-        href: '/'
+        url: '/contact',
+        href: '/contact'
     },
-    {
-        title: 'FAQ',
-        url: '/',
-        href: '/'
-    },
+    // {
+    //     title: 'FAQ',
+    //     url: '/',
+    //     href: '/'
+    // },
     {
         title: 'Organizing Committee',
-        url: '/',
-        href: '/'
+        url: '/about/organizers',
+        href: '/about/organizers'
     }
 ];
 
