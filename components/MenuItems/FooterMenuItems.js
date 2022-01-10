@@ -40,6 +40,11 @@ const AboutMenuItems = [
         title: 'FAQ',
         url: '/',
         href: '/'
+    },
+    {
+        title: 'Organizing Committee',
+        url: '/',
+        href: '/'
     }
 ];
 
