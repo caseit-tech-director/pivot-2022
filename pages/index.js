@@ -58,8 +58,8 @@ export default function Home() {
         caption2={'Network with Industry Professionals'}
         caption3={'Virtual Events'}
       />
-      <SponsorshipBanner />
-      <CardsModule />
+      {/* <SponsorshipBanner /> */}
+      {/* <CardsModule /> */}
       <Testimonials />
     </body>
   );
