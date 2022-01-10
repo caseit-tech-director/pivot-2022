@@ -17,7 +17,9 @@ export default function Footer() {
         </div>
         <div className={style['footer--links--row']}>
           <div className={style['footer--links--wrapper']}>
-            <div className={style['footer--links--h6']}>Competition</div>
+            <div className={style['footer--links--h6']}>
+              <h6 className="subtitle-1 muted--text">Competition</h6>
+            </div>
             <div className={style['footer--links']}>
               <ul>
                 {MenuItems.competition.map((item, index) => {
@@ -49,7 +51,9 @@ export default function Footer() {
             </div>
           </div> */}
           <div className={style['footer--links--wrapper']}>
-            <div className={style['footer--links--h6']}>About Us</div>
+            <div className={style['footer--links--h6']}>
+              <h6 className="subtitle-1 muted--text">About Us</h6>
+            </div>
             <div className={style['footer--links']}>
               <ul>
                 {MenuItems.about.map((item, index) => {
