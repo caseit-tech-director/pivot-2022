@@ -1,12 +1,12 @@
 export const SocialMenuItems = [
   {
     name: 'instagram',
-    href: '/',
+    href: 'https://www.instagram.com/pivotcasecompetition/',
     alt: 'temp',
   },
   {
     name: 'facebook',
-    href: '/',
+    href: 'https://www.facebook.com/PIVOTCaseCompetition/',
     alt: 'temp',
   }
 ];
