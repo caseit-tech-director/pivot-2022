@@ -81,9 +81,16 @@ export default function Particle() {
             shape: {
               type: 'circle',
             },
-            size: {
-              random: true,
-              value: 5,
+            "size": {
+              "value": 3.5,
+              "random": true,
+              "anim": {
+                "enable": true,
+                "speed": 1,
+                "speed_max": 1,
+                "size_min": 0.1,
+                "sync": false
+              }
             },
           },
           detectRetina: true,

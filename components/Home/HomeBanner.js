@@ -5,9 +5,9 @@ import Particle from '../particle';
 export default function HomeBanner(props) {
   return (
     <div className="bg-color--primary">
+      <Particle/>
       <MaxLayout className="center--banner">
         <div className="outer-container">
-          <Particle/>
           <div
             id="home--banner--text--wrapper"
             className={styles['home--banner--text--wrapper']}
