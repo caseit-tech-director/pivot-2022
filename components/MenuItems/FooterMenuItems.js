@@ -8,21 +8,21 @@ import { FaInstagram, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 
 
 const CompetitionMenuItems = [
-    {
-        title: 'Overview',
-        url: '/',
-        href: '/'
-    },
+    // {
+    //     title: 'Overview',
+    //     url: '/',
+    //     href: '/'
+    // },
     {
         title: 'Registration',
         url: '/',
         href: '/'
     },
-    {
-        title: 'Competition Structure',
-        url: '/',
-        href: "/"
-    },
+    // {
+    //     title: 'Competition Structure',
+    //     url: '/',
+    //     href: "/"
+    // },
     {
         title: 'Event Schedule',
         url: '/',
