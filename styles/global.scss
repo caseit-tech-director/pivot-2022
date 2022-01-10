@@ -334,25 +334,29 @@ input[type='submit']:hover {
   z-index: 10;
 }
 
-.outer-container {
+#container {
   position: relative;
-}
-
-#particles-js {
-  background-color: #212529;
-  position: absolute;
-  height: 100%;
   width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  overflow: scroll;
 }
 
-.testCanvas{
-  position:absolute;
-  position : absolute; width:100%;
-  height:100%; z-index:-1;
+#tsparticles {
+  position: absolute !important;
 }
 
-.outer-container .table-dark {
-  z-index: 1;
+.test {
   position: relative;
-  background-color: transparent;
+  overflow: hidden;
+
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0);
 }

@@ -9,11 +9,15 @@ const particlesLoaded = (container) => {
 };
 export default function Particle() {
   return (
-      <div className="outer-container">
+    <div id="container">
       <Particles
-        id="particles-js"
-        init={particlesInit}
-        loaded={particlesLoaded}
+        style={{
+          width: '100%',
+          position: 'fixed !important',
+        }}
+        // id="tsparticles"
+        // init={particlesInit}
+        // loaded={particlesLoaded}
         canvasClassName="testCanvas"
         //   container={@link home--banner--text--wrapper}
         options={{
@@ -66,7 +70,7 @@ export default function Particle() {
               outMode: 'bounce',
               random: false,
               speed: 1,
-              decay: 0.0000001,
+              decay: 0.0003,
               straight: false,
             },
             number: {
@@ -82,22 +86,21 @@ export default function Particle() {
             shape: {
               type: 'circle',
             },
-            "size": {
-              "value": 3.5,
-              "random": true,
-              "anim": {
-                "enable": true,
-                "speed": 1,
-                "speed_max": 1,
-                "size_min": 0.1,
-                "sync": false
-              }
+            size: {
+              value: 3.5,
+              random: true,
+              anim: {
+                enable: true,
+                speed: 1,
+                speed_max: 1,
+                size_min: 0.1,
+                sync: false,
+              },
             },
           },
           detectRetina: true,
         }}
       />
-
-      </div>
+    </div>
   );
 }
