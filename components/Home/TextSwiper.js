@@ -1,5 +1,5 @@
 import MaxLayout from '../Layout/MaxLayout';
-import testImage from '../../public/images/rect-4x3.jpg';
+import Judges from '../../public/images/text-slider/judges.jpg';
 import Image from 'next/image';
 import style from '../../styles/modules/_text-swiper.module.scss';
 
@@ -9,9 +9,7 @@ export default function TextSwiper() {
       <MaxLayout>
         <div className={style['container']}>
           <div className={style['image--content']}>
-            <div className={style['image--container']}>
-              <Image alt={'test'} src={testImage}></Image>
-            </div>
+            <Image alt={'test'} src={Judges}></Image>
           </div>
           <div className={style['text--content--wrapper']}>
             <div className={style['text--content']}>

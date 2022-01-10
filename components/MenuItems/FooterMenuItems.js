@@ -16,18 +16,18 @@ const CompetitionMenuItems = [
     {
         title: 'Registration',
         url: '/',
-        href: '/'
+        href: 'https://www.surveymonkey.ca/r/pivot2022?utm_source=Survey+Monkey&utm_campaign=Application'
     },
     // {
     //     title: 'Competition Structure',
     //     url: '/',
     //     href: "/"
     // },
-    {
-        title: 'Event Schedule',
-        url: '/',
-        href: "/"
-    }
+    // {
+    //     title: 'Event Schedule',
+    //     url: '/',
+    //     href: "/"
+    // }
 ];
 
 const AboutMenuItems = [

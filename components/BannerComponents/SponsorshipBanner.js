@@ -4,10 +4,14 @@ import BannerHeader from './BannerHeader';
 import ArrowButton from '../Molecules/ArrowButton';
 import Image from 'next/image';
 import testIMG from '../../public/images/square.jpg';
-
+import lrgSponsor1 from '../../public/images/sponsors/accenture-title.png';
+import lrgSponsor2 from '../../public/images/sponsors/cpa-networking.png';
+import lrgSponsor3 from '../../public/images/sponsors/ey-networking.png';
+import smSponsor1 from '../../public/images/sponsors/thrive-workshop.png';
+import smSponsor2 from '../../public/images/sponsors/salesforce-workshop.png';
 export default function SponsorshipBanner(props) {
   return (
-    <div className="bg-color--black">
+    <div className="bg-color--black--secondary">
       <MediumLayout className="banner--wrapper">
         <BannerHeader title={'SPONSORS'} overline={'PIVOT CASE COMPETITION'} />
         <div className={style['sponsor--content']}>
@@ -17,10 +21,36 @@ export default function SponsorshipBanner(props) {
               style['banner--title--sponsors'],
             ].join(' ')}
           >
-            <Image src={testIMG} width={128} height={128} alt="Sponsor" />
-            <Image src={testIMG} width={128} height={128} alt="Sponsor" />
-            <Image src={testIMG} width={128} height={128} alt="Sponsor" />
-            <h2 className="subtitle-2">Title Sponsors</h2>
+            <div className={style['sponsor--content--item']}>
+              <Image
+                objectFit="contain"
+                src={lrgSponsor1}
+                width={128}
+                height={128}
+                alt="Sponsor"
+              />
+              <h2 className="subtitle-2">Title Sponsor</h2>
+            </div>
+            <div className={style['sponsor--content--item']}>
+              <Image
+                objectFit="contain"
+                src={lrgSponsor2}
+                width={128}
+                height={128}
+                alt="Sponsor"
+              />
+              <h2 className="subtitle-2">Networking Sponsor</h2>
+            </div>
+            <div className={style['sponsor--content--item']}>
+              <Image
+                objectFit="contain"
+                src={lrgSponsor3}
+                width={128}
+                height={128}
+                alt="Sponsor"
+              />
+              <h2 className="subtitle-2">Networking Sponsor</h2>
+            </div>
           </div>
           <div
             className={[
@@ -28,10 +58,25 @@ export default function SponsorshipBanner(props) {
               style['banner--title--sponsors'],
             ].join(' ')}
           >
-            <Image src={testIMG} width={84} height={84} alt="Sponsor" />
-            <Image src={testIMG} width={84} height={84} alt="Sponsor" />
-            <Image src={testIMG} width={84} height={84} alt="Sponsor" />
-            <h2 className="subtitle-2">Title Sponsors</h2>
+            <div className="">
+              <Image
+                objectFit="contain"
+                src={smSponsor1}
+                width={84}
+                height={84}
+                alt="Sponsor"
+              />
+            </div>
+            <div className="">
+              <Image
+                objectFit="contain"
+                src={smSponsor2}
+                width={84}
+                height={84}
+                alt="Sponsor"
+              />
+              <h2 className="subtitle-2">Workshop Sponsors</h2>
+            </div>
           </div>
           <div
             className={[

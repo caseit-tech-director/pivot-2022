@@ -43,6 +43,7 @@ $body-2--tk: 0.015625rem; //0.25px
 $button--tk: 0.015625rem; //1.2px
 $caption--tk: 0.025rem; //0.4px
 $overline--tk: 0.09375rem; //1.5px
+$body--line--height: 2em;
 
 // Margins
 $lrg-margin: 5.25rem;
@@ -75,7 +76,9 @@ $secondary-type-color: #c4c4c4;
 
 // Greybox (Temporary)
 $bg-color--black: #151515; //Nav
+$bg-color--black--secondary: #202020;
 $bg-color--primary: #0449b0; // Section
+$bg-color--primary--translucent: rgba(4, 73, 176, 0.9); // Section
 $gb-4: #0000002d; // Images
 $primary-color--white: #eee8e7; // text light
 $gb--t--dark: #000000; // text dark

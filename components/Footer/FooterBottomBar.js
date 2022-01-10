@@ -8,12 +8,14 @@ export default function FooterBottomBar() {
       <ExtraSmallLayout>
         <div className={style['footer--bottom--bar--contents']}>
           <div className={style['footer--bottom--bar--policy']}>
-            <Link href="">
-              <a className="overline">Privacy Policy</a>
-            </Link>
+            {/* <Link href=""> */}
+            {/* <a className="overline"> */}
+            <p className="overline muted--text"> Privacy Policy</p>
+            {/* </a> */}
+            {/* </Link> */}
           </div>
           <div className={style['footer--copyright']}>
-            <small className="overline">&copy; PIVOT 2022</small>
+            <small className="muted--text overline">&copy; PIVOT 2022</small>
           </div>
         </div>
       </ExtraSmallLayout>

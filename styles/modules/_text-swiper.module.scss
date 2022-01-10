@@ -1,5 +1,19 @@
 @import '../base/variables';
 
+.image--content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-right: $lrg-margin;
+}
+
+.image--content img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .container {
   grid-column-start: $grid--start;
   grid-column-end: $grid--end;

@@ -34,13 +34,15 @@ export default function Layout({ children }) {
             }}
           >
             <div className="announcement--wrapper flex--inherit ">
-              <a className="overline">PIVOT&apos;s GOING ONLINE</a>
+              {/* <a className="overline"> */}
+                <p className="overline muted--text">PIVOT&apos;s GOING ONLINE</p>
+              {/* </a> */}
             </div>
           </Link>
         </div>
         <div className={[styles['nav--menu--grid']].join(' ')}>
           <div className="flex--inherit">
-            <p className="announcement--date overline">FEB 12 - FEB 13</p>
+            <p className="announcement--date overline muted--text">FEB 12 - FEB 13</p>
             <Link href="https://bit.ly/3G8pjJc">
               <a className={[styles['link--button']]}>SIGN UP</a>
             </Link>

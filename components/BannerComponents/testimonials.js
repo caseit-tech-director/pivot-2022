@@ -5,7 +5,7 @@ import ArrowButton from '../Molecules/ArrowButton';
 
 export default function Testimonials(props) {
   return (
-    <div className="bg-color--black">
+    <div className="bg-color--black--secondary">
       <ExtraSmallLayout className={style['testimonial--wrapper']}>
         <BannerHeader
           title={'TESTIMONIALS'}
@@ -19,9 +19,9 @@ export default function Testimonials(props) {
             while learning about industry trends.
           </p>
         </div>
-        <div className={style['testimonial--cta--wrapper']}>
+        {/* <div className={style['testimonial--cta--wrapper']}>
           <ArrowButton />
-        </div>
+        </div> */}
       </ExtraSmallLayout>
     </div>
   );

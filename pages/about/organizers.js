@@ -11,6 +11,12 @@ import MenuItems from '../../components/MenuItems/OrganizerMenuItems';
 import style from '../../styles/modules/_organizer.module.scss';
 import SideMenu from '../../components/Molecules/SideMenu';
 
+import emily from '../../public/images/organizing-committee/douglas-headshot.jpeg';
+import melissa from '../../public/images/organizing-committee/douglas-headshot.jpeg';
+import esther from '../../public/images/organizing-committee/douglas-headshot.jpeg';
+import justin from '../../public/images/organizing-committee/douglas-headshot.jpeg';
+import douglas from '../../public/images/organizing-committee/douglas-headshot.jpeg';
+
 export default function Orgaziners() {
   // remove
   const [isOpen, setIsOpen] = useState(false);
@@ -19,11 +25,11 @@ export default function Orgaziners() {
 
   return (
     <body>
-      <LargeHeader header={'organizing committee'} overline={'Overline'} />
+      <LargeHeader header={'organizing committee'} overline={'MEET THE TEAM'} />
       <BranchHeader
-        header={'Title'}
-        overline={'Overline'}
-        paragraph={dummyText}
+        header={'INTRODUCING'}
+        overline={'THE PIVOT 2022 ORGANIZING COMMITTEE'}
+        paragraph={"It is our pleasure to welcome you to PIVOT 2022! Thanks to the generous support of the Beedie School of Business at Simon Fraser University, our many sponsors, and our competitors, PIVOT has grown from its humble beginnings as an internal competition to engaging and inspiring students from across British Columbia. Are you ready to shift your thinking?"}
       />
       <section className={style['organizer--section--wrapper']}>
         <div className={style['organizer--gallery--wrapper']}>
@@ -32,6 +38,7 @@ export default function Orgaziners() {
               return (
                 <li key={index}>
                   <Image
+                    objectFit="cover"
                     width={500}
                     height={500}
                     src={'/' + item.src}
@@ -44,16 +51,16 @@ export default function Orgaziners() {
             })}
           </ul>
         </div>
-        <SideMenu
+        {/* <SideMenu
           subtitle={'All Years'}
           link1={'2022'}
           link2={'2021'}
           link3={'2020'}
           link4={'2019'}
           link5={'2018'}
-        />
+        /> */}
       </section>
-      <RegistrationModule header={'Title'} overline={'overline'} />
+      <RegistrationModule header={'GET INVOLVED'} overline={'ARE YOU READY?'} />
       <Testimonials />
     </body>
   );

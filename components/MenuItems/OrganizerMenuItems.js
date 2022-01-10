@@ -3,33 +3,38 @@ import imageSource from '../../public/images/rect-4x3.jpg';
 //  * interface ProjectMessages
 //  * @param {string} title
 //  */
+import emily from '../../public/images/organizing-committee/emily-headshot.jpeg';
+import melissa from '../../public/images/organizing-committee/melissa-headshot.jpeg';
+import esther from '../../public/images/organizing-committee/esther-headshot.jpeg';
+import justin from '../../public/images/organizing-committee/justin-headshot.jpeg';
+import douglas from '../../public/images/organizing-committee/douglas-headshot.jpeg';
 
 const MenuItems2022 = [
   {
     name: 'Emily Su',
-    src: 'images/rect-4x3.jpg',
+    src: 'images/organizing-committee/emily-headshot.jpeg',
     title: 'Chair',
   },
   {
     name: 'Douglas Cheung',
-    src: 'images/rect-4x3.jpg',
+    src: 'images/organizing-committee/douglas-headshot.jpeg',
     title: 'Director of External Relations',
   },
   {
     name: 'Melissa Bouwmeester',
-    src: 'images/rect-4x3.jpg',
+    src: 'images/organizing-committee/melissa-headshot.jpeg',
     title: 'Director of Marketing',
   },
   {
     name: 'Justin Jung',
-    src: 'images/rect-4x3.jpg',
+    src: 'images/organizing-committee/justin-headshot.jpeg',
     title: 'PIVOT Coordinator',
   },
   {
     name: 'Esther Ng',
-    src: 'images/rect-4x3.jpg',
+    src: 'images/organizing-committee/esther-headshot.jpeg',
     title: 'PIVOT Coordinator',
-  }
+  },
 ];
 
 const MenuItems2021 = [

@@ -46,6 +46,7 @@
   }
   .sponsor--content--row {
     margin-bottom: $med-margin !important;
+    display: flex;
   }
 }
 
@@ -77,6 +78,13 @@
   padding-top: calc(48px + 64px);
   justify-content: center;
   display: flex;
+}
+
+.sponsor--content--item {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: fit-content;
 }
 
 // Change the media query to breakpoints

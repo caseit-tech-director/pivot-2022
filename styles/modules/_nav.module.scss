@@ -28,7 +28,9 @@
 
 // Color
 .link--button {
-  background-color: green;
+  background-color: $primary-color;
+  color: $primary-color--white;
+  border-radius: 3px;
 }
 .nav--bg--extend {
   // background-color: $bg-color--black;
@@ -165,7 +167,7 @@
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     height: 50vh;
-    background-color: $bg-color--primary;
+    background-color: $bg-color--primary--translucent;
     display: flex;
   }
 

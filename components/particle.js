@@ -15,19 +15,11 @@ export default function Particle() {
           width: '100%',
           position: 'fixed !important',
         }}
-        // id="tsparticles"
-        // init={particlesInit}
-        // loaded={particlesLoaded}
         canvasClassName="testCanvas"
-        //   container={@link home--banner--text--wrapper}
         options={{
           fpsLimit: 60,
           interactivity: {
             events: {
-              onClick: {
-                enable: true,
-                mode: 'push',
-              },
               onHover: {
                 enable: true,
                 mode: 'repulse',
@@ -70,7 +62,7 @@ export default function Particle() {
               outMode: 'bounce',
               random: false,
               speed: 1,
-              decay: 0.0003,
+              decay: 0.0032,
               straight: false,
             },
             number: {
