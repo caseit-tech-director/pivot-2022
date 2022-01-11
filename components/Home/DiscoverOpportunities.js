@@ -17,7 +17,7 @@ export default function DiscoverOpportunities(props) {
         />
         <div className={style['opportunity--wrapper']}>
           <div className={style['opportunity--content']}>
-            <a href="">
+            {/* <a href=""> */}
               <div className={style['image--content']}>
                 <Image
                   objectFit="cover"
@@ -27,13 +27,13 @@ export default function DiscoverOpportunities(props) {
                   alt={'Opportunity Image'}
                 />
               </div>
-            </a>
+            {/* </a> */}
             <caption className="margin--top--xs subtitle-1 flex">
               {props.caption1}
             </caption>
           </div>
           <div className={style['opportunity--content']}>
-            <a href="">
+            {/* <a href=""> */}
               <div className={style['image--content']}>
                 <Image
                   objectFit="cover"
@@ -43,13 +43,13 @@ export default function DiscoverOpportunities(props) {
                   alt={'Opportunity Image'}
                 />
               </div>
-            </a>
+            {/* </a> */}
             <caption className="margin--top--xs subtitle-1 flex">
               {props.caption2}
             </caption>
           </div>
           <div className={style['opportunity--content']}>
-            <a href="">
+            {/* <a href=""> */}
               <div className={style['image--content']}>
                 <Image
                   objectFit="cover"
@@ -59,7 +59,7 @@ export default function DiscoverOpportunities(props) {
                   alt={'Opportunity Image'}
                 />
               </div>
-            </a>
+            {/* </a> */}
             <caption className="margin--top--xs subtitle-1 flex">
               {props.caption3}
             </caption>
