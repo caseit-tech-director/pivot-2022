@@ -2,10 +2,10 @@
   "name": "pivot-app",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "npm dev",
+    "build": "npm build",
+    "start": "npm start",
+    "lint": "npm lint"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -26,6 +26,7 @@
   "devDependencies": {
     "eslint": "8.4.1",
     "eslint-config-next": "12.0.7",
-    "sass": "^1.47.0"
+    "sass": "^1.47.0",
+    "@netlify/plugin-nextjs": "^4.0.0-beta.4"
   }
 }
