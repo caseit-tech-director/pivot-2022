@@ -41,7 +41,7 @@
 .social--media--item--wrapper {
   display: flex;
   * {
-    margin-right: $xs-margin/2;
+    margin-right: calc($xs-margin/2);
   }
 }
 
