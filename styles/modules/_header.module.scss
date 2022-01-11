@@ -75,8 +75,6 @@
   display: flex;
   justify-content: center;
   p {
-    margin-left: $sm-margin;
-    width: 17rem;
     align-self: center;
   }
 }
@@ -84,4 +82,32 @@
 .logo--heading {
   letter-spacing: -0.094rem;
   font-weight: bolder;
+}
+
+@media only screen and (min-width: $largeQuery) {
+
+.home--banner--text--wrapper {
+  
+  p {
+    margin-left: $sm-margin;
+    width: 17rem;
+    align-self: center;
+  }
+}
+}
+
+@media only screen and (max-width: $minQuery) {
+  .home--banner--text--wrapper {
+    display: flex;
+    flex-direction: column;
+    * {
+      margin: 0;
+      padding: 0;
+      justify-content: left;
+    }
+    p {
+      margin-top: $sm-margin;
+    }
+  }
+
 }
