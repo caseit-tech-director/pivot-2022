@@ -9,6 +9,8 @@ import lrgSponsor2 from '../../public/images/sponsors/cpa-networking.png';
 import lrgSponsor3 from '../../public/images/sponsors/ey-networking.png';
 import smSponsor1 from '../../public/images/sponsors/thrive-workshop.png';
 import smSponsor2 from '../../public/images/sponsors/salesforce-workshop.png';
+import smSponsor3 from '../../public/images/sponsors/TMP-logo.png';
+
 export default function SponsorshipBanner(props) {
   return (
     <div className="bg-color--black--secondary">
@@ -56,27 +58,39 @@ export default function SponsorshipBanner(props) {
             className={[
               style['sponsor--content--row'],
               style['banner--title--sponsors'],
+              style['sponsor--content--row--2'],
             ].join(' ')}
           >
-            <div className="">
-              <Image
-                objectFit="contain"
-                src={smSponsor1}
-                width={84}
-                height={84}
-                alt="Sponsor"
-              />
+            <div className={style['tier2--wrapper']}>
+              <div className="">
+                <Image
+                  objectFit="contain"
+                  src={smSponsor1}
+                  width={84}
+                  height={84}
+                  alt="Sponsor"
+                />
+              </div>
+              <div className="">
+                <Image
+                  objectFit="contain"
+                  src={smSponsor2}
+                  width={84}
+                  height={84}
+                  alt="Sponsor"
+                />
+              </div>
+              <div className="">
+                <Image
+                  objectFit="contain"
+                  src={smSponsor3}
+                  width={84}
+                  height={84}
+                  alt="Sponsor"
+                />
+              </div>
             </div>
-            <div className="">
-              <Image
-                objectFit="contain"
-                src={smSponsor2}
-                width={84}
-                height={84}
-                alt="Sponsor"
-              />
-              <h2 className="subtitle-2">Workshop Sponsors</h2>
-            </div>
+            <h2 className="subtitle-2">Workshop Sponsors</h2>
           </div>
           <div
             className={[
