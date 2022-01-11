@@ -37,11 +37,6 @@ export default function Home() {
           text={
             'The local rendition of CaseIT, the world’s premier MIS business case competition.'
           }
-        />
-        <LocomotiveParagraph
-          text={
-            'The local rendition of CaseIT, the world’s premier MIS business case competition.'
-          }
         ></LocomotiveParagraph>
         <LocomotiveParagraph
           text={
