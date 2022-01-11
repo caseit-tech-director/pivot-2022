@@ -13,3 +13,28 @@
 //   min-width: 100%;
 //   min-height: 100%;
 // }
+.opportunity--wrapper {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: -moz-box;
+  display: flex;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  > div {
+    margin-right: $sm-margin;
+  }
+  > :last-child{
+      margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: $minQuery) {
+    .opportunity--wrapper {
+      display: -moz-box;
+      display: flex;
+      flex-direction: column;
+      > div{
+          margin-bottom: $lrg-margin;
+      }
+    }
+}

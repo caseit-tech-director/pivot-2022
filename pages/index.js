@@ -59,7 +59,7 @@ export default function Home() {
         caption3={'Virtual Events'}
       />
       <SponsorshipBanner />
-      <CardsModule />
+      {/* <CardsModule /> */}
       <Testimonials />
     </body>
   );
