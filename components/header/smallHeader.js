@@ -4,7 +4,7 @@ import Particle from '../particle';
 
 function SmallHeader(props) {
   return (
-    <div className="bg-color--primary particle--contain">
+    <div className={[['bg-color--primary'], styles['particle--contain']].join(' ')}>
       <Particle />
       <div className={styles['sm--header--bg--extend']}>
         <ExtraSmallLayout className="text-color--white">

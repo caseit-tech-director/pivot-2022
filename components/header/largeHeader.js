@@ -1,11 +1,10 @@
 import styles from '../../styles/modules/_header.module.scss';
 import Particle from '../particle';
 
-
 function LargeHeader(props) {
   return (
-    <div className="particle--contain">
-      <Particle/>
+    <div className={styles['particle--contain']}>
+      <Particle />
       <header className="max--layout text-color--white bg-color--primary">
         <div className="center--banner max--layout grid--container">
           <div className={styles['header--lrg--text--wrapper']}>
