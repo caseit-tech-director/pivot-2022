@@ -21,7 +21,7 @@ export default function Home() {
 
   return (
     <body>
-      <div className="particle--home--banner--container">
+      {/* <div className="particle--home--banner--container"> */}
         {/* <div id="container">
           <Particle />
         </div> */}
@@ -46,7 +46,7 @@ export default function Home() {
         <LocomotiveParagraph
           text={'But this year we’re doing something different'}
         />
-      </div>
+      {/* </div> */}
       <TextSwiper />
       <DiscoverOpportunities
         caption1={'$1400 Prize Pool'}

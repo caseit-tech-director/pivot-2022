@@ -14,6 +14,22 @@
   align-items: center;
 }
 
+
+.particle--container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  // border: 1px solid black;
+  overflow: scroll;
+  
+}
+
 // SmallHeader.js
 .header--sm {
   // @extend %grid--container;
@@ -28,6 +44,7 @@
 .sm--header--bg--extend {
   background-color: $bg-color--primary;
   padding-top: calc(48px + 64px);
+
 }
 
 // LargeHeader.js

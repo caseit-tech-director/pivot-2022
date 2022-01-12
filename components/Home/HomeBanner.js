@@ -4,10 +4,8 @@ import Particle from '../particle';
 
 export default function HomeBanner(props) {
   return (
-    <div className="bg-color--primary test">
-      <div id="container">
-        <Particle />
-      </div>
+    <div className="bg-color--primary particle--contain">
+      <Particle />
       <MaxLayout className="center--banner">
         <div className="outer-container">
           <div
