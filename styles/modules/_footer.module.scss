@@ -2,6 +2,8 @@
 
 // Footer color strokes
 .hr--wrapper {
+  grid-column-end: $grid--end;
+  grid-column-start: $grid--start;
   overflow: hidden;
   display: flex;
   * {
