@@ -1,0 +1,20 @@
+@import '../base/variables';
+
+.items--flex--med--align {
+    display: flex;
+    > div {
+      margin-right: $med-margin;
+    }
+  }
+
+
+@media only screen and (max-width: $minQuery) {
+
+.items--flex--med--align {
+    flex-direction: column;
+    // > div {
+    
+    // }
+  }
+
+  }
