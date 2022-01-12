@@ -3,7 +3,7 @@ import MobileNav from '../components/Navbar/mobileNavbar';
 import Footer from './Footer/footer';
 import FooterBottomBar from './Footer/FooterBottomBar';
 import Head from 'next/head';
-import Favicon from '../static/favicon.png';
+import Favicon from '../static/favicon.ico';
 
 export default function Layout({ children }) {
   return (
