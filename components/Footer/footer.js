@@ -96,6 +96,11 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+        <div className={style['hr--wrapper']}>
+          <hr />
+          <hr />
+          <hr />
+        </div>
       </MediumLayout>
     </footer>
   );

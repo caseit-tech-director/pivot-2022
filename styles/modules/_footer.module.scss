@@ -1,5 +1,27 @@
 @import '../base/_variables.scss';
 
+// Footer color strokes
+.hr--wrapper {
+  overflow: hidden;
+  display: flex;
+  * {
+    margin-right: $sm-margin;
+  }
+  :first-child {
+    width: 20%;
+    border: 1px solid $accent-orange;
+  }
+  :nth-child(2) {
+    width: 40%;
+    border: 1px solid $accent-pink;
+  }
+  :last-child {
+    width: 40%;
+    margin-right: 0 !important;
+    border: 1px solid $accent-green;
+  }
+}
+
 // Footer base
 .footer--logo {
   grid-column-start: $grid--start;
