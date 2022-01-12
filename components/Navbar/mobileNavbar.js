@@ -33,12 +33,6 @@ const MobileNavbar = () => {
     transition: 'top 0.6s',
   };
 
-  // new useEffect:
-//   useEffect(() => {
-//     window.addEventListener('scroll', handleScroll);
-
-//     return () => window.removeEventListener('scroll', handleScroll);
-//   }, [prevScrollPos, visible, handleScroll]);
   return (
     <div
       style={{ ...navbarStyles, top: visible ? '0' : '-64px' }}
@@ -52,8 +46,8 @@ const MobileNavbar = () => {
         ].join(' ')}
       >
         <div className="grid--align--left flex--inherit">
-          <div className="img--contain icon--48 margin--left--reset margin--right--xs">
-            <Image src={ZoomIcon} alt="Zoom Logo" />
+          <div className="img--contain icon--48 icon--48--text margin--left--reset margin--flush--right">
+            <Link href="/">p</Link>
           </div>
           <Link passHref={true} href="/">
             <div className="margin--flush--left flex--inherit">

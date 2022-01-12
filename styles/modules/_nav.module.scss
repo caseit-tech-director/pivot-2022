@@ -98,9 +98,6 @@
     justify-content: right;
     margin-top: auto;
     margin-bottom: auto;
-    * {
-      margin-left: $xs-margin;
-    }
   }
 }
 
@@ -133,6 +130,12 @@
     max-width: $max--width;
     padding-left: $lrg-margin;
     padding-right: $lrg-margin;
+  }
+
+  .nav--menu {
+    * {
+      margin-left: $xs-margin;
+    }
   }
 }
 
@@ -244,7 +247,7 @@
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     height: 50vh;
-    background-color: $bg-color--primary;
+    background-color: $bg-color--primary--translucent;
     display: flex;
   }
 

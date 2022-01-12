@@ -41,8 +41,8 @@
 
 .sponsor--content {
   * {
-    margin-right: $xs-margin !important;
-    margin-bottom: $xs-margin !important;
+    // margin-right: $xs-margin !important;
+    // margin-bottom: $xs-margin !important;
   }
   .sponsor--content--row {
     margin-bottom: $med-margin !important;
@@ -85,7 +85,35 @@
   flex-direction: column;
   justify-content: left;
   width: fit-content;
+  align-items: center;
+  overflow: hidden;
+  padding: 1rem;
+  background-color: white;
+  margin-right: $xs-margin;
+  margin-bottom: $xs-margin;
 }
+
+.sponsor--image--wrapper{
+  padding: 1rem;
+  background-color: white;
+  margin-right: $xs-margin;
+  margin-bottom: $xs-margin;
+}
+
+// .image--content {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   overflow: hidden;
+//   margin-right: $lrg-margin;
+// }
+
+// .image--content img {
+//   flex-shrink: 0;
+//   min-width: 100%;
+//   min-height: 100%;
+// }
+
 
 // Change the media query to breakpoints
 @media only screen and (min-width: $largeQuery) {
@@ -168,3 +196,4 @@
   display: flex;
   flex-direction: column;
 }
+
