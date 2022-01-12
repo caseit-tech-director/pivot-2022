@@ -9,6 +9,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
+        <title>PIVOT</title>
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <div className="nav--wrapper">
