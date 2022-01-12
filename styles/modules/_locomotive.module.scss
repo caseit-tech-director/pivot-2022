@@ -1,9 +1,23 @@
 @import '../base/variables';
 
-.extra--heading{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $primary-color--white;
+.extra--heading {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary-color--white;
+}
+
+.content--container {
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+@media only screen and (min-width: $largeQuery) {
+  .content--container {
+    width: 55%;
+  }
 }
