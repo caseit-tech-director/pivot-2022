@@ -9,7 +9,7 @@ import lrgSponsor2 from '../../public/images/sponsors/cpa-networking.png';
 import lrgSponsor3 from '../../public/images/sponsors/ey-networking.png';
 import smSponsor1 from '../../public/images/sponsors/thrive-workshop.png';
 import smSponsor2 from '../../public/images/sponsors/salesforce-workshop.jpeg';
-import smSponsor3 from '../../public/images/sponsors/TMP-logo.png';
+import tmp from '../../public/images/sponsors/TMP-logo.png';
 
 export default function SponsorshipBanner(props) {
   return (
@@ -35,6 +35,7 @@ export default function SponsorshipBanner(props) {
               </div>
               <h2 className="subtitle-2">Title Sponsor</h2>
             </div>
+
             <div className={style['sponsor--content--item--wrapper']}>
               <div className={style['sponsor--image--wrapper']}>
                 <Image
@@ -60,7 +61,24 @@ export default function SponsorshipBanner(props) {
               </div>
               <h2 className="subtitle-2">Networking Sponsor</h2>
             </div>
+
+
+            <div className={style['sponsor--content--item--wrapper']}>
+              <div className={style['sponsor--image--wrapper']}>
+                <Image
+                  objectFit="contain"
+                  src={tmp}
+                  width={128}
+                  height={128}
+                  alt="Sponsor"
+                />
+              </div>
+              <h2 className="subtitle-2">Networking Sponsor</h2>
+            </div>
           </div>
+
+
+          
           <div
             className={[
               style['sponsor--content--row'],
@@ -82,15 +100,6 @@ export default function SponsorshipBanner(props) {
                 <Image
                   objectFit="contain"
                   src={smSponsor2}
-                  width={84}
-                  height={84}
-                  alt="Sponsor"
-                />
-              </div>
-              <div className={style['sponsor--content--item']}>
-                <Image
-                  objectFit="contain"
-                  src={smSponsor3}
                   width={84}
                   height={84}
                   alt="Sponsor"
