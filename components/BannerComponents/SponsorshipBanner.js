@@ -46,7 +46,7 @@ export default function SponsorshipBanner(props) {
                   alt="Sponsor"
                 />
               </div>
-              <h2 className="subtitle-2">Networking Sponsor</h2>
+              <h2 className="subtitle-2">Workshop Sponsor</h2>
             </div>
 
             <div className={style['sponsor--content--item--wrapper']}>
@@ -59,7 +59,7 @@ export default function SponsorshipBanner(props) {
                   alt="Sponsor"
                 />
               </div>
-              <h2 className="subtitle-2">Networking Sponsor</h2>
+              <h2 className="subtitle-2">Workshop Sponsor</h2>
             </div>
           </div>
 
@@ -101,7 +101,7 @@ export default function SponsorshipBanner(props) {
                 />
               </div>
             </div>
-            <h2 className="subtitle-2">Workshop Sponsors</h2>
+            <h2 className="subtitle-2">Networking Sponsors</h2>
           </div>
           <div
             className={[
