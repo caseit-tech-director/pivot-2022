@@ -4,12 +4,12 @@ import BannerHeader from './BannerHeader';
 import ArrowButton from '../Molecules/ArrowButton';
 import Image from 'next/image';
 // import testIMG from '../../public/images/square.jpg';
-import accenture from '../../public/images/sponsors/jpg/accenture.jpg';
-import cpa from '../../public/images/sponsors/jpg/cpa.jpg';
-import ey from '../../public/images/sponsors/jpg/ey.jpg';
-import thrive from '../../public/images/sponsors/jpg/thrive.jpg';
-import salesforce from '../../public/images/sponsors/jpg/salesforce.jpg';
-import tmp from '../../public/images/sponsors/jpg/TMP.jpg';
+import accenture from '../../public/images/sponsors/accenture.jpg';
+import cpa from '../../public/images/sponsors/cpa.jpg';
+import ey from '../../public/images/sponsors/ey.jpg';
+import thrive from '../../public/images/sponsors/thrive.jpg';
+import salesforce from '../../public/images/sponsors/salesforce.jpg';
+import tmp from '../../public/images/sponsors/TMP.jpg';
 
 export default function SponsorshipBanner(props) {
   return (
