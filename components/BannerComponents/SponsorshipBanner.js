@@ -40,7 +40,7 @@ export default function SponsorshipBanner(props) {
               <div className={style['sponsor--image--wrapper']}>
                 <Image
                   objectFit="contain"
-                  src={cpa}
+                  src={thrive}
                   width={128}
                   height={128}
                   alt="Sponsor"
@@ -53,21 +53,7 @@ export default function SponsorshipBanner(props) {
               <div className={style['sponsor--image--wrapper']}>
                 <Image
                   objectFit="contain"
-                  src={ey}
-                  width={128}
-                  height={128}
-                  alt="Sponsor"
-                />
-              </div>
-              <h2 className="subtitle-2">Networking Sponsor</h2>
-            </div>
-
-
-            <div className={style['sponsor--content--item--wrapper']}>
-              <div className={style['sponsor--image--wrapper']}>
-                <Image
-                  objectFit="contain"
-                  src={tmp}
+                  src={salesforce}
                   width={128}
                   height={128}
                   alt="Sponsor"
@@ -90,7 +76,7 @@ export default function SponsorshipBanner(props) {
               <div className={style['sponsor--content--item']}>
                 <Image
                   objectFit="contain"
-                  src={thrive}
+                  src={cpa}
                   width={84}
                   height={84}
                   alt="Sponsor"
@@ -99,7 +85,16 @@ export default function SponsorshipBanner(props) {
               <div className={style['sponsor--content--item']}>
                 <Image
                   objectFit="contain"
-                  src={salesforce}
+                  src={ey}
+                  width={84}
+                  height={84}
+                  alt="Sponsor"
+                />
+              </div>
+              <div className={style['sponsor--content--item']}>
+                <Image
+                  objectFit="contain"
+                  src={tmp}
                   width={84}
                   height={84}
                   alt="Sponsor"
