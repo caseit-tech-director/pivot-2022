@@ -4,12 +4,12 @@ import BannerHeader from './BannerHeader';
 import ArrowButton from '../Molecules/ArrowButton';
 import Image from 'next/image';
 import testIMG from '../../public/images/square.jpg';
-import lrgSponsor1 from '../../public/images/sponsors/accenture-title.png';
-import lrgSponsor2 from '../../public/images/sponsors/cpa-networking.png';
-import lrgSponsor3 from '../../public/images/sponsors/ey-networking.png';
-import smSponsor1 from '../../public/images/sponsors/thrive-workshop.png';
-import smSponsor2 from '../../public/images/sponsors/salesforce-workshop.jpeg';
-import tmp from '../../public/images/sponsors/TMP-logo.png';
+import accenture from '../../public/images/sponsors/jpg/accenture.jpg';
+import cpa from '../../public/images/sponsors/jpg/cpa.jpg';
+import ey from '../../public/images/sponsors/jpg/ey.jpg';
+import thrive from '../../public/images/sponsors/jpg/thrive.jpg';
+import salesforce from '../../public/images/sponsors/jpg/salesforce.jpg';
+import tmp from '../../public/images/sponsors/jpg/TMP.jpg';
 
 export default function SponsorshipBanner(props) {
   return (
@@ -27,7 +27,7 @@ export default function SponsorshipBanner(props) {
               <div className={style['sponsor--image--wrapper']}>
                 <Image
                   objectFit="contain"
-                  src={lrgSponsor1}
+                  src={accenture}
                   width={128}
                   height={128}
                   alt="Sponsor"
@@ -40,7 +40,7 @@ export default function SponsorshipBanner(props) {
               <div className={style['sponsor--image--wrapper']}>
                 <Image
                   objectFit="contain"
-                  src={lrgSponsor2}
+                  src={cpa}
                   width={128}
                   height={128}
                   alt="Sponsor"
@@ -53,7 +53,7 @@ export default function SponsorshipBanner(props) {
               <div className={style['sponsor--image--wrapper']}>
                 <Image
                   objectFit="contain"
-                  src={lrgSponsor3}
+                  src={ey}
                   width={128}
                   height={128}
                   alt="Sponsor"
@@ -90,7 +90,7 @@ export default function SponsorshipBanner(props) {
               <div className={style['sponsor--content--item']}>
                 <Image
                   objectFit="contain"
-                  src={smSponsor1}
+                  src={thrive}
                   width={84}
                   height={84}
                   alt="Sponsor"
@@ -99,7 +99,7 @@ export default function SponsorshipBanner(props) {
               <div className={style['sponsor--content--item']}>
                 <Image
                   objectFit="contain"
-                  src={smSponsor2}
+                  src={salesforce}
                   width={84}
                   height={84}
                   alt="Sponsor"
