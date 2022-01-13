@@ -9,11 +9,11 @@ export default function Sponsors() {
   return (
     <body>
       <LargeHeader header={'competition schedule'} overline={'GET READY'} />
-      {/* <BranchHeader
+      <BranchHeader
         header={'Title'}
         overline={'Overline'}
         paragraph={dummyText}
-      /> */}
+      />
       <Schedule/>
       <RegistrationModule header={'Title'} overline={'overline'} />
       <Testimonials/>
