@@ -46,7 +46,7 @@
         height: 2px;
         bottom: 0;
         display: block;
-        content: "";
+        content: '';
       }
     }
   }
@@ -170,7 +170,7 @@
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     height: 50vh;
-    background-color: $bg-color--primary--translucent;
+    background-color: $blue--primary--90;
     display: flex;
   }
 
@@ -247,7 +247,7 @@
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     height: 50vh;
-    background-color: $bg-color--primary--translucent;
+    background-color: $blue--primary--90;
     display: flex;
   }
 

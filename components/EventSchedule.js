@@ -7,23 +7,22 @@ export default function EventSchedule() {
     <MaxLayout>
       <div className={style['content--wrapper']}>
         <div
-          className={[style['text--center'], style['margin--bottom--lrg']].join(
+          className={[style['text--center'], style['margin--bottom--lrg'], style['margin--top--lrg']].join(
             ' '
           )}
         >
-          <h6>Title</h6>
-          <p className="overline">Overline</p>
+          <h6>PIVOT 2022 SCHEDULE</h6>
+          <p className="overline">GET READY</p>
         </div>
 
         <div className="schedule--item--wrapper">
           <div
             className={[
-              style['bg--gray--200'],
               style['content--wrapper--title'],
               style['text--center'],
             ].join(' ')}
           >
-            Main Schedule
+            Day One
           </div>
 
           <div className={style['schedule--wrapper']}>
@@ -40,11 +39,13 @@ export default function EventSchedule() {
                       ].join(' ')}
                       key={index}
                     >
-                      <div className="flex--left">
-                        <p className="event--title">{item.title}</p>
-                        <p className="event--description">{item.desc}</p>
+                      <div className={style['event--wrapper']}>
+                        <h5 className={style['event--title']}>{item.title}</h5>
+                        <p className="overline event--description">
+                          {item.desc}
+                        </p>
                       </div>
-                      <div className="flex--right">
+                      <div className="">
                         <h6 className="event--time">{item.time}</h6>
                       </div>
                     </div>
@@ -57,12 +58,11 @@ export default function EventSchedule() {
           <div className="schedule--item--wrapper">
             <div
               className={[
-                style['bg--gray--200'],
                 style['content--wrapper--title'],
                 style['text--center'],
               ].join(' ')}
             >
-              Main Schedule
+              Day Two
             </div>
 
             {/* Day two */}
@@ -76,15 +76,17 @@ export default function EventSchedule() {
                           style['flex--container'],
                           style['justify--between'],
                           style['item--wrapper'],
-                          style['margin--bottom--sm'],
+                          style['margin--bottom--xs'],
                         ].join(' ')}
                         key={index}
                       >
-                        <div className="flex--left">
-                          <p className="event--title">{item.title}</p>
-                          <p className="event--description">{item.desc}</p>
+                        <div className={style['event--wrapper']}>
+                          <h5 className={style['event--title']}>{item.title}</h5>
+                          <p className="overline">
+                            {item.desc}
+                          </p>
                         </div>
-                        <div className="flex--right">
+                        <div className="">
                           <h6 className="event--time">{item.time}</h6>
                         </div>
                       </div>
@@ -94,7 +96,6 @@ export default function EventSchedule() {
               }
             </div>
             {/* End of day two */}
-
           </div>
         </div>
       </div>
