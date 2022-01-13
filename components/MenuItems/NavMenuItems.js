@@ -19,12 +19,12 @@ export const MenuItems = [
     url: '/',
     href: '/about/organizers',
   },
-  // {
-  //   pName: '/schedule',
-  //   title: 'SCHEDULE',
-  //   url: '/',
-  //   href: '/schedule',
-  // },
+  {
+    pName: '/schedule',
+    title: 'SCHEDULE',
+    url: '/',
+    href: '/schedule',
+  },
   // {
   //   pName: '/competition',
   //   title: 'COMPETITION',
