@@ -5,6 +5,7 @@ import ArrowButton from '../Molecules/ArrowButton';
 import Image from 'next/image';
 // import testIMG from '../../public/images/square.jpg';
 import accenture from '../../public/images/sponsors/accenture.jpg';
+// import accenture from '../../public/images/sponsors/accenture.jpg';
 import cpa from '../../public/images/sponsors/cpa.jpg';
 import ey from '../../public/images/sponsors/ey.jpg';
 import thrive from '../../public/images/sponsors/thrive.jpg';
