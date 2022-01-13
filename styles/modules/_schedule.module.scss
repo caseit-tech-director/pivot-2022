@@ -1,0 +1,50 @@
+@import '/styles/base/variables';
+
+.content--wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    grid-column-start: $grid--start;
+    grid-column-end: $grid--end;
+    max-width: 1000px;
+}
+
+.text--center{
+    text-align: center;
+}
+
+.margin--bottom--lrg{
+    margin-bottom: $lrg-margin;
+}
+
+.margin--bottom--sm{
+    margin-bottom: $sm-margin;
+}
+
+.content--wrapper--title{
+    padding: $xs-margin;
+    margin-bottom: $xs-margin;
+    background-color: rgba(0, 0, 0, 0.200);
+}
+
+.flex--container{
+    display: flex;
+    width: 100%;
+}
+
+.justify--between{
+    justify-content: space-between;
+}
+
+.flex--column{
+    display: flex;
+    flex-direction: column;
+}
+
+.item--wrapper{
+
+}
+
+.schedule--wrapper{
+    margin-bottom: $lrg-margin;
+}
