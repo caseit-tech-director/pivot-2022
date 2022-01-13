@@ -1,15 +1,23 @@
 import MenuItems from './MenuItems/ScheduleItems';
 import MaxLayout from './Layout/MaxLayout';
 import style from '../styles/modules/_schedule.module.scss';
+import { useState } from 'react';
 
 export default function EventSchedule() {
+  const [showMe, setShowMe] = useState(false);
+  function toggle() {
+    setShowMe(!showMe);
+  }
+  
   return (
     <MaxLayout>
       <div className={style['content--wrapper']}>
         <div
-          className={[style['text--center'], style['margin--bottom--lrg'], style['margin--top--lrg']].join(
-            ' '
-          )}
+          className={[
+            style['text--center'],
+            style['margin--bottom--lrg'],
+            style['margin--top--lrg'],
+          ].join(' ')}
         >
           <h6>PIVOT 2022 SCHEDULE</h6>
           <p className="overline">GET READY</p>
@@ -41,9 +49,23 @@ export default function EventSchedule() {
                     >
                       <div className={style['event--wrapper']}>
                         <h5 className={style['event--title']}>{item.title}</h5>
-                        <p className="overline event--description">
-                          {item.desc}
-                        </p>
+                        <div className={style['event--description']}>
+                          <button
+                            onClick={toggle}
+                            id="toggle--description"
+                            className={style['toggle--button']}
+                          >
+                            <div className={style['expand--icon']}></div>
+                          </button>
+                          <p>{item.desc}</p>
+                          <div
+                            style={{
+                              display: showMe ? 'block' : 'none',
+                            }}
+                          >
+                            This should toggle my display
+                          </div>
+                        </div>
                       </div>
                       <div className="">
                         <h6 className="event--time">{item.time}</h6>
@@ -81,10 +103,10 @@ export default function EventSchedule() {
                         key={index}
                       >
                         <div className={style['event--wrapper']}>
-                          <h5 className={style['event--title']}>{item.title}</h5>
-                          <p className="overline">
-                            {item.desc}
-                          </p>
+                          <h5 className={style['event--title']}>
+                            {item.title}
+                          </h5>
+                          <p className="overline">{item.desc}</p>
                         </div>
                         <div className="">
                           <h6 className="event--time">{item.time}</h6>

@@ -6,6 +6,7 @@
   grid-column-start: $grid--start;
   overflow: hidden;
   display: flex;
+  height: 2px;
   * {
     margin-right: $sm-margin;
   }
