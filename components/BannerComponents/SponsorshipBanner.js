@@ -1,11 +1,11 @@
 import MediumLayout from '../Layout/MediumLayout';
 import style from '../../styles/modules/_banner.module.scss';
 import BannerHeader from './BannerHeader';
-import ArrowButton from '../Molecules/ArrowButton';
+// import ArrowButton from '../Molecules/ArrowButton';
 import Image from 'next/image';
 import accenture from "../../public/images/sponsors/accenture.jpg";
 import cpa from "../../public/images/sponsors/CPA.jpg";
-import ey from "../../public/images/sponsors/ey.jpg";
+import ey from "../../public/images/sponsors/EY.jpg";
 import salesforce from "../../public/images/sponsors/Salesforce.jpg";
 import thrive from "../../public/images/sponsors/thrive.jpg";
 import tmp from "../../public/images/sponsors/TMP.jpg";
