@@ -8,7 +8,7 @@ import Schedule from '../components/EventSchedule';
 
 export default function Sponsors() {
   return (
-    <body>
+    <>
       <SmallHeader header={'competition schedule'} overline={'GET READY'} />
       {/* <BranchHeader
         header={'Title'}
@@ -18,6 +18,6 @@ export default function Sponsors() {
       <Schedule/>
       <RegistrationModule header={'GET INVOLVED'} overline={'ARE YOU READY?'} />
       <Testimonials/>
-    </body>
+    </>
   );
 }

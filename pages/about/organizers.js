@@ -24,7 +24,7 @@ export default function Orgaziners() {
   const test = '../../public/images';
 
   return (
-    <body>
+    <>
       <LargeHeader header={'organizing committee'} overline={'MEET THE TEAM'} />
       <BranchHeader
         header={'INTRODUCING'}
@@ -62,6 +62,6 @@ export default function Orgaziners() {
       </section>
       <RegistrationModule header={'GET INVOLVED'} overline={'ARE YOU READY?'} />
       <Testimonials />
-    </body>
+    </>
   );
 }

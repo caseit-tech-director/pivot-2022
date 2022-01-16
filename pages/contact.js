@@ -5,9 +5,9 @@ import ContactSection from '../components/Contact/ContactSection';
 
 export default function Contact() {
   return (
-    <body>
+    <>
       <SmallHeader header={'contact'} overline={'GET MORE INFORMATION'} />
       <ContactSection/>
-    </body>
+    </>
   );
 }

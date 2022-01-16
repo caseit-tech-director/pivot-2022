@@ -6,7 +6,7 @@ import dummyText from '../components/DummyText';
 
 export default function Competition() {
   return (
-    <body>
+    <>
       <SmallHeader header={'competition'} overline={'Overline'} />
       <BranchHeader
         header={'Title'}
@@ -15,6 +15,6 @@ export default function Competition() {
       />
       <RegistrationModule header={'Title'} overline={'overline'} />
       <Testimonials/>
-    </body>
+    </>
   );
 }

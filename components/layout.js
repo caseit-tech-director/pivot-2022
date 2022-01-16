@@ -16,7 +16,7 @@ export default function Layout({ children }) {
         <MobileNav />
         <Navbar />
       </div>
-      <main>{children}</main>
+      <div>{children}</div>
       <Footer />
       <FooterBottomBar />
     </>

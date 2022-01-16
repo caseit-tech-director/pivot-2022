@@ -20,7 +20,7 @@ export default function Home() {
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
 
   return (
-    <body>
+    <>
       {/* <div className="particle--home--banner--container"> */}
         {/* <div id="container">
           <Particle />
@@ -56,6 +56,6 @@ export default function Home() {
       <SponsorshipBanner />
       {/* <CardsModule /> */}
       <Testimonials />
-    </body>
+    </>
   );
 }
