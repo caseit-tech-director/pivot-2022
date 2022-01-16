@@ -18,8 +18,8 @@
 }
 
 .margin--top--lrg {
-    margin-top: $lrg-margin;
-  }  
+  margin-top: $lrg-margin;
+}
 
 .margin--bottom--xs {
   margin-bottom: $xs-margin;
@@ -67,52 +67,58 @@
   }
 }
 
-.event--description{
-    display: flex;
-    align-items: center;
+.event--description {
+  display: flex;
+  align-items: center;
 }
 
 .expand--icon {
-    height: 12px;
-    width: 12px;
-    position: relative;
-  }
-  .expand--icon::before, .expand--icon::after {
-    content: " ";
-    width: 12px;
-    height: 2px;
-    background-color: $blue--primary--90;
-    display: block;
+  height: 12px;
+  width: 12px;
+  position: relative;
+}
+.expand--icon::before,
+.expand--icon::after {
+  content: ' ';
+  width: 12px;
+  height: 2px;
+  background-color: $blue--primary--90;
+  display: block;
   position: absolute;
-    top: 50%;
-    left: 50%;
-    transition: all 0.15s cubic-bezier(.42, 0, .58, 1);
-    opacity: 1;
-    border-radius: 2px;
-  }
-  .expand--icon::before {
-    transform: translate(-50%, -50%) rotate(90deg);
-  }
-  .expand--icon::after {
-    transform: translate(-50%, -50%);
-  }
-  
-  
-  .expand--icon.expanded::before {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  .expand--icon.expanded::after {
-    transform: translate(-50%, -50%) rotate(0deg);
-    opacity: 0;
-  }
+  top: 50%;
+  left: 50%;
+  transition: all 0.15s cubic-bezier(0.42, 0, 0.58, 1);
+  opacity: 1;
+  border-radius: 2px;
+}
+.expand--icon::before {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.expand--icon::after {
+  transform: translate(-50%, -50%);
+}
 
-  .toggle--button{
-      cursor: pointer;
-      margin-right: $xs-margin;
-      border: none;
-  }
+.expand--icon.expanded::before {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+.expand--icon.expanded::after {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 0;
+}
 
-  .expand--icon{
-      cursor: pointer;
-  }
+.toggle--button {
+  cursor: pointer;
+  margin-right: $xs-margin;
+  border: none;
+}
 
+.expand--icon {
+  cursor: pointer;
+}
+
+.event--toggler {
+  cursor: pointer;
+  &:hover {
+    background-color: tomato;
+  }
+}
