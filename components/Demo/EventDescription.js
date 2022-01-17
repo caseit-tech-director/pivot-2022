@@ -6,8 +6,8 @@ export default function EventDescription({ eventInfo }) {
   const [expanded, setExpanded] = useState(false);
   const { title, time, desc, fulldesc } = eventInfo;
 
-  function handleClick(){
-    setExpanded(!expanded)
+  function handleClick() {
+    setExpanded(!expanded);
   }
 
   return (
@@ -39,14 +39,14 @@ export default function EventDescription({ eventInfo }) {
               }}
             >
               <div className={style['toggle--button']}>
-                {!expanded && <div className={style['expand--icon']}></div>}
-                {expanded && (
+                {!expanded && (
                   <div
                     className={[style['expand--icon'], style['expanded']].join(
                       ' '
                     )}
                   ></div>
                 )}
+                {expanded && <div className={style['expand--icon']}></div>}
               </div>
             </motion.div>
           </AnimatePresence>

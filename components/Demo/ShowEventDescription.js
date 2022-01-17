@@ -15,9 +15,13 @@ export default function ShowEventDescription() {
       >
         Day One
       </div>
-      {MenuItems.DayOne.map((eventInfo, index) => (
-        <EventDescription key={index} eventInfo={eventInfo} />
-      ))}
+      <div className={style['event--day--margin']}>
+        <p className="body-2">
+          {MenuItems.DayOne.map((eventInfo, index) => (
+            <EventDescription key={index} eventInfo={eventInfo} />
+          ))}
+        </p>
+      </div>
 
       <div
         className={[
@@ -27,9 +31,13 @@ export default function ShowEventDescription() {
       >
         Day Two
       </div>
-      {MenuItems.DayTwo.map((eventInfo, index) => (
-        <EventDescription key={index} eventInfo={eventInfo} day={1} />
-      ))}
+      <div>
+        <p className="body-2">
+          {MenuItems.DayTwo.map((eventInfo, index) => (
+            <EventDescription key={index} eventInfo={eventInfo} day={1} />
+          ))}
+        </p>
+      </div>
     </div>
   );
 }

@@ -27,7 +27,6 @@
 
 .content--wrapper--title {
   padding: $xs-margin;
-  margin-bottom: $xs-margin;
   background-color: rgba(0, 0, 0, 0.2);
   color: $primary-color--white;
   background-color: $blue--primary--75;
@@ -128,4 +127,8 @@
       }
      
   }
+}
+
+.event--day--margin{
+  margin-bottom: 2 * $lrg-margin;
 }
