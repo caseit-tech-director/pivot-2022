@@ -45,7 +45,7 @@ export default function ContactForm() {
           ></textarea>
         </div>
 
-        <button type="submit" value="Your Message">
+        <button className="primary--btn" type="submit" value="Your Message">
           SEND MESSAGE
         </button>
       </form>

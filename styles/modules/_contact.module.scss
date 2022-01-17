@@ -112,7 +112,6 @@
 
   button {
     text-transform: uppercase;
-    font-weight: 300;
     color: $primary-color--white;
     background-color: $secondary-color;
     cursor: pointer;
@@ -125,6 +124,12 @@
   textarea:hover,
   button:hover {
     opacity: 0.5;
+  }
+
+  input:focus,
+  textarea:focus,
+  button:focus {
+    opacity: 1 !important;
   }
 
   div {
@@ -153,7 +158,7 @@
     background-color: $blue--dim--25;
     margin-bottom: $sm-margin !important;
   }
-  @-webkit-keyframes autofill {
+  @keyframes autofill {
     0%,
     100% {
       color: $primary-color--white;
