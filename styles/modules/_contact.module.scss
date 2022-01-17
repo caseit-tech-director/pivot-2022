@@ -64,33 +64,37 @@
     box-sizing: border-box;
     transition: all 0.3s ease-in-out;
   }
-  
+
   ::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
-    color: #909;
+    color: $primary-color--white;
+    opacity: 0.65;
   }
   :-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
-    color: #909;
-    opacity: 1;
+    color: $primary-color--white;
+    opacity: 0.65;
   }
   ::-moz-placeholder {
     /* Mozilla Firefox 19+ */
-    color: #909;
-    opacity: 1;
+    color: $primary-color--white;
+    opacity: 0.65;
   }
   :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: #909;
+    color: $primary-color--white;
+    opacity: 0.65;
   }
   ::-ms-input-placeholder {
     /* Microsoft Edge */
-    color: #909;
+    color: $primary-color--white;
+    opacity: 0.65;
   }
 
   ::placeholder {
     /* Most modern browsers support this now. */
-    color: #909;
+    color: $primary-color--white;
+    opacity: 0.65;
   }
 
   input,
@@ -148,5 +152,22 @@
   .label--input--wrapper {
     background-color: $blue--dim--25;
     margin-bottom: $sm-margin !important;
+  }
+  @-webkit-keyframes autofill {
+    0%,
+    100% {
+      color: $primary-color--white;
+      background: transparent;
+    }
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    background-color: $blue--dim--25 !important;
+    color: $primary-color--white !important;
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: $primary-color--white !important;
   }
 }
