@@ -1,6 +1,6 @@
 @import '../base/variables';
 
-.contact--icon{
+.contact--icon {
   margin-right: $xs-margin;
 }
 
@@ -8,7 +8,7 @@
   margin-bottom: $med-margin;
 }
 
-.inactive{
+.inactive {
   display: none;
 }
 
@@ -16,7 +16,7 @@
   .contact--information--item {
     display: flex;
     margin-top: $xs-margin;
-    caption{
+    caption {
       margin-left: $xs-margin;
       align-items: center;
       display: flex;
@@ -28,7 +28,7 @@
 }
 
 .social--media--item--wrapper {
-  a{
+  a {
     color: $bg-color--black;
   }
   margin-top: $xs-margin;
@@ -52,3 +52,101 @@
   grid-column-end: $grid--end;
 }
 
+.contact--form--title {
+  color: $primary-color--white;
+}
+
+.container {
+  * {
+    margin: 0 !important;
+    padding: $xs-margin !important;
+    border-style: none !important;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  ::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #909;
+  }
+  :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #909;
+    opacity: 1;
+  }
+  ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #909;
+    opacity: 1;
+  }
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #909;
+  }
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #909;
+  }
+
+  ::placeholder {
+    /* Most modern browsers support this now. */
+    color: #909;
+  }
+
+  input,
+  textarea {
+    color: $primary-color--white !important;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  button {
+    text-transform: uppercase;
+    font-weight: 300;
+    color: $primary-color--white;
+    background-color: $secondary-color;
+    cursor: pointer;
+    outline: none;
+    border-radius: 2px;
+    border: none;
+  }
+
+  input:hover,
+  textarea:hover,
+  button:hover {
+    opacity: 0.5;
+  }
+
+  div {
+    padding: 0 !important;
+  }
+
+  background-color: $primary-color;
+  padding: $med-margin;
+  border-radius: 2px;
+
+  .form--label {
+    color: $primary-color--white;
+    opacity: 0.6;
+    font-size: $caption--font-sz;
+    letter-spacing: $caption--tk;
+  }
+
+  .form--input {
+    // background-color: $blue--dim--25;
+    background-color: transparent;
+  }
+
+  .form--message--input {
+  }
+  .label--input--wrapper {
+    background-color: $blue--dim--25;
+    margin-bottom: $sm-margin !important;
+  }
+}
