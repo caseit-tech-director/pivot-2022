@@ -14,8 +14,8 @@
   align-items: center;
 }
 
-.header--text{
-  *{
+.header--text {
+  * {
     border-bottom: 1px solid white;
   }
 }
@@ -91,7 +91,6 @@
   font-weight: bolder;
 }
 
-
 .particle--home--banner--container,
 .test {
   h4,
@@ -125,10 +124,6 @@
   width: 100%;
   height: 100%;
   transform: translateZ(0);
-
-  canvas {
-    margin-top: calc(48px + 64px);
-  }
 }
 
 @media only screen and (min-width: $largeQuery) {
@@ -151,6 +146,19 @@
       align-self: center;
     }
   }
+
+  .particle--contain {
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+    transform: translateZ(0);
+
+    canvas {
+      margin-top: calc(48px + 64px);
+    }
+  }
 }
 
 @media only screen and (max-width: $minQuery) {
@@ -164,6 +172,19 @@
     }
     p {
       margin-top: $sm-margin;
+    }
+  }
+
+  .particle--contain {
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+    transform: translateZ(0);
+
+    canvas {
+      margin-top: 64px;
     }
   }
 }
