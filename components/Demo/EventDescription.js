@@ -6,6 +6,10 @@ export default function EventDescription({ eventInfo }) {
   const [expanded, setExpanded] = useState(false);
   const { title, time, desc, fulldesc } = eventInfo;
 
+  function handleClick(){
+    setExpanded(!expanded)
+  }
+
   return (
     <div
       className={[
@@ -15,7 +19,7 @@ export default function EventDescription({ eventInfo }) {
         style['margin--bottom--sm'],
         style['event--toggler'],
       ].join(' ')}
-      onClick={() => setExpanded(!expanded)}
+      onClick={() => handleClick()}
     >
       <div className={style['event--wrapper']}>
         <h5 className={style['event--title']}>{title}</h5>
@@ -24,41 +28,45 @@ export default function EventDescription({ eventInfo }) {
             className={style['toggle--button']}
             onClick={() => setExpanded(!expanded)}
           > */}
-          <div className={style['expand--icon']}></div>
-          {/* </button> */}
+          <AnimatePresence>
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{
+                ease: [0, 0.55, 0.45, 1],
+                duration: 0.3,
+              }}
+            >
+              <div className={style['toggle--button']}>
+                {!expanded && <div className={style['expand--icon']}></div>}
+                {expanded && (
+                  <div
+                    className={[style['expand--icon'], style['expanded']].join(
+                      ' '
+                    )}
+                  ></div>
+                )}
+              </div>
+            </motion.div>
+          </AnimatePresence>
           <p>{desc}</p>
-
-          {/* <AnimatePresence>
-            {expanded && (
-              <motion.div
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: 'auto' }}
-                exit={{ opacity: 0, height: 0 }}
-                transition={{
-                  ease: [0, 0.55, 0.45, 1],
-                  duration: 0.3,
-                }}
-              >
-                {fulldesc}
-              </motion.div>
-            )}
-          </AnimatePresence> */}
         </div>
         <AnimatePresence>
-            {expanded && (
-              <motion.div
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: 'auto' }}
-                exit={{ opacity: 0, height: 0 }}
-                transition={{
-                  ease: [0, 0.55, 0.45, 1],
-                  duration: 0.3,
-                }}
-              >
-                {fulldesc}
-              </motion.div>
-            )}
-          </AnimatePresence>
+          {expanded && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{
+                ease: [0, 0.55, 0.45, 1],
+                duration: 0.3,
+              }}
+            >
+              {fulldesc}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
       <div className="">

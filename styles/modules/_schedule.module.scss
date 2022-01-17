@@ -119,6 +119,13 @@
 .event--toggler {
   cursor: pointer;
   &:hover {
-    background-color: tomato;
+    
+      // color: tomato;
+      border-color: tomato !important;
+      // border-bottom: 1px solid tomato;
+      .expand--icon::before , .expand--icon::after{
+        background-color: tomato;
+      }
+     
   }
 }
