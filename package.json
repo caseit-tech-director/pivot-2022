@@ -32,7 +32,6 @@
     "react-router-dom": "^6.2.1",
     "react-tsparticles": "^1.39.0",
     "styled-components": "^5.3.3",
-    "toast": "^0.3.47",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
