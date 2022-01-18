@@ -1,11 +1,10 @@
 import style from '../../styles/modules/_contact.module.scss';
 import { useState, useEffect } from 'react';
 
-
 export default function ContactForm() {
   const [success, setSuccess] = useState(false);
   useEffect(() => {
-    if ( window.location.search.includes('success=true') ) {
+    if (window.location.search.includes('success=true')) {
       setSuccess(true);
     }
   }, []);
@@ -49,13 +48,7 @@ export default function ContactForm() {
       {success && (
         <p style={{ color: 'green' }}>Successfully submitted form!</p>
       )}
-      <form
-        method="POST"
-        data-netlify="true"
-        onSubmit="submit"
-        // action="/?success=true"
-        data-netlify-honeypot="bot-field"
-      >
+      <form name="contact" method="POST" data-netlify="true">
         <div className={style['label--input--wrapper']}>
           <label className={style['form--label']} htmlFor="name">
             FULL NAME
