@@ -2,12 +2,12 @@ import style from '../../styles/modules/_contact.module.scss';
 import { useState, useEffect } from 'react';
 
 export default function ContactForm() {
-  const [success, setSuccess] = useState(false);
-  useEffect(() => {
-    if (window.location.search.includes('success=true')) {
-      setSuccess(true);
-    }
-  }, []);
+  // const [success, setSuccess] = useState(false);
+  // useEffect(() => {
+  //   if (window.location.search.includes('success=true')) {
+  //     setSuccess(true);
+  //   }
+  // }, []);
   // const [name, setName] = useState('');
   // const [email, setEmail] = useState('');
   // const [message, setMessage] = useState('');
