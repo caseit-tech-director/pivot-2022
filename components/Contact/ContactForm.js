@@ -51,69 +51,26 @@ export default function ContactForm() {
       <form
         name="contact"
         method="POST"
-        data-netlify="true"
         action="contact/?success=true"
+        data-netlify="true"
       >
-        <div className={style['label--input--wrapper']}>
-          <label className={style['form--label']} htmlFor="name">
-            FULL NAME
-          </label>
-          <input
-            className={style['form--input']}
-            type="text"
-            name="name"
-            placeholder="Your Full Name"
-            // onChange={(e) => {
-            //   setName(e.target.value);
-            // }}
-          />
-        </div>
-        <div id={style['email']} className={style['label--input--wrapper']}>
-          <label className={style['form--label']} htmlFor="email">
-            EMAIL ADDRESS
-          </label>
-          <input
-            className={style['form--input']}
-            type="email"
-            name="email"
-            // pattern=".+@globex\.com"
-            placeholder="Your Email Address"
-            // onChange={(e) => {
-            //   setEmail(e.target.value);
-            // }}
-          />
-        </div>
-        <div className={style['label--input--wrapper']}>
-          <label className={style['form--label']} htmlFor="message">
-            MESSAGE
-          </label>
-          <textarea
-            rows="4"
-            className={[
-              style['form--input'],
-              style['form--message--input'],
-            ].join('')}
-            id="subject"
-            name="message"
-            placeholder="Message"
-            // onChange={(e) => {
-            //   setMessage(e.target.value);
-            // }}
-          ></textarea>
-        </div>
-
-        <input
-          className="primary--btn"
-          type="submit"
-          value="Your Message"
-          // onClick={(e) => {
-          //   handleSubmit(e);
-          // }}
-        >
-          {/* SEND MESSAGE */}
-        </input>
+        <input type="hidden" name="form-name" value="contact" />
+        <p>
+          <label htmlFor="name">Name</label>
+          <input type="text" id="name" name="name" />
+        </p>
+        <p>
+          <label htmlFor="email">Email</label>
+          <input type="text" id="email" name="email" />
+        </p>
+        <p>
+          <label htmlFor="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
       </form>
-      
 
       {/* <form
     name="contact-form"
