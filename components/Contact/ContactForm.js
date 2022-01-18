@@ -2,12 +2,12 @@ import style from '../../styles/modules/_contact.module.scss';
 import { useState, useEffect } from 'react';
 
 export default function ContactForm() {
-  // const [success, setSuccess] = useState(false);
-  // useEffect(() => {
-  //   if (window.location.search.includes('success=true')) {
-  //     setSuccess(true);
-  //   }
-  // }, []);
+  const [success, setSuccess] = useState(false);
+  useEffect(() => {
+    if (window.location.search.includes('success=true')) {
+      setSuccess(true);
+    }
+  }, []);
   // const [name, setName] = useState('');
   // const [email, setEmail] = useState('');
   // const [message, setMessage] = useState('');
@@ -48,7 +48,12 @@ export default function ContactForm() {
       {success && (
         <p style={{ color: 'green' }}>Successfully submitted form!</p>
       )}
-      <form name="contact" method="POST" data-netlify="true">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        action="contact/?success=true"
+      >
         <div className={style['label--input--wrapper']}>
           <label className={style['form--label']} htmlFor="name">
             FULL NAME
@@ -108,6 +113,7 @@ export default function ContactForm() {
           {/* SEND MESSAGE */}
         </input>
       </form>
+      
 
       {/* <form
     name="contact-form"
