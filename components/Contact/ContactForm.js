@@ -2,76 +2,72 @@ import style from '../../styles/modules/_contact.module.scss';
 import { useState } from 'react';
 
 export default function ContactForm() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+  
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Sending');
+    e.preventDefault()
+    console.log('Sending')
 
     let data = {
-      name,
-      email,
-      message,
-    };
+        name,
+        email,
+        message
+    }
 
     fetch('/api/contact', {
       method: 'POST',
       headers: {
-        Accept: 'application/json, text/plain, */*',
-        'Content-Type': 'application/json',
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
       },
-      body: JSON.stringify(data),
+      body: JSON.stringify(data)
     }).then((res) => {
-      console.log('Response received');
-      if (res.status === 200) {
-        console.log('Response succeeded!');
-        setSubmitted(true);
-        setName('');
-        setEmail('');
-        setBody('');
-      }
-    });
-  };
+        console.log('Response received')
+        if (res.status === 200) {
+            console.log('Response succeeded!')
+            setSubmitted(true) 
+            setName('')
+            setEmail('')
+            setMessage('')
+        }
+    })
+  }
 
   return (
     <div className={style['container']}>
       <h4 className={style['contact--form--title']}>SEND A MESSAGE</h4>
       <form action="action_page.php">
         <div className={style['label--input--wrapper']}>
-          <label className={style['form--label']} htmlFor="fname">
+          <label className={style['form--label']} htmlFor='name'>
             FULL NAME
           </label>
           <input
             className={style['form--input']}
             type="text"
-            id="fname"
-            name="name"
+            name='name'
             placeholder="Your Full Name"
-            onChange={(e) => {
-              setName(e.target.value);
-            }}
+            onChange={(e)=>{setName(e.target.value)}}
           />
         </div>
-        <div className={style['label--input--wrapper']}>
-          <label className={style['form--label']} htmlFor="email">
+        <div id={style['email']} className={style['label--input--wrapper']}>
+          <label className={style['form--label']} htmlFor='email'>
             EMAIL ADDRESS
           </label>
           <input
             className={style['form--input']}
-            type="text"
-            id="email"
-            name="email"
+            type='email'
+            name='email'
+            pattern=".+@globex\.com"
             placeholder="Your Email Address"
-            onChange={(e) => {
-              setName(e.target.value);
-            }}
+            onChange={(e)=>{setEmail(e.target.value)}}
           />
         </div>
         <div className={style['label--input--wrapper']}>
-          <label className={style['form--label']} htmlFor="subject">
+          <label className={style['form--label']} htmlFor='message'>
             MESSAGE
           </label>
           <textarea
@@ -81,11 +77,9 @@ export default function ContactForm() {
               style['form--message--input'],
             ].join('')}
             id="subject"
-            name="subject"
+            name='message'
             placeholder="Message"
-            onChange={(e) => {
-              setName(e.target.value);
-            }}
+            onChange={(e)=>{setMessage(e.target.value)}}
           ></textarea>
         </div>
 

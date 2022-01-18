@@ -176,3 +176,13 @@
     -webkit-text-fill-color: $primary-color--white !important;
   }
 }
+
+#email {
+  display: flex;
+  flex-direction: column;
+}
+
+#email .form--input{
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
