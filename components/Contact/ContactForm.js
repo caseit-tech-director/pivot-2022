@@ -8,42 +8,42 @@ export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Sending');
+    e.preventDefault()
+    console.log('Sending')
 
     let data = {
-      name,
-      email,
-      message,
-    };
+        name,
+        email,
+        message
+    }
 
-    fetch('/api/contact', {
+    fetch('../../pages/api/contact', {
       method: 'POST',
       headers: {
-        Accept: 'application/json, text/plain, */*',
-        'Content-Type': 'application/json',
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
       },
-      body: JSON.stringify(data),
+      body: JSON.stringify(data)
     }).then((res) => {
-      console.log('Response received');
-      if (res.status === 200) {
-        console.log('Response succeeded!');
-        setSubmitted(true);
-        setName('');
-        setEmail('');
-        setMessage('');
-      }
-    });
-  };
+        console.log('Response received')
+        if (res.status === 200) {
+            console.log('Response succeeded!')
+            setSubmitted(true) 
+            setName('')
+            setEmail('')
+            setMessage('')
+        }
+    })
+  }
 
   return (
     <div className={style['container']}>
       <h4 className={style['contact--form--title']}>SEND A MESSAGE</h4>
-      {/* <form
+      <form
         method="POST"
         data-netlify="true"
         onSubmit="submit"
-        action="contact/?success=true"
+        action="/contact/?success=true"
         data-netlify-honeypot="bot-field"
       >
         <div className={style['label--input--wrapper']}>
@@ -96,7 +96,7 @@ export default function ContactForm() {
 
         <button
           className="primary--btn"
-          type="submit"
+          type='submit'
           value="Your Message"
           onClick={(e) => {
             handleSubmit(e);
@@ -104,8 +104,10 @@ export default function ContactForm() {
         >
           SEND MESSAGE
         </button>
-      </form> */}
-       <form
+      </form>
+
+
+       {/* <form
     name="contact-form"
     method="POST"
     action="contact/?success=true"
@@ -124,7 +126,7 @@ export default function ContactForm() {
     <label htmlFor="message">Message *</label>
     <textarea id="message" name="message" required></textarea>
     <button type="submit">Submit</button>
-  </form>
+  </form> */}
     </div>
   );
 }
