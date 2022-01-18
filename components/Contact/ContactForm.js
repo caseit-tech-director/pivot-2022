@@ -39,7 +39,13 @@ export default function ContactForm() {
   return (
     <div className={style['container']}>
       <h4 className={style['contact--form--title']}>SEND A MESSAGE</h4>
-      <form method="post" data-netlify="true" onSubmit="submit" action="/success/" data-netlify-honeypot="bot-field">
+      <form
+        method="POST"
+        data-netlify="true"
+        onSubmit="submit"
+        action="contact/?success=true"
+        data-netlify-honeypot="bot-field"
+      >
         <div className={style['label--input--wrapper']}>
           <label className={style['form--label']} htmlFor="name">
             FULL NAME
