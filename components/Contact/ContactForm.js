@@ -53,7 +53,7 @@ export default function ContactForm() {
         method="POST"
         data-netlify="true"
         onSubmit="submit"
-        action="/?success=true"
+        // action="/?success=true"
         data-netlify-honeypot="bot-field"
       >
         <div className={style['label--input--wrapper']}>
