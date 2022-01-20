@@ -47,7 +47,7 @@ export default function ContactForm() {
     <div className={style['container']}>
       <h4 className={style['contact--form--title']}>SEND A MESSAGE</h4>
       {success && (
-        <p style={{ color: 'green' }}>Successfully submitted form!</p>
+        <p style={{ color: '#13ff13' }}>Successfully submitted form!</p>
       )}
       <form
         

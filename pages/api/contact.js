@@ -14,7 +14,7 @@ export default function (req, res) {
   const mailData = {
     from: 'demo email',
     to: 'caseitdirectormedia@gmail.com',
-    subject: `Message From ${req.body.name}`,
+    subject: `PIVOT Contact Form Message From ${req.body.name}`,
     text: req.body.message + " | Sent from: " + req.body.email,
     html: `<div>${req.body.message}</div><p>Sent from:
       ${req.body.email}</p>`,
