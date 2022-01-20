@@ -54,7 +54,7 @@ export default function ContactForm() {
         name="contact"
         method="POST"
         action="contact/?success=true"
-        data-netlify="true"
+        // data-netlify="true"
       >
         <div className={style['label--input--wrapper']}>
           <label className={style['form--label']} htmlFor="name">
