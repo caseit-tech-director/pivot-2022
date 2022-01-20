@@ -1,20 +1,31 @@
 @import '../base/variables';
 
 .items--flex--med--align {
-    display: flex;
-    > div {
-      margin-right: $med-margin;
-    }
+  display: flex;
+  > div {
+    margin-right: $med-margin;
   }
+}
 
+.graphic--content--container {
+  display: flex;
+  justify-content: space-between;
+}
+.graphic--content {
+  display: flex;
+  flex-wrap: wrap;
+
+  *{
+
+  }
+  p {
+    display: flex;
+    margin-top: auto;
+  }
+}
 
 @media only screen and (max-width: $minQuery) {
-
-.items--flex--med--align {
+  .items--flex--med--align {
     flex-direction: column;
-    // > div {
-    
-    // }
   }
-
-  }
+}
