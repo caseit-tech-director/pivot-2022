@@ -5,7 +5,7 @@ export default function AboutArticle(props) {
       <h3 className="margin--bottom--sm " id="aboutArticleTitle">
         {props.title}
       </h3>
-      <p className="margin--bottom--xs " id="aboutArticleContent">
+      <p className="margin--bottom--xs body-1" id="aboutArticleContent">
         {props.paragraph}
       </p>
       <div className="arrow--link">
