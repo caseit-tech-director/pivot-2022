@@ -25,7 +25,12 @@ export default class EventToggler extends React.Component {
                     <div className={style['event--description']}>
                       <button
                         id="toggle--description"
-                        className={style['toggle--button']}
+                        // className={style['toggle--button']}
+                        className={
+                          '' == item.fulldesc
+                            ? style['inactive']
+                            : style['toggle--button']
+                        }
                       >
                         <div className={style['expand--icon']}></div>
                       </button>

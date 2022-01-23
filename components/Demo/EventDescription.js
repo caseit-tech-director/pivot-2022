@@ -24,12 +24,9 @@ export default function EventDescription({ eventInfo }) {
       <div className={style['event--wrapper']}>
         <h5 className={style['event--title']}>{title}</h5>
         <div className={style['event--description']}>
-          {/* <button
-            className={style['toggle--button']}
-            onClick={() => setExpanded(!expanded)}
-          > */}
           <AnimatePresence>
             <motion.div
+              className={style['toggle--motion--container']}
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
@@ -38,7 +35,7 @@ export default function EventDescription({ eventInfo }) {
                 duration: 0.3,
               }}
             >
-              <div className={style['toggle--button']}>
+              <span id="toggle" className={style['toggle--button']}>
                 {!expanded && (
                   <div
                     className={[style['expand--icon'], style['expanded']].join(
@@ -47,7 +44,7 @@ export default function EventDescription({ eventInfo }) {
                   ></div>
                 )}
                 {expanded && <div className={style['expand--icon']}></div>}
-              </div>
+              </span>
             </motion.div>
           </AnimatePresence>
           <p>{desc}</p>
@@ -55,6 +52,7 @@ export default function EventDescription({ eventInfo }) {
         <AnimatePresence>
           {expanded && (
             <motion.div
+              className={style['toggle--motion--container']}
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}

@@ -33,6 +33,20 @@
   border-radius: 2px;
 }
 
+.hidden {
+  background: blue;
+  span {
+    display: none;
+  }
+}
+.active {
+  // background: tomato;
+  span {
+    display: none;
+  }
+  // display: none;
+}
+
 .flex--container {
   display: flex;
   // width: 100%;
@@ -105,10 +119,13 @@
   opacity: 0;
 }
 
-.toggle--button {
+span.toggle--button {
   cursor: pointer;
-  margin-right: $xs-margin;
+  margin-right: $xs-margin !important;
   border: none;
+}
+.toggle--motion--container {
+  display: flex;
 }
 
 .expand--icon {
@@ -118,17 +135,16 @@
 .event--toggler {
   cursor: pointer;
   &:hover {
-    
-      // color: tomato;
-      border-color: tomato !important;
-      // border-bottom: 1px solid tomato;
-      .expand--icon::before , .expand--icon::after{
-        background-color: tomato;
-      }
-     
+    // color: tomato;
+    border-color: tomato !important;
+    // border-bottom: 1px solid tomato;
+    .expand--icon::before,
+    .expand--icon::after {
+      background-color: tomato;
+    }
   }
 }
 
-.event--day--margin{
+.event--day--margin {
   margin-bottom: 2 * $lrg-margin;
 }
