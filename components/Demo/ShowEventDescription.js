@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Children, useState } from 'react';
 import { render } from 'react-dom';
 import EventDescription from './EventDescription';
 import MenuItems from '../MenuItems/ScheduleItems';
@@ -26,8 +26,9 @@ export default function ShowEventDescription() {
               key={index}
               className={
                 'none' == eventInfo.fulldesc
-                  ? style['active']
-                  : style['inactive']
+                  ? eventInfo.fulldesc.removeChild(element.firstChild)
+                  : // : style['inactive']
+                    eventInfo.fulldesc.removeChild(element.firstChild)
               }
             >
               <EventDescription key={index} eventInfo={eventInfo} />

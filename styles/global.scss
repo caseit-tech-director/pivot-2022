@@ -186,11 +186,12 @@ a:hover:after {
 
 .bg-color--primary {
   background-color: $bg-color--primary;
+  color: $primary-color--white !important;
 }
 
 .bg-color--blue--secondary {
   background-color: $secondary-color;
-  color: $primary-color--white;
+  color: $primary-color--white !important;
 }
 
 .bg-color--black {
@@ -408,6 +409,6 @@ input[type='submit']:hover {
   opacity: 0.7;
 }
 
-.body-1{
+.body-1 {
   line-height: $body--line--height !important;
 }

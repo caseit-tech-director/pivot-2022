@@ -33,18 +33,28 @@
   border-radius: 2px;
 }
 
+
+//DNW
 .hidden {
   background: blue;
-  span {
+  * {
     display: none;
   }
 }
+
+//WORK
+.inactive{
+  display: none;
+}
+
+//WORK
 .active {
-  // background: tomato;
-  span {
+  span, .expand--icon, p {
     display: none;
   }
-  // display: none;
+  .toggle--motion--container{
+    display: none;
+  }
 }
 
 .flex--container {

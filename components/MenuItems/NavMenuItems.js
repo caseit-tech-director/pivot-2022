@@ -25,12 +25,12 @@ export const MenuItems = [
     url: '/',
     href: '/schedule',
   },
-  // {
-  //   pName: '/competition',
-  //   title: 'COMPETITION',
-  //   url: '/',
-  //   href: '/competition',
-  // },
+  {
+    pName: '/competition',
+    title: 'COMPETITION',
+    url: '/',
+    href: '/competition',
+  },
   {
     pName: '/contact',
     title: 'CONTACT',

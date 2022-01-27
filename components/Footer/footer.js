@@ -34,22 +34,6 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-          {/* <div className={style['footer--links--wrapper']}>
-            <div className={style['footer--links--h6']}>Sponsorship</div>
-            <div className={style['footer--links']}>
-              <ul>
-                {MenuItems.sponsorship.map((item, index) => {
-                  return (
-                    <li key={index}>
-                      <Link to={'/' + item.href} href={item.href}>
-                        {item.title}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          </div> */}
           <div className={style['footer--links--wrapper']}>
             <div className={style['footer--links--h6']}>
               <h6 className="subtitle-1 muted--text">About Us</h6>
@@ -75,21 +59,9 @@ export default function Footer() {
             <ul className={style['social--media--item--wrapper']}>
               <li className={style['social--media--item']}>
                 <a href="https://www.instagram.com/pivotcasecompetition/">
-                  {/* <Image
-                        width={24}
-                        height={24}
-                        src={'/' + item.src}
-                        alt="test"
-                      /> */}
                   <FaInstagram size={24} />
                 </a>
                 <a href="https://www.facebook.com/PIVOTCaseCompetition/">
-                  {/* <Image
-                        width={24}
-                        height={24}
-                        src={'/' + item.src}
-                        alt="test"
-                      /> */}
                   <FaFacebookSquare size={24} />
                 </a>
               </li>

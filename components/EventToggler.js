@@ -43,7 +43,7 @@ export default class EventToggler extends React.Component {
                       </div>
                     </div>
                   </div>
-                  <div className="">
+                  <div>
                     <h6 className="event--time">{item.time}</h6>
                   </div>
                 </div>
