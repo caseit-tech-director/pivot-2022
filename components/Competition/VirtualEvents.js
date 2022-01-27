@@ -7,17 +7,25 @@ import Event from '../Organisms/Competition/EventOrganism';
 export default function EventOrganism() {
   return (
     <MaxLayout>
-      <div className="section--header--wrapper flex--justify--center">
-        <h2>Title</h2>
-        <p className="overline">overline</p>
+      <div className={style['virutal--events--container']}>
+        <div className="section--header--wrapper flex--justify--center">
+          <h2>Title</h2>
+          <p className="overline">overline</p>
+        </div>
+        <div className={style['event--wrapper']}>
+          {VirtualEventItems.map((item, index) => {
+            return (
+              <li className={style['flex--item']} key={index}>
+                <Event
+                  title={item.title}
+                  sponsor={item.sponsor}
+                  desc={item.description}
+                />
+              </li>
+            );
+          })}
+        </div>
       </div>
-      {VirtualEventItems.map((item, index) => {
-        return (
-            <li key={index}>
-              <Event title={item.title} sponsor={item.sponsor} desc={item.description}/>
-            </li>
-        );
-      })}  
     </MaxLayout>
   );
 }

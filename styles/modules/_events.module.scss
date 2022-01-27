@@ -1,0 +1,29 @@
+@import '../base/variables';
+
+.event--organism--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+  div {
+    margin-bottom: $xs-margin;
+  }
+}
+.event--wrapper {
+  margin-top: $lrg-margin;
+  display: flex;
+  justify-content: space-between;
+}
+.virutal--events--container {
+  justify-content: space-between;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.flex--item{
+    width: 22%;
+}
+
+@media only screen and (min-width: $largeQuery) {
+  
+}

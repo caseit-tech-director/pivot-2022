@@ -25,7 +25,7 @@ const CountdownTimer = ({ countdownTimestampMs }) => {
   }
 
   return (
-    <MaxLayout>
+    <MaxLayout className="flex">
       <div className={style['countdown--timer']}>
         <div className={style['item--wrapper']}>
           <span className={style['item--overline']}>days</span>

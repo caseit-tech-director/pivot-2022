@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function EventOrganism(props) {
   return (
-    <div className="event--organism--wrapper">
+    <div className={style['event--organism--wrapper']}>
       <div className={style['hr--wrapper']}>
         <hr />
       </div>
