@@ -1,0 +1,110 @@
+.scene {
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.cube {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-100px);
+  transition: transform 1s;
+}
+
+.cube2 {
+  transform: scale(0.7) translateX(42px)  translateY(130px);
+}
+.cube3 {
+  transform: scale(0.4) translateX(295px)  translateY(455px);
+}
+
+.cube.show-front {
+  transform: translateZ(-100px) rotateY(0deg);
+}
+.cube.show-right {
+  transform: translateZ(-100px) rotateY(0deg);
+}
+.cube.show-back {
+  transform: translateZ(-100px) rotateY(-180deg);
+}
+.cube.show-left {
+  transform: translateZ(-100px) rotateY(90deg);
+}
+.cube.show-top {
+  transform: translateZ(-100px) rotateX(-90deg);
+}
+.cube.show-bottom {
+  transform: translateZ(-100px) rotateX(90deg);
+}
+
+.cube__face {
+  position: absolute;
+  width: 200px;
+  height: 400px;
+  border: 2px solid black;
+  line-height: 200px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.cube__face__small {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  line-height: 200px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.cube__face--front {
+  background: hsla(0, 100%, 50%, 0.7);
+}
+.cube__face--right {
+  background: hsla(60, 100%, 50%, 0.7);
+}
+.cube__face--back {
+  background: hsla(120, 100%, 50%, 0.7);
+}
+.cube__face--left {
+  background: hsla(180, 100%, 50%, 0.7);
+}
+.cube__face--top {
+  background: hsla(240, 100%, 50%, 0.7);
+}
+.cube__face--bottom {
+  background: hsla(300, 100%, 50%, 0.7);
+}
+
+.cube__face--front {
+  transform: rotateY(0deg) translateZ(200px) translateY(0px);
+}
+.cube__face--right {
+  transform: skewY(45deg) scaleX(0.5) translateY(100px) translateX(-300px)
+    translateZ(150px);
+}
+.cube__face--back {
+  transform: rotateY(5deg) translateY(-100px) translateX(-90px)
+    translateZ(-115px);
+}
+.cube__face--left {
+  transform: skewY(45deg) scaleX(0.5) translateY(-102px) translateX(104px)
+    translateZ(150px);
+}
+.cube__face--top {
+  transform: skewX(45deg) scaleY(0.5) translateX(102px) translateY(-302px)
+    translateZ(150px);
+}
+.cube__face--bottom {
+  transform: skewX(45deg) scaleY(0.5) translateX(-300px) translateY(502px)
+    translateZ(50px);
+}
