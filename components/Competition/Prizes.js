@@ -56,6 +56,7 @@ export default function Prizes() {
               >
                 bottom
               </div>
+              <button className={style['prize--toggle--button']}>+</button>
             </div>
             <div className={[style['cube'], style['cube2']].join(' ')}>
               <div
@@ -106,6 +107,7 @@ export default function Prizes() {
               >
                 bottom
               </div>
+              <button className={style['prize--toggle--button']}>+</button>
             </div>
             <div className={[style['cube'], style['cube3']].join(' ')}>
               <div
@@ -156,6 +158,7 @@ export default function Prizes() {
               >
                 bottom
               </div>
+              <button className={style['prize--toggle--button']}>+</button>
             </div>
           </div>
         </div>

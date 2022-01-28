@@ -1,11 +1,12 @@
+@import '../base/variables';
 
-.container{
-    // margin-left: -6.5%; // use for mobile
-    margin-left: -.5%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container {
+  // margin-left: -6.5%; // use for mobile
+  margin-left: -0.5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .scene {
@@ -17,6 +18,24 @@
   flex-direction: row-reverse;
 }
 
+.prize--toggle--button {
+  background-color: $bg-color--black--secondary;
+  width: 48px;
+  height: 48px;
+  font-size: $h4--font-sz;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: lighter;
+  border-radius: 5rem;
+  color: $accent-orange;
+  border: none;
+  z-index: 99;
+  position: relative;
+  transform: translateZ(1100px);
+  transform-style: preserve-3d;
+}
 
 .cube {
   width: 200px;
@@ -28,10 +47,16 @@
 }
 
 .cube2 {
-  transform: scale(0.7) translateX(42px)  translateY(130px);
+  transform: scale(0.7) translateX(42px) translateY(130px);
+  button {
+    transform: scale(1.42857142857);
+  }
 }
 .cube3 {
-  transform: scale(0.4) translateX(295px)  translateY(455px);
+  transform: scale(0.4) translateX(295px) translateY(455px);
+  button {
+    transform: scale(2.5);
+  }
 }
 
 .cube.show-front {
