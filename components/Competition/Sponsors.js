@@ -6,24 +6,60 @@ export default function Sponsors() {
   return (
     <>
       <ExtendableLayout>
-        <div className="content--wrapper">
-          <div className="item--wrapper">
-            <h3>Title</h3>
-            <Image width="200px" height="200px" src={TestImg} alt="test img" />
-          </div>
-          <div className="item--wrapper">
-            <h3>Title</h3>
-            <div className="items">
-              <Image width="200px" height="200px" src={TestImg} alt="test img" />
-              <Image width="200px" height="200px" src={TestImg} alt="test img" />
+        <div className={style['content--wrapper']}>
+          <div className={style['item--wrapper']}>
+            <div className={style['item--contain']}>
+              <h3>Title</h3>
+              <Image
+                width="200px"
+                height="200px"
+                src={TestImg}
+                alt="test img"
+              />
             </div>
           </div>
-          <div className="item--wrapper">
-            <h3>Title</h3>
-            <div className="items">
-              <Image width="200px" height="200px" src={TestImg} alt="test img" />
-              <Image width="200px" height="200px" src={TestImg} alt="test img" />
-              <Image width="200px" height="200px" src={TestImg} alt="test img" />
+          <div className={style['item--wrapper']}>
+            <div className={style['item--contain']}>
+              <h3>Title</h3>
+              <div className={style['items']}>
+                <Image
+                  width="200px"
+                  height="200px"
+                  src={TestImg}
+                  alt="test img"
+                />
+                <Image
+                  width="200px"
+                  height="200px"
+                  src={TestImg}
+                  alt="test img"
+                />
+              </div>
+            </div>
+          </div>
+          <div className={style['item--wrapper']}>
+            <div className={style['item--contain']}>
+              <h3>Title</h3>
+              <div className={style['items']}>
+                <Image
+                  width="200px"
+                  height="200px"
+                  src={TestImg}
+                  alt="test img"
+                />
+                <Image
+                  width="200px"
+                  height="200px"
+                  src={TestImg}
+                  alt="test img"
+                />
+                <Image
+                  width="200px"
+                  height="200px"
+                  src={TestImg}
+                  alt="test img"
+                />
+              </div>
             </div>
           </div>
         </div>

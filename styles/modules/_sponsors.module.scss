@@ -1,2 +1,25 @@
 @import '../base/variables';
 
+.content--wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.item--wrapper {
+  margin-bottom: $lrg-margin * 2;
+  display: flex;
+  justify-content: center;
+  .item--contain {
+    width: 100%;
+    text-align: center;
+    h3 {
+      margin-bottom: $med-margin;
+    }
+  }
+  .items {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
