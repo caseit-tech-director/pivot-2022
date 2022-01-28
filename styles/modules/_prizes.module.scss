@@ -49,13 +49,13 @@
 .cube2 {
   transform: scale(0.7) translateX(42px) translateY(130px);
   button {
-    transform: scale(1.42857142857);
+    transform: scale(1.42857142857) translateZ(1100px);
   }
 }
 .cube3 {
   transform: scale(0.4) translateX(295px) translateY(455px);
   button {
-    transform: scale(2.5);
+    transform: scale(2.5) translateZ(1100px);
   }
 }
 

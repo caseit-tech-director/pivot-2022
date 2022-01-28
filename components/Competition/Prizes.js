@@ -1,5 +1,6 @@
 import MaxLayout from '../Layout/MaxLayout';
 import style from '../../styles/modules/_prizes.module.scss';
+import PrizeDescription from '../Competition/PrizeDescription';
 
 export default function Prizes() {
   return (
@@ -56,7 +57,9 @@ export default function Prizes() {
               >
                 bottom
               </div>
-              <button className={style['prize--toggle--button']}>+</button>
+              {/* <button className={style['prize--toggle--button']}>+</button> */}
+              {/* Testing button */}
+              <PrizeDescription/>
             </div>
             <div className={[style['cube'], style['cube2']].join(' ')}>
               <div
