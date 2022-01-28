@@ -62,7 +62,7 @@ export default function Particle() {
               outMode: 'bounce',
               random: false,
               speed: 1,
-              decay: 0.000141,
+              decay: 0.000133,
               straight: false,
             },
             number: {
