@@ -5,51 +5,51 @@ import PrizeDescription from '../Competition/PrizeDescription';
 export default function Prizes(props) {
   return (
     <div className={style['test']}>
-      <div className={[style['cube'], style[props.class]].join(' ')}>
+      <div className={[style['cube--small'], style[props.class]].join(' ')}>
         <div
-          className={[style['cube__face'], style['cube__face--front']].join(
+          className={[style['cube__face--small'], style['cube__face--front--small']].join(
             ' '
           )}
         >
           front
         </div>
         <div
-          className={[style['cube__face'], style['cube__face--back']].join(' ')}
+          className={[style['cube__face--small'], style['cube__face--back--small']].join(' ')}
         >
           back
         </div>
         <div
-          className={[style['cube__face'], style['cube__face--right']].join(
+          className={[style['cube__face--small'], style['cube__face--right--small']].join(
             ' '
           )}
         >
           right
         </div>
         <div
-          className={[style['cube__face'], style['cube__face--left']].join(' ')}
+          className={[style['cube__face--small'], style['cube__face--left--small']].join(' ')}
         >
           left
         </div>
         <div
           className={[
-            style['cube__face__short'],
-            style['cube__face--top'],
+            style['cube__face__short--small'],
+            style['cube__face--top--small'],
           ].join(' ')}
         >
           top
         </div>
         <div
           className={[
-            style['cube__face__short'],
-            style['cube__face--bottom'],
+            style['cube__face__short--small'],
+            style['cube__face--bottom--small'],
           ].join(' ')}
         >
           bottom
         </div>
       </div>
-      <div className={[style['test--wrapper'], style[props.test]].join(' ')}>
+      {/* <div className={[style['test--wrapper'], style[props.test]].join(' ')}>
         <PrizeDescription />
-      </div>
+      </div> */}
     </div>
   );
 }

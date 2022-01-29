@@ -87,45 +87,49 @@ $primary-color--white: #eee8e7; // text light
 $gb--t--dark: #000000; // text dark
 
 // Cube Dimensions
-// $cube--face--width: 200px;
-// $cube--face--height: 400px;
-// $cube--small--face--width: 200px;
-// $cube--small--face--height: 200px;
+$cube--face--width--small: 200px;
+$cube--face--height--small: 400px;
+$cube--small--face--width--small: 200px;
+$cube--small--face--height--small: 200px;
 
-// $cube__face--front--translateY: 0px;
-// $cube__face--right--translateY: 100px;
-// $cube__face--right--translateX: -300px;
+$cube__face--front--translateY--small: 0px;
+$cube__face--right--translateY--small: 100px;
+$cube__face--right--translateX--small: -300px;
 
-// $cube__face--back--translateY: -100px;
-// $cube__face--back--translateX: -90px;
+$cube__face--back--translateY--small: -100px;
+$cube__face--back--translateX--small: -90px;
 
-// $cube__face--left--translateY: -102px;
-// $cube__face--left--translateX: 104px;
+$cube__face--left--translateY--small: -102px;
+$cube__face--left--translateX--small: 104px;
 
-// $cube__face--top--translateX: 102px;
-// $cube__face--top--translateY: -302px;
+$cube__face--top--translateX--small: 102px;
+$cube__face--top--translateY--small: -302px;
 
+$cube__face--bottom--translateY--small: 502px;
+$cube__face--bottom--translateX--small: -300px;
 
-// $cube__face--bottom--translateY: 502px;
-// $cube__face--bottom--translateX: -300px;
+$cube2--transformX--small: 42px;
+$cube2--transformY-small: 130px;
 
-// $cube2--transformX: 42px;
-// $cube2--transformY: 130px;
+$cube3--transformX--small: 295px;
+$cube3--transformY--small: 455px;
 
-// $cube3--transformX: 295px;
-// $cube3--transformY: 455px;
 
 $cube2--transformX: -158px;
-$cube2--transformY: 302px;
+$cube2--transformY: 221px;
 
 $cube3--transformX: -251px;
-$cube3--transformY: 1056px;
+$cube3--transformY: 1536px;
 
+$cube--face--width--small: 200px;
+$cube--face--height--small: 400px;
+$cube--short--face--width--small: 200px;
+$cube--short--face--height--small: 200px;
 
 $cube--face--width: 400px;
 $cube--face--height: 800px;
-$cube--small--face--width: 400px;
-$cube--small--face--height: 400px;
+$cube--short--face--width: 400px;
+$cube--short--face--height: 400px;
 
 $cube__face--front--translateY: 0px;
 $cube__face--right--translateY: 200px;
@@ -139,7 +143,6 @@ $cube__face--left--translateX: 203px;
 
 $cube__face--top--translateX: 202px;
 $cube__face--top--translateY: -604px;
-
 
 $cube__face--bottom--translateY: 1004px;
 $cube__face--bottom--translateX: -600px;

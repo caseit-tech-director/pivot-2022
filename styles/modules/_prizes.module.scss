@@ -1,8 +1,12 @@
 @import '../base/variables';
 
+.desktop {
+  display: none !important;
+}
+
 .container {
   // margin-left: -0.5%; // use for desktop
-//   margin-left: -6.5%; // use for mobile (use a static value instead for both)
+  //   margin-left: -6.5%; // use for mobile (use a static value instead for both)
   height: 100%;
   display: flex;
   align-items: center;
@@ -16,6 +20,7 @@
   position: relative;
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
 }
 
 .prize--toggle--button {
@@ -38,33 +43,53 @@
 }
 
 .cube {
+  width: 200px;
+  height: 200px;
+  position: relative;
   transform-style: preserve-3d;
   transform: translateZ(-100px);
   transition: transform 1s;
 }
 
-
-
-.test{
-
-  width: min-content;
-  height: auto;
-  position: relative;
-}
-
 .prize--desc--container {
-    z-index: 5;
-    padding-left: 2rem; // Most ideal for largest cube
+  z-index: 5;
+  padding-left: 2rem; // Most ideal for largest cube
 }
 
 .cube2 {
-  transform: scale(0.7) translateX($cube2--transformX) translateY($cube2--transformY);
+  transform: scale(0.7) translateX($cube2--transformX)
+    translateY($cube2--transformY);
   button {
     transform: scale(1.42857142857) translateZ(1100px);
   }
 }
 .cube3 {
-  transform: scale(0.4) translateX($cube3--transformX) translateY($cube3--transformY);
+  transform: scale(0.4) translateX($cube3--transformX)
+    translateY($cube3--transformY);
+  button {
+    transform: scale(2.5) translateZ(1100px);
+  }
+}
+
+.cube--small {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-100px);
+  transition: transform 1s;
+}
+
+.cube2--small {
+  transform: scale(0.7) translateX($cube2--transformX--small)
+    translateY($cube2--transformY-small);
+  button {
+    transform: scale(1.42857142857) translateZ(1100px);
+  }
+}
+.cube3--small {
+  transform: scale(0.4) translateX($cube3--transformX--small)
+    translateY($cube3--transformY--small);
   button {
     transform: scale(2.5) translateZ(1100px);
   }
@@ -89,6 +114,38 @@
   transform: translateZ(-100px) rotateX(90deg);
 }
 
+.cube__face--front,
+.cube__face--right,
+.cube__face--back,
+.cube__face--left,
+.cube__face--top,
+.cube__face--bottom {
+  background: hsla(0, 100%, 50%, 0.7);
+}
+
+.cube__face--front--small,
+.cube__face--right--small,
+.cube__face--back--small,
+.cube__face--left--small,
+.cube__face--top--small,
+.cube__face--bottom--small {
+  background: hsla(138, 72%, 40%, 0.7);
+}
+
+// Large
+
+.cube__face__short {
+  position: absolute;
+  width: $cube--short--face--width;
+  height: $cube--short--face--height;
+  border: 2px solid $primary-color--white;
+  line-height: 200px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
 .cube__face {
   position: absolute;
   width: $cube--face--width;
@@ -100,11 +157,38 @@
   color: white;
   text-align: center;
 }
+.cube__face--front {
+  transform: rotateY(0deg) translateZ(200px)
+    translateY($cube__face--front--translateY);
+}
+.cube__face--right {
+  transform: skewY(45deg) scaleX(0.5) translateY($cube__face--right--translateY)
+    translateX($cube__face--right--translateX) translateZ(150px);
+}
+.cube__face--back {
+  transform: rotateY(5deg) translateY($cube__face--back--translateY)
+    translateX($cube__face--back--translateX) translateZ(-115px);
+}
+.cube__face--left {
+  transform: skewY(45deg) scaleX(0.5) translateY($cube__face--left--translateY)
+    translateX($cube__face--left--translateX) translateZ(150px);
+}
+.cube__face--top {
+  transform: skewX(45deg) scaleY(0.5) translateX($cube__face--top--translateX)
+    translateY($cube__face--top--translateY) translateZ(150px);
+}
+.cube__face--bottom {
+  transform: skewX(45deg) scaleY(0.5)
+    translateX($cube__face--bottom--translateX)
+    translateY($cube__face--bottom--translateY) translateZ(50px);
+}
+// === end of cube large ===
 
-.cube__face__small {
+// !Small
+.cube__face__short--small {
   position: absolute;
-  width: $cube--small--face--width;
-  height: $cube--small--face--height;
+  width: $cube--short--face--width--small;
+  height: $cube--short--face--height--small;
   border: 2px solid $primary-color--white;
   line-height: 200px;
   font-size: 40px;
@@ -113,47 +197,72 @@
   text-align: center;
 }
 
-.cube__face--front {
-  background: hsla(0, 100%, 50%, 0.7);
-}
-.cube__face--right {
-  background: hsla(60, 100%, 50%, 0.7);
-}
-.cube__face--back {
-  background: hsla(120, 100%, 50%, 0.7);
-}
-.cube__face--left {
-  background: hsla(180, 100%, 50%, 0.7);
-}
-.cube__face--top {
-  background: hsla(240, 100%, 50%, 0.7);
-}
-.cube__face--bottom {
-  background: hsla(300, 100%, 50%, 0.7);
+.cube__face--small {
+  position: absolute;
+  width: $cube--face--width--small;
+  height: $cube--face--height--small;
+  border: 2px solid $primary-color--white;
+  line-height: 200px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
 }
 
+.cube__face--front--small {
+  transform: rotateY(0deg) translateZ(200px)
+    translateY($cube__face--front--translateY--small);
+}
+.cube__face--right--small {
+  transform: skewY(45deg) scaleX(0.5)
+    translateY($cube__face--right--translateY--small)
+    translateX($cube__face--right--translateX--small) translateZ(150px);
+}
+.cube__face--back--small {
+  transform: rotateY(5deg) translateY($cube__face--back--translateY--small)
+    translateX($cube__face--back--translateX--small) translateZ(-115px);
+}
+.cube__face--left--small {
+  transform: skewY(45deg) scaleX(0.5)
+    translateY($cube__face--left--translateY--small)
+    translateX($cube__face--left--translateX--small) translateZ(150px);
+}
+.cube__face--top--small {
+  transform: skewX(45deg) scaleY(0.5)
+    translateX($cube__face--top--translateX--small)
+    translateY($cube__face--top--translateY--small) translateZ(150px);
+}
+.cube__face--bottom--small {
+  transform: skewX(45deg) scaleY(0.5)
+    translateX($cube__face--bottom--translateX--small)
+    translateY($cube__face--bottom--translateY--small) translateZ(50px);
+}
+// === end of cube small ===
+
 .cube__face--front {
-  transform: rotateY(0deg) translateZ(200px) translateY($cube__face--front--translateY);
+  transform: rotateY(0deg) translateZ(200px)
+    translateY($cube__face--front--translateY);
 }
 .cube__face--right {
-  transform: skewY(45deg) scaleX(0.5) translateY($cube__face--right--translateY) translateX($cube__face--right--translateX)
-    translateZ(150px);
+  transform: skewY(45deg) scaleX(0.5) translateY($cube__face--right--translateY)
+    translateX($cube__face--right--translateX) translateZ(150px);
 }
 .cube__face--back {
-  transform: rotateY(5deg) translateY($cube__face--back--translateY) translateX($cube__face--back--translateX)
-    translateZ(-115px);
+  transform: rotateY(5deg) translateY($cube__face--back--translateY)
+    translateX($cube__face--back--translateX) translateZ(-115px);
 }
 .cube__face--left {
-  transform: skewY(45deg) scaleX(0.5) translateY($cube__face--left--translateY) translateX($cube__face--left--translateX)
-    translateZ(150px);
+  transform: skewY(45deg) scaleX(0.5) translateY($cube__face--left--translateY)
+    translateX($cube__face--left--translateX) translateZ(150px);
 }
 .cube__face--top {
-  transform: skewX(45deg) scaleY(0.5) translateX($cube__face--top--translateX) translateY($cube__face--top--translateY)
-    translateZ(150px);
+  transform: skewX(45deg) scaleY(0.5) translateX($cube__face--top--translateX)
+    translateY($cube__face--top--translateY) translateZ(150px);
 }
 .cube__face--bottom {
-  transform: skewX(45deg) scaleY(0.5) translateX($cube__face--bottom--translateX) translateY($cube__face--bottom--translateY)
-    translateZ(50px);
+  transform: skewX(45deg) scaleY(0.5)
+    translateX($cube__face--bottom--translateX)
+    translateY($cube__face--bottom--translateY) translateZ(50px);
 }
 
 .prize--desc--wrapper {
@@ -167,19 +276,14 @@
   margin-right: 24px;
 }
 
-.animate--scene--container {
-
-}
-
+//large
 .prize--desc--container {
   position: absolute;
-  margin-top: -$med-margin;
-
+  margin-top: 15rem;
 }
 
 .cta--container {
   width: $cube--face--width;
-//   margin-top: 125px;
   justify-content: right;
   display: flex;
   align-items: center;
@@ -189,12 +293,42 @@
   margin-bottom: $xs-margin;
 }
 
-// Change the media query to breakpoints
-@media only screen and (min-width: $largeQuery) {
+.test--wrapper {
+  height: 800px;
+  display: flex;
+  padding-left: 0;
+  align-items: center;
+}
+.desc--wrapper-1 {
+  margin-top: -24rem;
+}
+
+.desc--wrapper-2 {
+  margin-left: -13rem;
+  margin-top: -31rem;
+}
+
+.desc--wrapper-3 {
+  margin-left: -18rem;
+}
+
+@media only screen and (max-width: $minQuery) {
+  .desktop {
+    display: none !important;
+  }
+  .mobile {
+    display: flex !important;
+  }
 }
 
 @media only screen and (max-width: $medQuery) {
 }
 
-@media only screen and (max-width: $minQuery) {
+@media only screen and (min-width: $largeQuery) {
+  .mobile {
+    display: none !important;
+  }
+  .desktop {
+    display: flex !important;
+  }
 }
