@@ -5,10 +5,12 @@
 }
 
 .container {
-  // margin-left: -0.5%; // use for desktop
-  //   margin-left: -6.5%; // use for mobile (use a static value instead for both)
   height: 100%;
-  display: flex;
+  // display: flex;
+  div{
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
   align-items: center;
   justify-content: center;
 }
@@ -314,6 +316,10 @@
 }
 
 @media only screen and (max-width: $minQuery) {
+  .scene{
+    transform: scale(.5);
+    height: auto;
+  }
   .desktop {
     display: none !important;
   }

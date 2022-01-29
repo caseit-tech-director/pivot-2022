@@ -1,44 +1,62 @@
 @import '../base/variables';
 
-.countdown--timer{
-    display: flex;
-    margin: auto;
-    justify-content: space-around;
-    width: 100%;
-    grid-column-start: $grid--start;
-    grid-column-end: $grid--end;
-    height: fit-content;
+.countdown--timer {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  width: 100%;
+  grid-column-start: $grid--start;
+  grid-column-end: $grid--end;
+  height: fit-content;
 }
 
-.item--wrapper{
-    width: 10rem;
-    display: flex;
-    flex-direction: column;
-    * {
-        justify-content: center;
-        display: flex;
-    }
-    .item--overline{
-        margin-bottom: $xs-margin;
-    }
-}
-
-.item--divider{
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.item--divider, .item--content{
-    font-size: 5rem;
-    font-weight: bold;
-}
-
-.content--wrapper{
-    display: flex;
-}
-
-.container{
-    display: flex;
+.item--wrapper {
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  * {
     justify-content: center;
-    margin: auto;
+    display: flex;
+  }
+  .item--overline {
+    margin-bottom: $xs-margin;
+  }
+}
+
+.item--divider {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.item--divider,
+.item--content {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.content--wrapper {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+
+
+@media only screen and (max-width: $minQuery) {
+    .item--content, .item--divider{
+        font-size: 2rem;
+    }
+    .item--wrapper{
+        width: 5rem;
+    }
+}
+
+@media only screen and (max-width: $medQuery) {
+}
+
+@media only screen and (min-width: $largeQuery) {
 }
