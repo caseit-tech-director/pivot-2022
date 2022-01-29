@@ -11,7 +11,7 @@ export default function PrizeDescription({ prizeInfo }) {
 
   return (
     <div className={style['prize--desc--container']}>
-      <div className="animate--scene--container">
+      <div className={style['animate--scene--container']}>
         <div className={style['cta--container']}>
           <button
             className={style['prize--toggle--button']}

@@ -8,6 +8,7 @@ import VirtualEvents from '../components/Competition/VirtualEvents';
 import LocomotiveParagraph from '../components/Molecules/locomotiveParagraph';
 import Timer from '../components/Organisms/Timer';
 import Prizes from '../components/Competition/Prizes';
+import PrizeContainer from '../components/Competition/PrizeContainer';
 import Sponsors from '../components/Competition/Sponsors';
 
 export default function Competition() {
@@ -19,8 +20,8 @@ export default function Competition() {
         overline={'Overline'}
         paragraph={dummyText}
       />
+      <PrizeContainer/>
       <Sponsors/>
-      <Prizes/>
       <LocomotiveParagraph
         text={'But this year we’re doing something different'}
       />

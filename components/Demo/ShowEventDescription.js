@@ -26,9 +26,9 @@ export default function ShowEventDescription() {
               key={index}
               className={
                 'none' == eventInfo.fulldesc
-                  ? eventInfo.fulldesc.removeChild(element.firstChild)
-                  : // : style['inactive']
-                    eventInfo.fulldesc.removeChild(element.firstChild)
+                  // ? eventInfo.fulldesc.removeChild(element.firstChild)
+                  // : // : style['inactive']
+                    // eventInfo.fulldesc.removeChild(element.firstChild)
               }
             >
               <EventDescription key={index} eventInfo={eventInfo} />
@@ -50,11 +50,11 @@ export default function ShowEventDescription() {
           {MenuItems.DayTwo.map((eventInfo, index) => (
             <div
               key={index}
-              className={
-                'none' == eventInfo.fulldesc
-                  ? style['active']
-                  : style['inactive']
-              }
+              // className={
+              //   'none' == eventInfo.fulldesc
+              //     ? style['active']
+              //     : style['inactive']
+              // }
             >
               <EventDescription key={index} eventInfo={eventInfo} day={1} />
             </div>
