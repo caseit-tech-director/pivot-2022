@@ -7,32 +7,45 @@ export default function Prizes(props) {
     <div className={style['test']}>
       <div className={[style['cube'], style[props.class]].join(' ')}>
         <div
-          className={[style['cube__face'], style['cube__face--front']].join(
-            ' '
-          )}
+          className={[
+            style['cube__face'],
+            style[props.color],
+            style['cube__face--front'],
+          ].join(' ')}
         >
           front
         </div>
         <div
-          className={[style['cube__face'], style['cube__face--back']].join(' ')}
+          className={[
+            style['cube__face'],
+            style[props.color],
+            style['cube__face--back'],
+          ].join(' ')}
         >
           back
         </div>
         <div
-          className={[style['cube__face'], style['cube__face--right']].join(
-            ' '
-          )}
+          className={[
+            style['cube__face'],
+            style[props.color],
+            style['cube__face--right'],
+          ].join(' ')}
         >
           right
         </div>
         <div
-          className={[style['cube__face'], style['cube__face--left']].join(' ')}
+          className={[
+            style['cube__face'],
+            style[props.color],
+            style['cube__face--left'],
+          ].join(' ')}
         >
           left
         </div>
         <div
           className={[
             style['cube__face__short'],
+            style[props.color],
             style['cube__face--top'],
           ].join(' ')}
         >
@@ -41,6 +54,7 @@ export default function Prizes(props) {
         <div
           className={[
             style['cube__face__short'],
+            style[props.color],
             style['cube__face--bottom'],
           ].join(' ')}
         >

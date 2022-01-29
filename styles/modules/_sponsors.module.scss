@@ -8,13 +8,13 @@
 }
 
 .item--wrapper {
-  margin-bottom: $lrg-margin * 2;
+  margin-bottom: $lrg-margin;
   display: flex;
   justify-content: center;
   .item--contain {
     width: 100%;
     text-align: center;
-    h3 {
+    h5 {
       margin-bottom: $med-margin;
     }
   }
