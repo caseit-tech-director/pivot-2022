@@ -23,20 +23,20 @@ import StevesPoke from '../../public/images/sponsors/in-kind/steves-poke-bar.png
 import StickerMule from '../../public/images/sponsors/in-kind/sticker-mule-logo-light-stacked.png';
 import MYST from '../../public/images/sponsors/in-kind/VAN_MYST_LOGO_FINALv5_HORIZONTAL LOGO600px.png';
 
-
 export default function Sponsors() {
   return (
     <>
       <ExtendableLayout>
-      <div className="section--header--wrapper flex--justify--center">
-        <h2>Sponsors</h2>
-        <p className="overline">PIVOT | COMPETITION</p>
-      </div>
+        <div className="section--header--wrapper flex--justify--center">
+          <h2>Sponsors</h2>
+          <p className="overline">PIVOT | COMPETITION</p>
+        </div>
         <div className={style['content--wrapper']}>
           <div className={style['item--wrapper']}>
             <div className={style['item--contain']}>
               <h5>Title Sponsor</h5>
               <Image
+                className={style['image--item']}
                 width="200px"
                 height="200px"
                 src={Accenture}
@@ -74,14 +74,13 @@ export default function Sponsors() {
                   src={EY}
                   alt="test img"
                   layout="intrinsic"
-                  objectFit='contain'
-
+                  objectFit="contain"
                 />
                 <Image
                   width="200px"
                   height="200px"
                   layout="intrinsic"
-                  objectFit='contain'
+                  objectFit="contain"
                   src={CGI}
                   alt="test img"
                 />
@@ -91,7 +90,7 @@ export default function Sponsors() {
                   src={SAP}
                   alt="test img"
                   layout="intrinsic"
-                  objectFit='contain'
+                  objectFit="contain"
                 />
                 <Image
                   width="200px"
@@ -99,7 +98,7 @@ export default function Sponsors() {
                   src={CPA}
                   alt="test img"
                   layout="intrinsic"
-                  objectFit='contain'
+                  objectFit="contain"
                 />
                 <Image
                   width="200px"
@@ -107,11 +106,12 @@ export default function Sponsors() {
                   src={TMP}
                   alt="test img"
                   layout="intrinsic"
-                  objectFit='contain'
+                  objectFit="contain"
                 />
               </div>
             </div>
-          </div><div className={style['item--wrapper']}>
+          </div>
+          <div className={style['item--wrapper']}>
             <div className={style['item--contain']}>
               <h5>In Kind Sponsors</h5>
               <div className={style['items']}>
@@ -121,7 +121,7 @@ export default function Sponsors() {
                   src={EVO}
                   alt="test img"
                   layout="intrinsic"
-                  objectFit='contain'
+                  objectFit="contain"
                 />
                 <Image
                   width="200px"
@@ -129,7 +129,7 @@ export default function Sponsors() {
                   src={ScienceWorld}
                   alt="test img"
                   layout="intrinsic"
-                  objectFit='contain'
+                  objectFit="contain"
                 />
                 <Image
                   width="200px"
@@ -137,7 +137,7 @@ export default function Sponsors() {
                   src={StevesPoke}
                   alt="test img"
                   layout="intrinsic"
-                  objectFit='contain'
+                  objectFit="contain"
                 />
                 <Image
                   width="200px"
@@ -145,7 +145,7 @@ export default function Sponsors() {
                   src={StickerMule}
                   alt="test img"
                   layout="intrinsic"
-                  objectFit='contain'
+                  objectFit="contain"
                 />
                 <Image
                   width="200px"
@@ -153,7 +153,7 @@ export default function Sponsors() {
                   src={MYST}
                   alt="test img"
                   layout="intrinsic"
-                  objectFit='contain'
+                  objectFit="contain"
                 />
               </div>
             </div>
