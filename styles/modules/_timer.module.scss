@@ -8,6 +8,7 @@
   grid-column-start: $grid--start;
   grid-column-end: $grid--end;
   height: fit-content;
+  margin-bottom: $lrg-margin;
 }
 
 .item--wrapper {
@@ -42,17 +43,51 @@
   display: flex;
   justify-content: center;
   margin: auto;
+  flex-direction: column;
 }
 
+.cta--wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
 
+%center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// Buttons
+.link--button {
+  @extend %center;
+  height: $button--height;
+  padding-left: $xs-margin;
+  padding-right: $xs-margin;
+  letter-spacing: $button--tk;
+  font-size: $button--font-sz;
+  font-family: $body--font-family;
+  // margin-left: 24px;
+}
+
+.link--button {
+  background-color: $blue--dim--25;
+  color: $primary-color--white;
+  border-radius: 3px;
+}
 
 @media only screen and (max-width: $minQuery) {
-    .item--content, .item--divider{
-        font-size: 2rem;
-    }
-    .item--wrapper{
-        width: 5rem;
-    }
+  .item--content,
+  .item--divider {
+    font-size: 2rem;
+  }
+  .item--wrapper {
+    width: 4.5rem;
+  }
+  .item--overline {
+    font-size: 0.9rem;
+  }
 }
 
 @media only screen and (max-width: $medQuery) {

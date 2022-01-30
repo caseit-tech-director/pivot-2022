@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { getRemainingTimeUntilMsTimestamp } from '../../utilities/TimerUtils';
 import style from '../../styles/modules/_timer.module.scss';
 import MaxLayout from '../Layout/MaxLayout';
+import Button from '../../components/Molecules/button';
+import Link from 'next/link';
 
 const defaultRemainingTime = {
   seconds: '00',
@@ -52,6 +54,19 @@ const CountdownTimer = ({ countdownTimestampMs }) => {
             <span className={style['item--content']}>
               {remainingTime.seconds}
             </span>
+          </div>
+        </div>
+        <div className={style['cta--wrapper']}>
+          {/* <h6 className="margin--bottom--xs">props.header</h6>
+        <p className="overline">props.overline</p> */}
+          <div className={style['registration--cta--wrapper']}>
+            <Link
+              href={
+                'https://www.surveymonkey.ca/r/pivot2022?utm_source=Survey+Monkey&utm_campaign=Application'
+              }
+            >
+              <a className={[style['link--button']]}>REGISTER NOW</a>
+            </Link>{' '}
           </div>
         </div>
       </div>
