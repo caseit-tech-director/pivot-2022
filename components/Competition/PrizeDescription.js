@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import style from '../../styles/modules/_prizes.module.scss';
 
-export default function PrizeDescription({ prizeInfo }) {
+export default function PrizeDescription(props) {
   const [expanded, setExpanded] = useState(false);
 
-  function handleClick() {
+  function handleClick(props) {
     setExpanded(!expanded);
   }
 
@@ -33,14 +33,15 @@ export default function PrizeDescription({ prizeInfo }) {
               }}
             >
               <div className={style['prize--title--wrapper']}>
-                <h5>Title</h5>
-                <div className="overline">Overline</div>
+                <h5>{props.prizeTitle}</h5>
+                <div className="overline">{props.prizeOverline}</div>
               </div>
-
-              <p className="body-2">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Aliquid perspiciatis unde quibusdam numquam porro?
-              </p>
+              <ul className="body-2">
+                <li>{props.prizeDesc1}</li>
+                <li>{props.prizeDesc2}</li>
+                <li>{props.prizeDesc3}</li>
+                <li>{props.prizeDesc4}</li>
+              </ul>
             </motion.div>
           )}
         </AnimatePresence>

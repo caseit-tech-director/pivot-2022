@@ -1,26 +1,63 @@
 import Prizes from '../Competition/Prizes';
 import PrizeSmall from '../Competition/PrizesSmall';
-import MaxLayout from '../Layout/MaxLayout';
+import ExtendableLayout from '../Layout/ExtendableLayout';
 import style from '../../styles/modules/_prizes.module.scss';
 import PrizeDescription from '../Competition/PrizeDescription';
+import DummyText from '../DummyText';
+import dummyText from '../DummyText';
+// import ExtendableLayout from '../Layout/ExtendableLayout';
 
 export default function PrizeContainer() {
   return (
-    <MaxLayout className={style['container']}>
+    <ExtendableLayout className={style['container']}>
       <div className="section--header--wrapper flex--justify--center">
         <h2>Prizes</h2>
         <p className="overline">PIVOT | COMPETITION</p>
       </div>
       <div className={[style['scene'], style['desktop']].join(' ')}>
-        <Prizes color="blue--cube" class="cube1" test="desc--wrapper-1" />
-        <Prizes color="pink--cube" class="cube2" test="desc--wrapper-2" />
-        <Prizes color="orange--cube" class="cube3" test="desc--wrapper-3" />
+        <Prizes color="blue--cube" class="cube1" test="desc--wrapper-1">
+          {' '}
+          <PrizeDescription
+            prizeTitle={'1st Place'}
+            prizeDesc1={'- Cash: $200/competitor'}
+            prizeDesc2={'- Product Teacher courses & additional content: Lifetime access to Solving the PM Interview course'}
+            prizeDesc3={'- 1 free month of their "Behind-The-Scenes Recordings"'}
+            prizeDesc4={'- 1 free month of their "monthly PM classes"'}
+            prizeOverline={'Total value of $407 per Competitor'}
+          />
+        </Prizes>
+        <Prizes color="pink--cube" class="cube2" test="desc--wrapper-2">
+          <PrizeDescription
+            prizeTitle={'2nd Place'}
+            prizeDesc1={'- Cash: $100/competitor'}
+            prizeDesc2={'- Product teacher course: one month free to their "Behind-The-Scenes Recordings"'}
+            prizeDesc3={'- 1 free month of their "monthly PM classes"'}
+            prizeOverline={'Total value of $190 per Competitor'}
+          />
+        </Prizes>
+        <Prizes color="orange--cube" class="cube3" test="desc--wrapper-3">
+          {' '}
+          <PrizeDescription
+            prizeTitle={'3rd Place'}
+            prizeDesc1={'- Cash: $50/competitor'}
+            prizeDesc2={'- Product teacher course: one month free to their "monthly PM classes"'}
+            prizeOverline={'Total value of $80 per Competitor'}
+          />
+        </Prizes>
       </div>
       <div className={[style['scene'], style['mobile']].join(' ')}>
         <PrizeSmall color="blue--cube" class="cube1" test="desc--wrapper-1" />
-        <PrizeSmall color="pink--cube" class="cube2--small" test="desc--wrapper-2" />
-        <PrizeSmall color="orange--cube" class="cube3--small" test="desc--wrapper-3" />
+        <PrizeSmall
+          color="pink--cube"
+          class="cube2--small"
+          test="desc--wrapper-2"
+        />
+        <PrizeSmall
+          color="orange--cube"
+          class="cube3--small"
+          test="desc--wrapper-3"
+        />
       </div>
-    </MaxLayout>
+    </ExtendableLayout>
   );
 }

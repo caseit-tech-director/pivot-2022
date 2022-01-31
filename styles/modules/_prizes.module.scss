@@ -17,7 +17,10 @@
 
 .scene {
   justify-content: center;
-  height: $cube--face--height;
+  // height: $cube--face--height;
+  grid-column-start: $grid--start;
+  grid-column-end: $grid--end;
+  height: auto;
   width: 100%;
   position: relative;
   display: flex;

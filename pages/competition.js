@@ -16,9 +16,9 @@ export default function Competition() {
     <div className="bg-color--primary">
       <LargeHeader header={'competition'} overline={'Overline'} />
       <BranchHeaderLarge
-        header={'Title'}
-        overline={'Overline'}
-        paragraph={dummyText}
+        header={'PIVOT 2022'}
+        overline={'Special Thanks'}
+        paragraph="Thank you to all our sponsors, this event would not be possible without you! We are so excited to be able to offer competitors the opportunity to connect with you."
       />
       <PrizeContainer/>
       <Sponsors/>
