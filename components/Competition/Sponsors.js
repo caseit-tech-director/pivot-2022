@@ -49,15 +49,15 @@ export default function Sponsors() {
               <h5>Workshop Sponsors</h5>
               <div className={style['items']}>
                 <Image
-                  width="200px"
-                  height="200px"
+                  width="175px"
+                  height="175px"
                   layout="intrinsic"
                   src={Thrive}
                   alt="test img"
                 />
                 <Image
-                  width="200px"
-                  height="200px"
+                  width="175px"
+                  height="175px"
                   src={SalesForce}
                   alt="test img"
                 />
@@ -69,40 +69,40 @@ export default function Sponsors() {
               <h5>Networking Sponsors</h5>
               <div className={style['items']}>
                 <Image
-                  width="200px"
-                  height="200px"
+                  width="150px"
+                  height="150px"
                   src={EY}
                   alt="test img"
                   layout="intrinsic"
                   objectFit="contain"
                 />
                 <Image
-                  width="200px"
-                  height="200px"
+                  width="150px"
+                  height="150px"
                   layout="intrinsic"
                   objectFit="contain"
                   src={CGI}
                   alt="test img"
                 />
                 <Image
-                  width="200px"
-                  height="200px"
+                  width="150px"
+                  height="150px"
                   src={SAP}
                   alt="test img"
                   layout="intrinsic"
                   objectFit="contain"
                 />
                 <Image
-                  width="200px"
-                  height="200px"
+                  width="150px"
+                  height="150px"
                   src={CPA}
                   alt="test img"
                   layout="intrinsic"
                   objectFit="contain"
                 />
                 <Image
-                  width="200px"
-                  height="200px"
+                  width="150px"
+                  height="150px"
                   src={TMP}
                   alt="test img"
                   layout="intrinsic"
@@ -116,40 +116,40 @@ export default function Sponsors() {
               <h5>In Kind Sponsors</h5>
               <div className={style['items']}>
                 <Image
-                  width="200px"
-                  height="200px"
+                  width="100px"
+                  height="100px"
                   src={EVO}
                   alt="test img"
                   layout="intrinsic"
                   objectFit="contain"
                 />
                 <Image
-                  width="200px"
-                  height="200px"
+                  width="100px"
+                  height="100px"
                   src={ScienceWorld}
                   alt="test img"
                   layout="intrinsic"
                   objectFit="contain"
                 />
                 <Image
-                  width="200px"
-                  height="200px"
+                  width="100px"
+                  height="100px"
                   src={StevesPoke}
                   alt="test img"
                   layout="intrinsic"
                   objectFit="contain"
                 />
                 <Image
-                  width="200px"
-                  height="200px"
+                  width="100px"
+                  height="100px"
                   src={StickerMule}
                   alt="test img"
                   layout="intrinsic"
                   objectFit="contain"
                 />
                 <Image
-                  width="200px"
-                  height="200px"
+                  width="100px"
+                  height="100px"
                   src={MYST}
                   alt="test img"
                   layout="intrinsic"

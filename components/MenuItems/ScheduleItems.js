@@ -3,7 +3,7 @@ const DayOneItems = [
     title: 'ARRIVAL',
     desc: '',
     time: '9:45',
-    fulldesc: 'none',
+    fulldesc: '',
   },
   {
     title: 'WORKSHOP 1',
@@ -15,7 +15,7 @@ const DayOneItems = [
     title: 'BREAK',
     desc: '',
     time: '10:45',
-    fulldesc: 'none',
+    fulldesc: '',
   },
   {
     title: 'WORKSHOP 2',
@@ -27,7 +27,7 @@ const DayOneItems = [
     title: 'BREAK',
     desc: '',
     time: '11:45',
-    fulldesc: 'none',
+    fulldesc: '',
   },
   {
     title: 'FIRESIDE CHAT',
@@ -39,7 +39,7 @@ const DayOneItems = [
     title: 'BREAK',
     desc: '',
     time: '1:00',
-    fulldesc: 'none',
+    fulldesc: '',
   },
   {
     title: 'NETWORKING',
@@ -51,7 +51,7 @@ const DayOneItems = [
     title: 'CLOSING AND DIVISION DRAW',
     desc: '',
     time: '2:30',
-    fulldesc: 'none',
+    fulldesc: '',
   },
   {
     title: 'CASE RELEASE AND DELIBERATION PERIOD',
@@ -66,7 +66,7 @@ const DayTwoItems = [
     title: 'ARRIVAL',
     desc: '',
     time: '10:00',
-    fulldesc: 'none',
+    fulldesc: '',
   },
   {
     title: 'PRELIMINARY PRESENTATIONS',
@@ -78,7 +78,7 @@ const DayTwoItems = [
     title: 'BREAK',
     desc: '',
     time: '12:00',
-    fulldesc: 'none',
+    fulldesc: '',
   },
   {
     title: 'FINALS PRESENTATION',
@@ -90,7 +90,7 @@ const DayTwoItems = [
     title: 'BREAK',
     desc: '',
     time: '2:00',
-    fulldesc: 'none',
+    fulldesc: '',
   },
   {
     title: 'CLOSING AND AWARDS CEREMONY',

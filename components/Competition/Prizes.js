@@ -22,7 +22,7 @@ class Prizes extends Component {
               style['cube__face--front'],
             ].join(' ')}
           >
-            front
+            {/* front */}
           </div>
           <div
             className={[
@@ -31,7 +31,7 @@ class Prizes extends Component {
               style['cube__face--back'],
             ].join(' ')}
           >
-            back
+            {/* back */}
           </div>
           <div
             className={[
@@ -40,7 +40,7 @@ class Prizes extends Component {
               style['cube__face--right'],
             ].join(' ')}
           >
-            right
+            {/* right */}
           </div>
           <div
             className={[
@@ -49,7 +49,7 @@ class Prizes extends Component {
               style['cube__face--left'],
             ].join(' ')}
           >
-            left
+            {/* left */}
           </div>
           <div
             className={[
@@ -58,7 +58,7 @@ class Prizes extends Component {
               style['cube__face--top'],
             ].join(' ')}
           >
-            top
+            {/* top */}
           </div>
           <div
             className={[
@@ -67,7 +67,7 @@ class Prizes extends Component {
               style['cube__face--bottom'],
             ].join(' ')}
           >
-            bottom
+            {/* bottom */}
           </div>
         </div>
         <div className={[style['test--wrapper'], style[this.props.test]].join(' ')}>

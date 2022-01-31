@@ -33,27 +33,21 @@
   border-radius: 2px;
 }
 
-
-//DNW
-.hidden {
-  background: blue;
-  * {
-    display: none;
-  }
-}
-
-//WORK
-.inactive{
-  display: none;
-}
-
 //WORK
 .active {
-  span, .expand--icon, p {
+  span {
     display: none;
   }
-  .toggle--motion--container{
-    display: none;
+  .event--toggler {
+    cursor: unset;
+    &:hover {
+      // color: unset;
+      border-color: unset !important;
+      .expand--icon::before,
+      .expand--icon::after {
+        background-color: unset !important;
+      }
+    }
   }
 }
 

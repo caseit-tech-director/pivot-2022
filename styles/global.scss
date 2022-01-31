@@ -38,6 +38,11 @@ body {
   padding: 0;
 }
 
+
+.inactive{
+  display: none !important;
+}
+
 // Lists
 li {
   list-style: none;

@@ -25,11 +25,8 @@ export default function Competition() {
       <LocomotiveParagraph
         text={'But this year we’re doing something different'}
       />
-      {/* <VirtualEvents /> */}
+      <VirtualEvents />
       <Timer countdownTimestampMs={1644652800000} />
-      {/* <div className="bg-color--white">
-        <RegistrationModule header={'Title'} overline={'overline'} />
-      </div> */}
       <Testimonials />
     </div>
   );

@@ -6,9 +6,13 @@ import style from '../../styles/modules/_schedule.module.scss';
 
 export default function ShowEventDescription() {
   const [toggleShow, setToggleShowed] = useState(true);
-  function showToggle() {
+  function showToggle(e) {
+    if (!(e.length > 0)) {
+      e.toggled();
+    }
     setToggleShowed(!toggleShow);
   }
+
   return (
     <div className="schedule--item--wrapper">
       <div
@@ -22,17 +26,23 @@ export default function ShowEventDescription() {
       <div className={style['event--day--margin']}>
         <p className="body-2">
           {MenuItems.DayOne.map((eventInfo, index) => (
-            <div
-              key={index}
-              className={
-                'none' == eventInfo.fulldesc
-                  // ? eventInfo.fulldesc.removeChild(element.firstChild)
-                  // : // : style['inactive']
-                    // eventInfo.fulldesc.removeChild(element.firstChild)
-              }
+            <li key={index} eventInfo={eventInfo} 
+            className={
+              eventInfo.fulldesc.length > 0
+                ? [style['']].join(' ')
+                : [style['active']].join(' ')}
             >
-              <EventDescription key={index} eventInfo={eventInfo} />
-            </div>
+            <EventDescription
+              key={index}
+              eventInfo={eventInfo}
+              className={
+                eventInfo.fulldesc.length === 'none'
+                  ? [style['']].join(' ')
+                  : [style['active']].join(' ')
+              }
+            />
+
+            </li>
           ))}
         </p>
       </div>

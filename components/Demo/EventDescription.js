@@ -4,10 +4,15 @@ import style from '../../styles/modules/_schedule.module.scss';
 
 export default function EventDescription({ eventInfo }) {
   const [expanded, setExpanded] = useState(false);
+  const [toggled, setToggled] = useState(false);
   const { title, time, desc, fulldesc } = eventInfo;
 
   function handleClick() {
     setExpanded(!expanded);
+  }
+
+  function removeToggle() {
+    setToggled(!toggled);
   }
 
   return (
@@ -35,7 +40,13 @@ export default function EventDescription({ eventInfo }) {
                 duration: 0.3,
               }}
             >
-              <span id="toggle" className={style['toggle--button']}>
+              <span
+                id="toggle"
+                className={[
+                  style['toggle--button'],
+                  style[''],
+                ].join(' ')}
+              >
                 {!expanded && (
                   <div
                     className={[style['expand--icon'], style['expanded']].join(
