@@ -10,7 +10,7 @@ function Menu({menuItem}) {
                         <div className="item-container">
                             <img src={item.image} alt=""/>
                             <h2>{item.title}</h2>
-                            <p>{item.description}</p>
+                            <p className="body-1">{item.description}</p>
                         </div>
                     </div>
                 })

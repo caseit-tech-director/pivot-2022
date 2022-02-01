@@ -9,8 +9,8 @@ import Button from '../Molecules/SideMenu';
 import items from '../MenuItems/allData';
 import { useState } from 'react';
 
-// const allCategories = ['All', ...new Set(items.map((item) => item.category))];
-const allCategories = [ ...new Set(items.map((item) => item.category))];
+const allCategories = ['All', ...new Set(items.map((item) => item.category))];
+// const allCategories = [ ...new Set(items.map((item) => item.category))];
 
 
 console.log(allCategories);
@@ -47,7 +47,7 @@ export default function EventOrganism() {
           <div className={style['scroll--menu']}>
             <div className="">
               <div className="scroll--menu--title">
-                <h6 className="subtitle-1 margin--bottom--xs">subtitle</h6>
+                <h6 className="subtitle-1 margin--bottom--xs">All Events</h6>
               </div>
               <Button button={buttons} filter={filter} />
             </div>
