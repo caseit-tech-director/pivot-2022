@@ -6,7 +6,7 @@ import Testimonials from '../../components/BannerComponents/testimonials';
 import Link from 'next/link';
 import { useState } from 'react';
 import Image from 'next/image';
-import MenuItems from '../../components/MenuItems/OrganizerMenuItems';
+import MenuItems from '../../components/JSON/OrganizerMenuItems';
 
 import style from '../../styles/modules/_organizer.module.scss';
 import SideMenu from '../../components/Molecules/SideMenu';
@@ -29,7 +29,9 @@ export default function Orgaziners() {
       <BranchHeader
         header={'INTRODUCING'}
         overline={'THE PIVOT 2022 ORGANIZING COMMITTEE'}
-        paragraph={"It is our pleasure to welcome you to PIVOT 2022! Thanks to the generous support of the Beedie School of Business at Simon Fraser University, our many sponsors, and our competitors, PIVOT has grown from its humble beginnings as an internal competition to engaging and inspiring students from across British Columbia. Are you ready to shift your thinking?"}
+        paragraph={
+          'It is our pleasure to welcome you to PIVOT 2022! Thanks to the generous support of the Beedie School of Business at Simon Fraser University, our many sponsors, and our competitors, PIVOT has grown from its humble beginnings as an internal competition to engaging and inspiring students from across British Columbia. Are you ready to shift your thinking?'
+        }
       />
       <section className={style['organizer--section--wrapper']}>
         <div className={style['organizer--gallery--wrapper']}>

@@ -1,20 +1,15 @@
 import Testimonials from '../components/BannerComponents/testimonials';
-// import SmallHeader from '../components/header/smallHeader';
 import BranchHeaderLarge from '../components/Organisms/BranchHeaderLarge';
-import RegistrationModule from '../components/Organisms/RegistrationModule';
-import dummyText from '../components/DummyText';
 import LargeHeader from '../components/header/largeHeader';
 import VirtualEvents from '../components/Competition/VirtualEvents';
-import LocomotiveParagraph from '../components/Molecules/locomotiveParagraph';
 import Timer from '../components/Organisms/Timer';
-import Prizes from '../components/Competition/Prizes';
 import PrizeContainer from '../components/Competition/PrizeContainer';
-import Sponsors from '../components/Competition/Sponsors';
+import Sponsors from '../components/Competition/SponsorsDiagram';
 
 export default function Competition() {
   return (
     <div className="bg-color--primary">
-      <LargeHeader header={'competition'} overline={'Overline'} />
+      <LargeHeader header={'competition'} overline={'ARE YOU READY?'} />
       <BranchHeaderLarge
         header={'PIVOT 2022'}
         overline={'Special Thanks'}

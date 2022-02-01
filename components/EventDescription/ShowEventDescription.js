@@ -1,7 +1,7 @@
 import React, { Children, useState } from 'react';
 import { render } from 'react-dom';
 import EventDescription from './EventDescription';
-import MenuItems from '../MenuItems/ScheduleItems';
+import MenuItems from '../JSON/ScheduleItems';
 import style from '../../styles/modules/_schedule.module.scss';
 
 export default function ShowEventDescription() {

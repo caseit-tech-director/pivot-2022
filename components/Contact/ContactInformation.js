@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { ContactMenuItems } from '../MenuItems/ContactMenuItems';
-import { SocialMenuItems } from '../MenuItems/SocialMenuItems';
+import { ContactMenuItems } from '../JSON/ContactMenuItems';
+import { SocialMenuItems } from '../JSON/SocialMenuItems';
 import style from '../../styles/modules/_contact.module.scss';
 import { FaMapMarkerAlt, FaInstagram, FaFacebookSquare } from 'react-icons/fa';
 

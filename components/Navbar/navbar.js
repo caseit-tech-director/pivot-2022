@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import styles from '../../styles/modules/_nav.module.scss';
-import { MenuItems } from '../MenuItems/NavMenuItems';
+import { MenuItems } from '../JSON/NavMenuItems';
 import { debounce } from '../../utilities/helpers';
 import Topbar from './topbar';
 import { useRouter } from 'next/router';

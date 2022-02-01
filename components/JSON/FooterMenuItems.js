@@ -8,26 +8,21 @@ import { FaInstagram, FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 
 
 const CompetitionMenuItems = [
-    // {
-    //     title: 'Overview',
-    //     url: '/',
-    //     href: '/'
-    // },
     {
         title: 'Registration',
         url: '/',
         href: 'https://www.surveymonkey.ca/r/pivot2022?utm_source=Survey+Monkey&utm_campaign=Application'
     },
-    // {
-    //     title: 'Competition Structure',
-    //     url: '/',
-    //     href: "/"
-    // },
-    // {
-    //     title: 'Event Schedule',
-    //     url: '/',
-    //     href: "/"
-    // }
+    {
+        title: 'Competition Details',
+        url: '/competition',
+        href: "/competition"
+    },
+    {
+        title: 'Event Schedule',
+        url: '/schedule',
+        href: "/schedule"
+    }
 ];
 
 const AboutMenuItems = [

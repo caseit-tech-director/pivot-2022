@@ -1,16 +1,16 @@
 import MaxLayout from '../../components/Layout/MaxLayout';
 import style from '../../styles/modules/_events.module.scss';
 import Image from 'next/image';
-import { VirtualEventItems } from '../MenuItems/VirtualEventItems';
+import { VirtualEventItems } from '../JSON/VirtualEventItems';
 import Event from '../Organisms/Competition/EventOrganism';
 
-import Menu from '../Molecules/VirtualEvents';
+import VirtualEventContent from '../Molecules/VirtualEventContent';
 import Button from '../Molecules/SideMenu';
-import items from '../MenuItems/allData';
+import items from '../JSON/allData';
 import { useState } from 'react';
 
-// const allCategories = ['All', ...new Set(items.map((item) => item.category))];
-const allCategories = [ ...new Set(items.map((item) => item.category))];
+const allCategories = ['All Events', ...new Set(items.map((item) => item.category))];
+// const allCategories = [ ...new Set(items.map((item) => item.category))];
 
 
 console.log(allCategories);
@@ -21,7 +21,7 @@ export default function EventOrganism() {
 
   //Filter Function
   const filter = (button) => {
-    if (button === 'All') {
+    if (button === 'All Events') {
       setMenuItem(items);
       return;
     }
@@ -41,14 +41,14 @@ export default function EventOrganism() {
 
         <div className={style['event--wrapper']}>
           <div className={style['content--container']}>
-            <Menu menuItem={menuItem} />
+            <VirtualEventContent menuItem={menuItem} />
           </div>
 
           <div className={style['scroll--menu']}>
             <div className="">
-              <div className="scroll--menu--title">
+              {/* <div className="scroll--menu--title">
                 <h6 className="subtitle-1 margin--bottom--xs">All Events</h6>
-              </div>
+              </div> */}
               <Button button={buttons} filter={filter} />
             </div>
           </div>

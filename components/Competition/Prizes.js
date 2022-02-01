@@ -16,7 +16,7 @@ class Prizes extends Component {
       <div className={style['test']}>
         <div className={[style['cube'], style[this.props.class]].join(' ')}>
           <div
-            className={[
+          className={[
               style['cube__face'],
               style[this.props.color],
               style['cube__face--front'],

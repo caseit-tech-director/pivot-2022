@@ -1,4 +1,4 @@
-import MenuItems from './MenuItems/ScheduleItems';
+import MenuItems from './JSON/ScheduleItems';
 import style from '../styles/modules/_schedule.module.scss';
 import React from 'react';
 

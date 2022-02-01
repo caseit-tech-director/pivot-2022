@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import MediumLayout from '../Layout/MediumLayout';
 import style from '../../styles/modules/_footer.module.scss';
-import MenuItems from '../MenuItems/FooterMenuItems';
+import MenuItems from '../JSON/FooterMenuItems';
 import { FaInstagram, FaFacebookSquare } from 'react-icons/fa';
 
 export default function Footer() {

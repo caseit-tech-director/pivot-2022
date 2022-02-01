@@ -1,4 +1,4 @@
-import MenuItems from './MenuItems/ScheduleItems';
+import MenuItems from './JSON/ScheduleItems';
 import MaxLayout from './Layout/MaxLayout';
 import style from '../styles/modules/_schedule.module.scss';
 import { useState } from 'react';
