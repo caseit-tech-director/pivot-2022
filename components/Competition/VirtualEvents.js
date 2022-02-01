@@ -9,8 +9,8 @@ import Button from '../Molecules/SideMenu';
 import items from '../MenuItems/allData';
 import { useState } from 'react';
 
-const allCategories = ['All', ...new Set(items.map((item) => item.category))];
-// const allCategories = [ ...new Set(items.map((item) => item.category))];
+// const allCategories = ['All', ...new Set(items.map((item) => item.category))];
+const allCategories = [ ...new Set(items.map((item) => item.category))];
 
 
 console.log(allCategories);

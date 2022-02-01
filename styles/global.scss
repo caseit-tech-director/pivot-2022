@@ -209,6 +209,8 @@ a:hover:after {
 }
 
 .bg-color--black--secondary {
+  position: relative;
+  z-index: 99;
   background-color: $bg-color--black--secondary;
   color: $primary-color--white;
 }

@@ -22,9 +22,9 @@ export default function Competition() {
       />
       <PrizeContainer/>
       <Sponsors/>
-      <LocomotiveParagraph
+      {/* <LocomotiveParagraph
         text={'But this year we’re doing something different'}
-      />
+      /> */}
       <VirtualEvents />
       <Timer countdownTimestampMs={1644652800000} />
       <Testimonials />

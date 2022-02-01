@@ -3,7 +3,8 @@ import Particle from '../particle';
 
 function LargeHeader(props) {
   return (
-    <div className={styles['particle--contain']}>
+    // <div className={styles['particle--contain']}>
+    <div className={styles['']}>
       <Particle />
       <header className="max--layout text-color--white bg-color--primary">
         <div className="center--banner max--layout grid--container">
