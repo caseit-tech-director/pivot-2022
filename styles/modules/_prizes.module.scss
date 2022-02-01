@@ -20,7 +20,7 @@
   // height: $cube--face--height;
   grid-column-start: $grid--start;
   grid-column-end: $grid--end;
-  height: auto;
+  height: 500px;
   width: 100%;
   position: relative;
   display: flex;
@@ -321,7 +321,6 @@
 @media only screen and (max-width: $minQuery) {
   .scene{
     transform: scale(.5);
-    height: auto;
   }
   .desktop {
     display: none !important;
@@ -332,9 +331,13 @@
 }
 
 @media only screen and (max-width: $medQuery) {
+  
 }
 
 @media only screen and (min-width: $largeQuery) {
+  .scene{
+    height: auto;
+  }
   .mobile {
     display: none !important;
   }

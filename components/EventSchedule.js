@@ -2,7 +2,7 @@ import MenuItems from './MenuItems/ScheduleItems';
 import MaxLayout from './Layout/MaxLayout';
 import style from '../styles/modules/_schedule.module.scss';
 import { useState } from 'react';
-import ShowEventDescription from '../components/Demo/ShowEventDescription';
+import ShowEventDescription from './EventDescription/ShowEventDescription';
 
 export default function EventSchedule() {
   return (

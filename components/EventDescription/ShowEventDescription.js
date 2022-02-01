@@ -26,22 +26,24 @@ export default function ShowEventDescription() {
       <div className={style['event--day--margin']}>
         <p className="body-2">
           {MenuItems.DayOne.map((eventInfo, index) => (
-            <li key={index} eventInfo={eventInfo} 
-            className={
-              eventInfo.fulldesc.length > 0
-                ? [style['']].join(' ')
-                : [style['active']].join(' ')}
-            >
-            <EventDescription
+            <li
               key={index}
               eventInfo={eventInfo}
               className={
-                eventInfo.fulldesc.length === 'none'
+                eventInfo.fulldesc.length > 0
                   ? [style['']].join(' ')
                   : [style['active']].join(' ')
               }
-            />
-
+            >
+              <EventDescription
+                key={index}
+                eventInfo={eventInfo}
+                className={
+                  eventInfo.fulldesc.length === 'none'
+                    ? [style['']].join(' ')
+                    : [style['active']].join(' ')
+                }
+              />
             </li>
           ))}
         </p>
@@ -55,19 +57,28 @@ export default function ShowEventDescription() {
       >
         Day Two
       </div>
-      <div>
+      <div className={style['event--day--margin']}>
         <p className="body-2">
           {MenuItems.DayTwo.map((eventInfo, index) => (
-            <div
+            <li
               key={index}
-              // className={
-              //   'none' == eventInfo.fulldesc
-              //     ? style['active']
-              //     : style['inactive']
-              // }
+              eventInfo={eventInfo}
+              className={
+                eventInfo.fulldesc.length > 0
+                  ? [style['']].join(' ')
+                  : [style['active']].join(' ')
+              }
             >
-              <EventDescription key={index} eventInfo={eventInfo} day={1} />
-            </div>
+              <EventDescription
+                key={index}
+                eventInfo={eventInfo}
+                className={
+                  eventInfo.fulldesc.length === 'none'
+                    ? [style['']].join(' ')
+                    : [style['active']].join(' ')
+                }
+              />
+            </li>
           ))}
         </p>
       </div>
