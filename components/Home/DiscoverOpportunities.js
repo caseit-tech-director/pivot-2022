@@ -17,49 +17,55 @@ export default function DiscoverOpportunities(props) {
         />
         <div className={style['opportunity--wrapper']}>
           <div className={style['opportunity--content']}>
-            <a href="">
-              <div className={style['image--content']}>
-                <Image
-                  objectFit="cover"
-                  src={DiscoverImage1}
-                  width={408}
-                  height={306}
-                  alt={'Opportunity Image'}
-                />
-              </div>
-            </a>
+            <Link href="/competition#prizes">
+              <a>
+                <div className={style['image--content']}>
+                  <Image
+                    objectFit="cover"
+                    src={DiscoverImage1}
+                    width={408}
+                    height={306}
+                    alt={'Opportunity Image'}
+                  />
+                </div>
+              </a>
+            </Link>
             <caption className="margin--top--xs subtitle-1 flex">
               {props.caption1}
             </caption>
           </div>
           <div className={style['opportunity--content']}>
-            <a href="">
-              <div className={style['image--content']}>
-                <Image
-                  objectFit="cover"
-                  src={DiscoverImage2}
-                  width={408}
-                  height={306}
-                  alt={'Opportunity Image'}
-                />
-              </div>
-            </a>
+            <Link href="/competition#sponsors">
+              <a>
+                <div className={style['image--content']}>
+                  <Image
+                    objectFit="cover"
+                    src={DiscoverImage2}
+                    width={408}
+                    height={306}
+                    alt={'Opportunity Image'}
+                  />
+                </div>
+              </a>
+            </Link>
             <caption className="margin--top--xs subtitle-1 flex">
               {props.caption2}
             </caption>
           </div>
           <div className={style['opportunity--content']}>
-            <a href="">
-              <div className={style['image--content']}>
-                <Image
-                  objectFit="cover"
-                  src={DiscoverImage3}
-                  width={408}
-                  height={306}
-                  alt={'Opportunity Image'}
-                />
-              </div>
-            </a>
+            <Link href="/competition#virtualEvents">
+              <a>
+                <div className={style['image--content']}>
+                  <Image
+                    objectFit="cover"
+                    src={DiscoverImage3}
+                    width={408}
+                    height={306}
+                    alt={'Opportunity Image'}
+                  />
+                </div>
+              </a>
+            </Link>
             <caption className="margin--top--xs subtitle-1 flex">
               {props.caption3}
             </caption>

@@ -48,6 +48,9 @@
     margin-bottom: $med-margin !important;
     display: flex;
   }
+  :last-child{
+    margin-bottom: 0 !important;
+  }
 }
 
 // RegistrationModule
@@ -89,14 +92,14 @@
   overflow: hidden;
   // padding: 1rem;
   // background-color: white;
-  margin-right: $xs-margin;
+  margin-right: $sm-margin;
   margin-bottom: $xs-margin;
 }
 
 .sponsor--image--wrapper{
   // padding: 1rem;
   // background-color: white;
-  margin-right: $xs-margin;
+  margin-right: $sm-margin;
   margin-bottom: $xs-margin;
 }
 

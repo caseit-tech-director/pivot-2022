@@ -27,7 +27,7 @@ export default function Sponsors() {
   return (
     <>
       <ExtendableLayout>
-        <div className="section--header--wrapper flex--justify--center">
+        <div id="sponsors" className="section--header--wrapper flex--justify--center">
           <h2>Sponsors</h2>
           <p className="overline">PIVOT | COMPETITION</p>
         </div>

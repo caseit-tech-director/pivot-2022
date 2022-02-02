@@ -9,9 +9,11 @@ import Button from '../Molecules/SideMenu';
 import items from '../JSON/VirtualEventItems';
 import { useState } from 'react';
 
-const allCategories = ['All Events', ...new Set(items.map((item) => item.category))];
+const allCategories = [
+  'All Events',
+  ...new Set(items.map((item) => item.category)),
+];
 // const allCategories = [ ...new Set(items.map((item) => item.category))];
-
 
 console.log(allCategories);
 
@@ -32,6 +34,7 @@ export default function EventOrganism() {
   return (
     <MaxLayout>
       <div
+        id="virtualEvents"
         className={[style['virutal--events--container'], style['']].join(' ')}
       >
         <div className="margin--bottom--lrg">

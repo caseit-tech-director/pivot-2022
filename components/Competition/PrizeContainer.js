@@ -10,7 +10,7 @@ import dummyText from '../DummyText';
 export default function PrizeContainer() {
   return (
     <ExtendableLayout className={style['container']}>
-      <div className="section--header--wrapper flex--justify--center">
+      <div id="prizes" className="section--header--wrapper flex--justify--center">
         <h2>Prizes</h2>
         <p className="overline">PIVOT | COMPETITION</p>
       </div>
