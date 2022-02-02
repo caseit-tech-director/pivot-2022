@@ -22,6 +22,11 @@ const CompetitionMenuItems = [
         title: 'Event Schedule',
         url: '/schedule',
         href: "/schedule"
+    },
+    {
+        title: 'Sponsors',
+        url: '/sponsors',
+        href: "/sponsors"
     }
 ];
 
