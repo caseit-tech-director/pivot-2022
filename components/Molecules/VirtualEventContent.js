@@ -10,7 +10,7 @@ function Menu({ menuItem }) {
           <div className={style['item--container']} key={item.id}>
             {/* <img src={item.image} alt="item"/> */}
             <div className={[style[item.color], style['border--color--margin']].join(' ')}>
-              <h4>{item.title}</h4>
+              <h4 className="margin--bottom--sm">{item.title}</h4>
               <p className="body-2">{item.description}</p>
             </div>
           </div>

@@ -22,13 +22,106 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    div{
+    div {
       margin: 1rem;
-      width: fit-content
+      width: fit-content;
     }
-    *{
+    * {
       width: 80%;
     }
   }
 }
 
+.event--organism--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+  div {
+    margin-bottom: $xs-margin;
+  }
+}
+
+.event--wrapper {
+  display: flex;
+}
+
+.content--container {
+  width: 60%;
+}
+
+.virutal--events--container {
+  grid-column-start: $grid--start;
+  grid-column-end: $grid--end;
+}
+
+.section--header--wrapper,
+.event--wrapper {
+  position: relative;
+}
+
+.flex--item {
+  width: 22%;
+}
+
+.green {
+  border-left: 2px solid $accent-green;
+}
+.orange {
+  border-left: 2px solid $accent-orange;
+}
+.yellow {
+  border-left: 2px solid $accent-yellow;
+}
+.pink {
+  border-left: 2px solid $accent-pink;
+}
+
+.border--color--margin {
+  div {
+    margin-left: $xs-margin;
+  }
+}
+
+.item--container {
+  margin-bottom: $lrg-margin;
+}
+
+.scroll--menu {
+  position: absolute !important;
+  right: 0;
+}
+
+.sponsor--content--flex{
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+@media only screen and (max-width: $minQuery) {
+  .event--wrapper {
+    flex-direction: column-reverse;
+  }
+  .scroll--menu {
+    * {
+      display: flex;
+      flex-direction: row;
+      margin-right: $xs-margin;
+      flex-wrap: wrap;
+    }
+    position: relative !important;
+  }
+}
+
+@media only screen and (min-width: $medQuery) {
+  .scroll--menu {
+    position: absolute !important;
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: $largeQuery) {
+  .scroll--menu {
+    position: absolute !important;
+    right: 0;
+  }
+}

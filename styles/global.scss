@@ -48,10 +48,13 @@ li {
   list-style: none;
 }
 
+.text--color--black{
+  color: $type-color;
+}
+
 a {
-  // color: ;
   text-decoration: none;
-  display: inline-block;
+  display: inline-block !important;
   position: relative;
   z-index: 1;
 }

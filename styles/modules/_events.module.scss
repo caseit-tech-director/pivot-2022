@@ -31,44 +31,28 @@
   width: 22%;
 }
 
-.green{
-    border-left: 2px solid $accent-green;
+.green {
+  border-left: 2px solid $accent-green;
 }
-.orange{
-    border-left: 2px solid $accent-orange;
+.orange {
+  border-left: 2px solid $accent-orange;
 }
-.yellow{
-    border-left: 2px solid $accent-yellow;
+.yellow {
+  border-left: 2px solid $accent-yellow;
 }
-.pink{
-    border-left: 2px solid $accent-pink;
+.pink {
+  border-left: 2px solid $accent-pink;
 }
 
-.border--color--margin{
+.border--color--margin {
   * {
     margin-left: $xs-margin;
   }
 }
 
-.item--container{
+.item--container {
   margin-bottom: $lrg-margin;
 }
-
-// .item-con{
-
-//   > div:first-child {
-//     border-left: 2px solid $accent-orange;
-//   }
-//   > div:nth-child(2) {
-//     border-left: 2px solid $accent-pink;
-//   }
-//   > div:nth-child(3) {
-//     border-left: 2px solid $accent-yellow;
-//   }
-//   > div:nth-child(4) {
-//     border-left: 2px solid $accent-green;
-//   }
-// }
 
 .scroll--menu {
   position: absolute !important;
@@ -79,7 +63,11 @@
   .event--wrapper {
     flex-direction: column-reverse;
   }
+  .content--container{
+    width: 100%;
+  }
   .scroll--menu {
+    margin-bottom: $med-margin;
     * {
       display: flex;
       flex-direction: row;
@@ -89,8 +77,6 @@
     position: relative !important;
   }
 }
-
-
 
 @media only screen and (min-width: $medQuery) {
   .scroll--menu {
