@@ -78,7 +78,7 @@
 }
 
 .border--color--margin {
-  div {
+  > div {
     margin-left: $xs-margin;
   }
 }
@@ -92,7 +92,7 @@
   right: 0;
 }
 
-.sponsor--content--flex{
+.content--flex--reverse{
   display: flex;
   flex-wrap: wrap-reverse;
 }

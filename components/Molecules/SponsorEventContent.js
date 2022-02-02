@@ -22,16 +22,18 @@ function Menu({ menuItem }) {
                   Website
                 </a>
               </div>
-              <div className={style['sponsor--content--flex']}>
+              <div className={style['content--flex--reverse']}>
                 <p className="body-2">{item.shortDesc}</p>
-                <Image
-                  src={item.image}
-                  width="200px"
-                  height="200px"
-                  objectFit="contain"
-                  layout="intrinsic"
-                  alt={item.alt}
-                />
+                <div className="margin--bottom--sm">
+                  <Image
+                    src={item.image}
+                    width="200px"
+                    height="200px"
+                    objectFit="contain"
+                    layout="intrinsic"
+                    alt={item.alt}
+                  />
+                </div>
               </div>
             </div>
           </div>

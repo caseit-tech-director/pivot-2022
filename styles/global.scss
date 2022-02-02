@@ -180,7 +180,12 @@ a:hover:after {
 .margin--right--xs {
   margin-right: $xs-margin;
 }
-
+.margin--right--sm {
+  margin-right: $sm-margin;
+}
+.padding--bottom--xs {
+  padding-bottom: $xs-margin !important;
+}
 
 // Temp
 .bg-color--primary {
