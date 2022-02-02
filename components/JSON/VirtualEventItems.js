@@ -6,13 +6,15 @@ import Jenny from '../../public/images/fs-chat/FS-Chat-Jenny-Lian.png';
 export default [
   {
     id: 1,
-    image: Lawrence,
-    image2: Jenny,
-    image3: Darren,
-    height: '200px',
-    width: '200px',
-    flex: 'content--flex--reverse',
-    class: 'margin--bottom--sm margin--right--sm',
+    image:
+      'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+    image2:
+      'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+    image3:
+      'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
+    height: '0px',
+    width: '0px',
+    class: 'flex',
     color: 'green',
     title: 'Thrive Health Workshop',
     category: 'Thrive Health Workshop',
@@ -38,15 +40,13 @@ export default [
   },
   {
     id: 3,
-    image:
-      'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
-    image2:
-      'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
-    image3:
-      'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7',
-    class: 'flex',
-    height: '0px',
-    width: '0px',
+    image: Lawrence,
+    image2: Jenny,
+    image3: Darren,
+    height: '200px',
+    width: '200px',
+    flex: 'content--flex--reverse',
+    class: 'margin--bottom--sm margin--right--sm',
     color: 'orange',
     title: 'Fireside Chat',
     category: 'Fireside Chat',

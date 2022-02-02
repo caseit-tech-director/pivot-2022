@@ -1,7 +1,7 @@
 import MediumLayout from '../Layout/MediumLayout';
 import style from '../../styles/modules/_banner.module.scss';
 import BannerHeader from './BannerHeader';
-// import ArrowButton from '../Molecules/ArrowButton';
+import ArrowButton from '../Molecules/ArrowButton';
 import Image from 'next/image';
 import accenture from "../../public/images/sponsors/accenture.jpg";
 import cpa from "../../public/images/sponsors/CPA.jpg";
@@ -112,9 +112,9 @@ export default function SponsorshipBanner(props) {
             {/* <MyImage></MyImage> */}
           </div>
         </div>
-        {/* <div className={style['testimonial--cta--wrapper']}>
+        <div className={style['testimonial--cta--wrapper']}>
           <ArrowButton />
-        </div> */}
+        </div>
       </MediumLayout>
     </div>
   );

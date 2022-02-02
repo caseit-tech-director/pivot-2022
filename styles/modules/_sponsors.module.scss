@@ -47,7 +47,7 @@
 }
 
 .content--container {
-  width: 60%;
+  width: 80%;
 }
 
 .virutal--events--container {
@@ -83,8 +83,15 @@
   }
 }
 
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .item--container {
   margin-bottom: $lrg-margin;
+  width: 45%;
 }
 
 .scroll--menu {
@@ -92,16 +99,26 @@
   right: 0;
 }
 
-.content--flex--reverse{
+.content--flex--reverse {
   display: flex;
   flex-wrap: wrap-reverse;
 }
 
 @media only screen and (max-width: $minQuery) {
+  .content--container {
+    width: 100%;
+  }
+
+  .item--container {
+    margin-bottom: $lrg-margin;
+    width: 100%;
+  }
+
   .event--wrapper {
     flex-direction: column-reverse;
   }
   .scroll--menu {
+    margin-bottom: $med-margin;
     * {
       display: flex;
       flex-direction: row;

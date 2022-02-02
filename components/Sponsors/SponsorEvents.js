@@ -1,5 +1,5 @@
 import MaxLayout from '../../components/Layout/MaxLayout';
-import style from '../../styles/modules/_events.module.scss';
+import style from '../../styles/modules/_sponsors.module.scss';
 
 import SponsorEventContent from '../Molecules/SponsorEventContent';
 import Button from '../Molecules/SideMenu';
@@ -7,7 +7,7 @@ import items from '../JSON/SponsorMessages';
 import { useState } from 'react';
 
 const allCategories = [
-  'All Events',
+  'All Sponsors',
   ...new Set(items.map((item) => item.category)),
 ];
 
@@ -19,7 +19,7 @@ export default function EventOrganism() {
 
   //Filter Function
   const filter = (button) => {
-    if (button === 'All Events') {
+    if (button === 'All Sponsors') {
       setMenuItem(items);
       return;
     }

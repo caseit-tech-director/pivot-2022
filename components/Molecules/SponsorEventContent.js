@@ -18,21 +18,25 @@ function Menu({ menuItem }) {
               <div className="margin--bottom--sm">
                 <h4 className="margin--bottom--sm">{item.title}</h4>
                 <p className="caption">Tier: {item.tier}</p>
-                <a className="caption text--color--black" href={item.website}>
-                  Website
-                </a>
+                <div className="arrow--link">
+                  <a className="caption text--color--black" href={item.website}>
+                    Website -&gt;
+                  </a>
+                </div>
               </div>
               <div className={style['content--flex--reverse']}>
-                <p className="body-2">{item.shortDesc}</p>
-                <div className="margin--bottom--sm">
-                  <Image
-                    src={item.image}
-                    width="200px"
-                    height="200px"
-                    objectFit="contain"
-                    layout="intrinsic"
-                    alt={item.alt}
-                  />
+                <div className="content--wrapper">
+                  <p className="body-2">{item.shortDesc}</p>
+                  <div className="margin--bottom--sm">
+                    <Image
+                      src={item.image}
+                      width="200px"
+                      height="200px"
+                      objectFit="contain"
+                      layout="intrinsic"
+                      alt={item.alt}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
