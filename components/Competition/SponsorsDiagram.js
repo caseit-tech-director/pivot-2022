@@ -21,7 +21,7 @@ import EVO from '../../public/images/sponsors/in-kind/Evo_logo_TMRGB.jpg';
 import ScienceWorld from '../../public/images/sponsors/in-kind/ScienceWorld/1_Black/CMYK/SW_logo_richblack_cmyk.png';
 import StevesPoke from '../../public/images/sponsors/in-kind/steves-poke-bar.png';
 import StickerMule from '../../public/images/sponsors/in-kind/sticker-mule-logo-light-stacked.png';
-import MYST from '../../public/images/sponsors/in-kind/VAN_MYST_LOGO_FINALv5_HORIZONTAL LOGO600px.png';
+import MYST from '../../public/images/sponsors/in-kind/VAN_MYST_LOGO_FINALv5_HORIZONTAL-LOGO600px.png';
 
 export default function Sponsors() {
   return (
