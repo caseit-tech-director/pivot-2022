@@ -1,10 +1,11 @@
 import styles from '../../styles/modules/_button.module.scss';
+import Link from 'next/link';
 
 function ArrowButton(props) {
   return (
-    <button className={styles['arrow--button']}>
-      <i className="arrow right"></i>
-    </button>
+    <Link href={''}>
+      <a className={[styles['link--button']].join(' ')}>{props.text}</a>
+    </Link>
   );
 }
 

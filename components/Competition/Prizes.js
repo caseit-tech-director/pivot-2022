@@ -22,7 +22,7 @@ class Prizes extends Component {
               style['cube__face--front'],
             ].join(' ')}
           >
-            {/* front */}
+            {this.props.prizeName}
           </div>
           <div
             className={[

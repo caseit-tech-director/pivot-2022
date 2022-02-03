@@ -1,4 +1,57 @@
-.arrow--button{
-    height: 48px;
-    width: 48px;
+@import '../base/variables';
+
+.arrow--button {
+  height: 48px;
+  width: 48px;
+  border-radius: 5rem;
+  border-style: none;
+  background-color: $bg-color--primary;
+  transition-duration: 0.8s;
+  transition: ease-in;
+
+  cursor: pointer;
+  * {
+    color: $primary-color--white !important;
+    border: solid $primary-color--white;
+    border-width: 0 3px 3px 0;
+  }
+  &:hover {
+    * {
+      border: solid $accent-pink;
+      border-width: 0 3px 3px 0;
+    }
+  }
 }
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+%center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// Buttons
+.link--button {
+  @extend %center;
+  height: $button--height;
+  padding-left: $xs-margin;
+  padding-right: $xs-margin;
+  letter-spacing: $button--tk;
+  font-size: $button--font-sz;
+  font-family: $body--font-family;
+  background-color: $primary-color;
+  color: $primary-color--white;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+

@@ -15,7 +15,7 @@ export default function PrizeContainer() {
         <p className="overline">PIVOT | COMPETITION</p>
       </div>
       <div className={[style['scene'], style['desktop']].join(' ')}>
-        <Prizes color="blue--cube" class="cube1" test="desc--wrapper-1">
+        <Prizes prizeName="First" color="blue--cube" class="cube1" test="desc--wrapper-1">
           {' '}
           <PrizeDescription
             prizeTitle={'1st Place'}
@@ -26,7 +26,7 @@ export default function PrizeContainer() {
             prizeOverline={'Total value of $407 per Competitor'}
           />
         </Prizes>
-        <Prizes color="pink--cube" class="cube2" test="desc--wrapper-2">
+        <Prizes prizeName="Second" color="pink--cube" class="cube2" test="desc--wrapper-2">
           <PrizeDescription
             prizeTitle={'2nd Place'}
             prizeDesc1={'- Cash: $100/competitor'}
@@ -35,7 +35,7 @@ export default function PrizeContainer() {
             prizeOverline={'Total value of $190 per Competitor'}
           />
         </Prizes>
-        <Prizes color="orange--cube" class="cube3" test="desc--wrapper-3">
+        <Prizes prizeName="Third" color="orange--cube" class="cube3" test="desc--wrapper-3">
           {' '}
           <PrizeDescription
             prizeTitle={'3rd Place'}

@@ -15,6 +15,18 @@
   padding-bottom: $lrg-margin;
 }
 
+.grid--span--2{
+  grid-column-end: span 2;
+}
+
+.grid--end--m2{
+  grid-column-end: $grid--end - 2;
+}
+
+.grid--align--right {
+  grid-column-start: -1;
+}
+
 .grid--align--left {
   grid-column-start: 1;
   grid-column-end: 5;
