@@ -1,9 +1,9 @@
 // Title Sponsor(s)
-import Accenture from '../../public/images/sponsors/accenture.jpg';
+import Accenture from '../../public/images/sponsors/jpg/accenture.jpg';
 
 // Workshop Sponsor(s)
-import Salesforce from '../../public/images/sponsors/Salesforce.jpg';
-import Thrive from '../../public/images/sponsors/thrive.jpg';
+import Salesforce from '../../public/images/sponsors/jpg/Salesforce.jpg';
+import Thrive from '../../public/images/sponsors/jpg/thrive.jpg';
 
 // Networking Sponsor(s)
 import CGI from '../../public/images/sponsors/network/CGI_logo_color_rgb.png';

@@ -3,11 +3,11 @@ import style from '../../styles/modules/_sponsors.module.scss';
 import Image from 'next/image';
 
 // Title Sponsor(s)
-import Accenture from '../../public/images/sponsors/accenture.jpg';
+import Accenture from '../../public/images/sponsors/jpg/accenture.jpg';
 
 // Workshop Sponsor(s)
-import SalesForce from '../../public/images/sponsors/Salesforce.jpg';
-import Thrive from '../../public/images/sponsors/thrive.jpg';
+import SalesForce from '../../public/images/sponsors/jpg/Salesforce.jpg';
+import Thrive from '../../public/images/sponsors/jpg/thrive.jpg';
 
 // Networking Sponsor(s)
 import CGI from '../../public/images/sponsors/network/CGI_logo_color_rgb.png';
@@ -22,6 +22,10 @@ import ScienceWorld from '../../public/images/sponsors/in-kind/ScienceWorld/1_Bl
 import StevesPoke from '../../public/images/sponsors/in-kind/steves-poke-bar.png';
 import StickerMule from '../../public/images/sponsors/in-kind/sticker-mule-logo-light-stacked.png';
 import MYST from '../../public/images/sponsors/in-kind/VAN_MYST_LOGO_FINALv5_HORIZONTAL-LOGO600px.png';
+
+// White versions
+import ScienceWorldWhite from '../../public/images/sponsors/in-kind/ScienceWorld/2_Reversed/CMYK/SW_logo_white_cmyk.png';
+
 
 export default function Sponsors() {
   return (
@@ -156,7 +160,7 @@ export default function Sponsors() {
                   <Image
                     width="100px"
                     height="100px"
-                    src={ScienceWorld}
+                    src={ScienceWorldWhite}
                     alt="test img"
                     layout="intrinsic"
                     objectFit="contain"
