@@ -35,7 +35,7 @@ export default function Layout({ children }) {
           >
             <div className="announcement--wrapper flex--inherit ">
               {/* <a className="overline"> */}
-                <p className="overline muted--text">PIVOT&apos;s GOING ONLINE</p>
+                <p className="overline muted--text">PIVOT&apos;S GOING ONLINE</p>
               {/* </a> */}
             </div>
           </Link>

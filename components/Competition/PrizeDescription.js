@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import style from '../../styles/modules/_prizes.module.scss';
+import Image from 'next/image';
+import sponsor from '../../public/images/sponsors/product_teacher.png';
 
 export default function PrizeDescription(props) {
   const [expanded, setExpanded] = useState(false);
@@ -42,6 +44,14 @@ export default function PrizeDescription(props) {
                 <li>{props.prizeDesc3}</li>
                 <li>{props.prizeDesc4}</li>
               </ul>
+              <Image
+                width="84px"
+                height="84px"
+                layout="intrinsic"
+                objectFit="contain"
+                src={sponsor}
+                alt="Sponsor"
+              />
             </motion.div>
           )}
         </AnimatePresence>

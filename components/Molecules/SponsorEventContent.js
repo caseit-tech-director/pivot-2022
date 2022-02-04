@@ -26,7 +26,6 @@ function Menu({ menuItem }) {
               </div>
               <div className={style['content--flex--reverse']}>
                 <div className="content--wrapper">
-                  <p className="body-2">{item.shortDesc}</p>
                   <div className="margin--bottom--sm">
                     <Image
                       src={item.image}
@@ -37,6 +36,7 @@ function Menu({ menuItem }) {
                       alt={item.alt}
                     />
                   </div>
+                  <p className="body-2">{item.shortDesc}</p>
                 </div>
               </div>
             </div>

@@ -1,14 +1,14 @@
 // Title Sponsor(s)
-import Accenture from '../../public/images/sponsors/jpg/accenture.jpg';
 
 // Workshop Sponsor(s)
-import Salesforce from '../../public/images/sponsors/jpg/Salesforce.jpg';
-import Thrive from '../../public/images/sponsors/jpg/thrive.jpg';
+import Accenture from '../../public/images/sponsors/title/Accenture-Logo.png';
+import Thrive from '../../public/images/sponsors/workshop/thrive-health-logo.png';
 
+import Salesforce from '../../public/images/sponsors/workshop/salesforce-transparent-logo.png';
 // Networking Sponsor(s)
 import CGI from '../../public/images/sponsors/network/CGI_logo_color_rgb.png';
-import CPABC from '../../public/images/sponsors/network/cpa-bc-logo.png';
 import EY from '../../public/images/sponsors/network/ey-logo.png';
+import CPABC from '../../public/images/sponsors/network/cpa-bc-logo.png';
 import SAP from '../../public/images/sponsors/network/SAP-logo.png';
 import TMP from '../../public/images/sponsors/network/TMP-logo.png';
 
@@ -16,9 +16,9 @@ import TMP from '../../public/images/sponsors/network/TMP-logo.png';
 export default [
   {
     id: 1,
-    image: Accenture,
-    color: 'yellow',
     alt: 'alt',
+    color: 'yellow',
+    image: Accenture,
     website: 'https://www.accenture.com/ca-en',
     tier: 'Title',
     title: 'Accenture',
@@ -30,23 +30,9 @@ export default [
   },
   {
     id: 2,
-    image: Thrive,
+    alt: 'alt',
     color: 'green',
-    alt: 'alt',
-    website: 'https://welcome.thrive.health/',
-    tier: 'Workshop',
-    title: 'Thrive Health',
-    category: 'Thrive Health',
-    shortDesc:
-      "Thrive Health offers a software platform to digitally enable care. Solutions built on the Thrive platform are designed to enhance the individual's care journey, improve provider efficiency, and maintain the highest compliance standards for managing personal health information.",
-    description:
-      "Thrive Health offers a software platform to digitally enable care. Solutions built on the Thrive platform are designed to enhance the individual's care journey, improve provider efficiency, and maintain the highest compliance standards for managing personal health information. We are headquartered in Vancouver, BC and work with hospitals, health systems, post-secondaries, and enterprise organizations across North America.",
-  },
-  {
-    id: 3,
     image: Salesforce,
-    color: 'pink',
-    alt: 'alt',
     website: 'https://www.salesforce.com/ca/',
     tier: 'Workshop',
     title: 'Salesforce',
@@ -57,10 +43,24 @@ export default [
       "Salesforce, the Customer Success Platform and world's #1 CRM, empowers companies to connect with their customers in a whole new way. We are the fastest growing of the top 10 enterprise software companies, one of the World’s Most Innovative Companies according to Forbes, and one of Fortune’s 100 Best Companies to Work For seven years running. The growth, innovation, and Aloha spirit of Salesforce are driven by our incredible employees who thrive on delivering success for our customers while also finding time to give back through our 1/1/1 model, which leverages 1% of our time, equity, and product to improve communities around the world. Salesforce is a team sport, and we play to win. Join us!",
   },
   {
-    id: 4,
-    image: TMP,
-    color: 'orange',
+    id: 3,
     alt: 'alt',
+    color: 'pink',
+    image: Thrive,
+    website: 'https://welcome.thrive.health/',
+    tier: 'Workshop',
+    title: 'Thrive Health',
+    category: 'Thrive Health',
+    shortDesc:
+      "Thrive Health offers a software platform to digitally enable care. Solutions built on the Thrive platform are designed to enhance the individual's care journey, improve provider efficiency, and maintain the highest compliance standards for managing personal health information.",
+    description:
+      "Thrive Health offers a software platform to digitally enable care. Solutions built on the Thrive platform are designed to enhance the individual's care journey, improve provider efficiency, and maintain the highest compliance standards for managing personal health information. We are headquartered in Vancouver, BC and work with hospitals, health systems, post-secondaries, and enterprise organizations across North America.",
+  },
+  {
+    id: 4,
+    alt: 'alt',
+    color: 'orange',
+    image: TMP,
     website: 'https://www.talentmarketplace.ca/',
     tier: 'Networking',
     title: 'TMP',
@@ -72,9 +72,9 @@ export default [
   },
   {
     id: 5,
-    image: CPABC,
-    color: 'yellow',
     alt: 'alt',
+    color: 'yellow',
+    image: CPABC,
     website: 'https://www.bccpa.ca/',
     tier: 'Networking',
     title: 'CPABC',
@@ -86,9 +86,9 @@ export default [
   },
   {
     id: 6,
-    image: SAP,
-    color: 'green',
     alt: 'alt',
+    color: 'green',
+    image: SAP,
     website: 'https://www.sap.com/canada/index.html',
     tier: 'Networking',
     title: 'SAP',
@@ -100,10 +100,10 @@ export default [
   },
   {
     id: 7,
-    image: CGI,
-    color: 'pink',
     alt: 'alt',
-    website: 'www.cgi.com',
+    color: 'pink',
+    image: CGI,
+    website: 'https://www.cgi.com',
     tier: 'Networking',
     title: 'CGI',
     category: 'CGI',

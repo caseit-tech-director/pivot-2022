@@ -10,11 +10,11 @@ import SalesForce from '../../public/images/sponsors/jpg/Salesforce.jpg';
 import Thrive from '../../public/images/sponsors/jpg/thrive.jpg';
 
 // Networking Sponsor(s)
-import CGI from '../../public/images/sponsors/network/CGI_logo_color_rgb.png';
-import CPA from '../../public/images/sponsors/network/cpa-bc-logo.png';
-import EY from '../../public/images/sponsors/network/ey-logo.png';
-import SAP from '../../public/images/sponsors/network/SAP-logo.png';
-import TMP from '../../public/images/sponsors/network/TMP-logo.png';
+import CGI from '../../public/images/sponsors/jpg/CGI.jpg';
+import CPA from '../../public/images/sponsors/jpg/CPA.jpg';
+import EY from '../../public/images/sponsors/jpg/EY.jpg';
+import SAP from '../../public/images/sponsors/jpg/SAP.jpg';
+import TMP from '../../public/images/sponsors/jpg/TMP.jpg';
 
 // In Kind Sponsor(s)
 import EVO from '../../public/images/sponsors/in-kind/Evo_logo_TMRGB.jpg';

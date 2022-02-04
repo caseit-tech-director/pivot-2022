@@ -49,9 +49,6 @@ export default function EventOrganism() {
 
           <div className={style['scroll--menu']}>
             <div className="">
-              {/* <div className="scroll--menu--title">
-                <h6 className="subtitle-1 margin--bottom--xs">All Events</h6>
-              </div> */}
               <Button button={buttons} filter={filter} />
             </div>
           </div>

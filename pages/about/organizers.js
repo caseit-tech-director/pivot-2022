@@ -25,7 +25,7 @@ export default function Orgaziners() {
 
   return (
     <>
-      <LargeHeader header={'organizing committee'} overline={'MEET THE TEAM'} />
+      <LargeHeader style="particle--contain" header={'organizing committee'} overline={'MEET THE TEAM'} />
       <BranchHeader
         header={'INTRODUCING'}
         overline={'THE PIVOT 2022 ORGANIZING COMMITTEE'}

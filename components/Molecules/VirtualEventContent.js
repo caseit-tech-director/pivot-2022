@@ -30,8 +30,9 @@ function Menu({ menuItem }) {
                     layout="intrinsic"
                     alt={item.alt}
                   />
+                  <div className="margin--top--xs">{item.title1}</div>
                 </div>
-                <div className={item.class}>
+                <div className={item.class + ' ' + 'flex--column'}>
                   <Image
                     src={item.image2}
                     width={item.width}
@@ -40,6 +41,7 @@ function Menu({ menuItem }) {
                     layout="intrinsic"
                     alt={item.alt}
                   />
+                  <div className="margin--top--xs">{item.title2}</div>
                 </div>
                 <div className={item.class}>
                   <Image
@@ -50,6 +52,7 @@ function Menu({ menuItem }) {
                     layout="intrinsic"
                     alt={item.alt}
                   />
+                  <div className="margin--top--xs">{item.title3}</div>
                 </div>
               </div>
             </div>

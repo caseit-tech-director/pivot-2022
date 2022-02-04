@@ -118,6 +118,12 @@ a:hover:after {
 .flex {
   display: flex;
 }
+
+.flex--column {
+  display: flex;
+  flex-direction: column;
+}
+
 .flex--inherit {
   display: flex;
   > * {
