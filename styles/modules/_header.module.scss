@@ -73,7 +73,7 @@
 }
 
 .home--banner--text--wrapper {
-  width: 500px;
+  width: auto;
   .header--text,
   p {
     color: $primary-color--white;
@@ -195,7 +195,7 @@
 
 @media only screen and (max-width: $medQuery) {
   .home--banner--text--wrapper {
-    width: 500px;
+    width: auto;
     .header--text,
     p {
       color: $primary-color--white;
