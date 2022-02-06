@@ -127,9 +127,10 @@ export default function SponsorshipBanner(props) {
             </div>
             <h2 className="subtitle-2">Networking Sponsors</h2>
           </div>
-        </div>
+
         <div className="grid--span--2 vertical--align">
           <ArrowButton className="grid--align--right" text={'Learn More'} />
+        </div>
         </div>
       </SmallLayout>
     </div>

@@ -17,15 +17,11 @@ import SAP from '../../public/images/sponsors/jpg/SAP.jpg';
 import TMP from '../../public/images/sponsors/jpg/TMP.jpg';
 
 // In Kind Sponsor(s)
-import EVO from '../../public/images/sponsors/in-kind/Evo_logo_TMRGB.jpg';
-import ScienceWorld from '../../public/images/sponsors/in-kind/ScienceWorld/1_Black/CMYK/SW_logo_richblack_cmyk.png';
+import EVO from '../../public/images/sponsors/in-kind/Evo_logo_TMRGB.jpeg';
+import ScienceWorld from '../../public/images/sponsors/in-kind/ScienceWorld/ScienceWorld.jpg';
 import StevesPoke from '../../public/images/sponsors/in-kind/steves-poke-bar.png';
 import StickerMule from '../../public/images/sponsors/in-kind/sticker-mule-logo-light-stacked.png';
-import MYST from '../../public/images/sponsors/in-kind/VAN_MYST_LOGO_FINALv5_HORIZONTAL-LOGO600px.png';
-
-// White versions
-import ScienceWorldWhite from '../../public/images/sponsors/in-kind/ScienceWorld/2_Reversed/CMYK/SW_logo_white_cmyk.png';
-
+import MYST from '../../public/images/sponsors/in-kind/VAN_MYST_LOGO_FINALv5_HORIZONTAL-LOGO600px.jpeg';
 
 export default function Sponsors() {
   return (
@@ -160,7 +156,7 @@ export default function Sponsors() {
                   <Image
                     width="100px"
                     height="100px"
-                    src={ScienceWorldWhite}
+                    src={ScienceWorld}
                     alt="test img"
                     layout="intrinsic"
                     objectFit="contain"
