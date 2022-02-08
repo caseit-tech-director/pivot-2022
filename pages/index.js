@@ -30,7 +30,7 @@ export default function Home() {
           header={'pivot'}
           overline={'05 year anniversary'}
           paragraph={
-            'British Columbia based business technology management case competition built for future business leaders'
+            'A B.C. based business technology management case competition built for future business leaders'
           }
         />
         <LocomotiveParagraph

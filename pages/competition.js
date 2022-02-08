@@ -10,7 +10,7 @@ export default function Competition() {
   return (
     <div className="bg-color--primary">
       <LargeHeader header={'competition'} overline={'ARE YOU READY?'} />
-      <BranchHeader
+      <BranchHeaderLarge
         header={'PIVOT 2022'}
         overline={'Special Thanks'}
         paragraph={

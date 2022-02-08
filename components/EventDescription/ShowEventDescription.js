@@ -57,7 +57,7 @@ export default function ShowEventDescription() {
       >
         Day Two
       </div>
-      <div className={style['event--day--margin']}>
+      <div className={style['']}>
         <p className="body-2">
           {MenuItems.DayTwo.map((eventInfo, index) => (
             <li

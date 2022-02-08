@@ -87,6 +87,52 @@ export default function PrizeContainer() {
           test="desc--wrapper-3"
         />
       </div>
+      <div className={style['prize--text--wrapper']}>
+        <div className={style['']}>
+          <div className={style['title--wrapper']}>
+            <h5>1st Place</h5>
+            <h6 className="overline">Total value of $407 per Competitor</h6>
+          </div>
+          <ul>
+            <li>- Cash: $200/competitor</li>
+            <li>
+              - Product Teacher courses & additional content: Lifetime access to
+              Solving the PM Interview course
+            </li>
+            <li>
+              - 1 free month of their &ldquo;Behind-The-Scenes Recordings&rdquo;
+            </li>
+            <li>- 1 free month of their &ldquo;monthly PM classes&rdquo;</li>
+          </ul>
+        </div>
+        <div className={style['']}>
+          <div className={style['title--wrapper']}>
+            <h5>2nd Place</h5>
+            <h6 className="overline">Total value of $190 per Competitor</h6>
+          </div>
+          <ul>
+            <li>- Cash: $100/competitor</li>
+            <li>
+              - Product teacher course: one month free to their
+              &ldquo;Behind-The-Scenes Recordings&rdquo;
+            </li>
+            <li>- 1 free month of their &ldquo;monthly PM classes&rdquo;</li>
+          </ul>
+        </div>
+        <div className={style['']}>
+          <div className={style['title--wrapper']}>
+            <h5>3rd Place</h5>
+            <h6 className="overline">Total value of $80 per Competitor</h6>
+          </div>
+          <ul>
+            <li>- Cash: $50/competitor</li>
+            <li>
+              - Product teacher course: one month free to their &ldquo;monthly
+              PM classes&rdquo;
+            </li>
+          </ul>
+        </div>
+      </div>
     </ExtendableLayout>
   );
 }

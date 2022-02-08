@@ -5,8 +5,36 @@
   justify-content: center;
   flex-direction: column;
   grid-column-start: $grid--start;
-  grid-column-end: $grid--end;
+  grid-column-end: $grid--end - 4;
   max-width: 1000px;
+}
+
+.color--stroke--1 {
+  :first-child {
+    border-right: 3px solid $accent-orange;
+    height: 30%;
+    margin-top: 14rem;
+  }
+  grid-column-start: $grid--end - 3;
+  grid-column-end: $grid--end - 3;
+}
+.color--stroke--2 {
+  :first-child {
+    border-right: 3px solid $accent-pink;
+    height: 30%;
+    margin-top: 26rem;
+  }
+  grid-column-start: $grid--end - 2;
+  grid-column-end: $grid--end - 2;
+}
+.color--stroke--3 {
+  :first-child {
+    border-right: 3px solid $accent-green;
+    height: 30%;
+    margin-top: 22rem;
+  }
+  grid-column-start: $grid--end - 1;
+  grid-column-end: $grid--end - 1;
 }
 
 .text--center {
@@ -151,4 +179,14 @@ span.toggle--button {
 
 .event--day--margin {
   margin-bottom: 2 * $lrg-margin;
+}
+
+.color--stroke--1, .color--stroke--2, .color--stroke--3{
+  display: none;
+}
+
+@media only screen and (min-width: $largeQuery) {
+  .color--stroke--1, .color--stroke--2, .color--stroke--3{
+    display: none;
+  }
 }

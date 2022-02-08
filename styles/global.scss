@@ -270,6 +270,16 @@ footer {
 .margin--top--xs {
   margin-top: $xs-margin;
 }
+.margin--top--med {
+  margin-top: $med-margin;
+}
+.margin--top--lrg {
+  margin-top: $lrg-margin;
+}
+
+.margin--bottom--lrg{
+  margin-bottom: $lrg-margin;
+}
 
 // migrated over to banner module
 // other use cases must abide by module styling

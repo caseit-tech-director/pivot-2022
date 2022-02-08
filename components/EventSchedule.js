@@ -29,6 +29,15 @@ export default function EventSchedule() {
           </div>
         </div>
       </div>
+      <div className={style['color--stroke--1']}>
+        <div></div>
+      </div>
+      <div className={style['color--stroke--2']}>
+        <div></div>
+      </div>
+      <div className={style['color--stroke--3']}>
+        <div></div>
+      </div>
     </MaxLayout>
   );
 }
