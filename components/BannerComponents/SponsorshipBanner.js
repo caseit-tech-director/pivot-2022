@@ -14,6 +14,7 @@ import Thrive from '../../public/images/sponsors/jpg/thrive.jpg';
 // Networking Sponsor(s)
 import CGI from '../../public/images/sponsors/jpg/CGI.jpg';
 import CPA from '../../public/images/sponsors/jpg/CPA.jpg';
+import Microsoft from '../../public/images/sponsors/jpg/microsoft.jpeg';
 
 import EY from '../../public/images/sponsors/jpg/EY.jpg';
 import SAP from '../../public/images/sponsors/jpg/SAP.jpg';
@@ -119,6 +120,15 @@ export default function SponsorshipBanner(props) {
                 <Image
                   objectFit="contain"
                   src={CGI}
+                  width={84}
+                  height={84}
+                  alt="Sponsor"
+                />
+              </div>
+              <div className={style['sponsor--content--item']}>
+                <Image
+                  objectFit="contain"
+                  src={Microsoft}
                   width={84}
                   height={84}
                   alt="Sponsor"

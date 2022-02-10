@@ -11,6 +11,7 @@ import EY from '../../public/images/sponsors/network/ey-logo.png';
 import CPABC from '../../public/images/sponsors/network/cpa-bc-logo.png';
 import SAP from '../../public/images/sponsors/network/SAP-logo.png';
 import TMP from '../../public/images/sponsors/network/TMP-logo.png';
+import Microsoft from '../../public/images/sponsors/network/microsoft.png';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default [
@@ -22,7 +23,7 @@ export default [
     website: 'https://www.accenture.com/ca-en',
     tier: 'Title',
     title: 'Accenture',
-    category: 'Accenture',
+    category: 'Title',
     shortDesc:
       'Accenture is a global professional services company with leading capabilities in digital, cloud and security. Combining unmatched experience and specialized skills across more than 40 industries, we offer Strategy and Consulting, Interactive, Technology and Operations services — all powered by the world’s largest network of Advanced Technology and Intelligent Operations centers.',
     description:
@@ -36,7 +37,7 @@ export default [
     website: 'https://www.salesforce.com/ca/',
     tier: 'Workshop',
     title: 'Salesforce',
-    category: 'Salesforce',
+    category: 'Workshop',
     shortDesc:
       "Salesforce, the Customer Success Platform and world's #1 CRM, empowers companies to connect with their customers in a whole new way. The growth, innovation, and Aloha spirit of Salesforce are driven by our incredible employees who thrive on delivering success for our customers.",
     description:
@@ -50,7 +51,7 @@ export default [
     website: 'https://welcome.thrive.health/',
     tier: 'Workshop',
     title: 'Thrive Health',
-    category: 'Thrive Health',
+    category: 'Workshop',
     shortDesc:
       "Thrive Health offers a software platform to digitally enable care. Solutions built on the Thrive platform are designed to enhance the individual's care journey, improve provider efficiency, and maintain the highest compliance standards for managing personal health information.",
     description:
@@ -64,7 +65,7 @@ export default [
     website: 'https://www.talentmarketplace.ca/',
     tier: 'Networking',
     title: 'TMP',
-    category: 'TMP',
+    category: 'Networking',
     shortDesc:
       'TalentMarketplace is a curated talent pool of project professionals (project managers, coordinators, and business analysts) available for hire. After encountering the challenges that hiring project professionals face, TalentMarketplace was founded as an alternative to traditional hiring practices.',
     description:
@@ -78,7 +79,7 @@ export default [
     website: 'https://www.bccpa.ca/',
     tier: 'Networking',
     title: 'CPABC',
-    category: 'CPABC',
+    category: 'Networking',
     shortDesc:
       'CPAs are on the front lines of business in BC, and seeing issues affecting the economy firsthand. The Chartered Professional Accountants of British Columbia (CPABC) is the training, governing, and regulatory body for over 38,000 CPA members.',
     description:
@@ -92,7 +93,7 @@ export default [
     website: 'https://www.sap.com/canada/index.html',
     tier: 'Networking',
     title: 'SAP',
-    category: 'SAP',
+    category: 'Networking',
     shortDesc:
       'SAP is the market leader in enterprise application software, helping companies of all sizes and in all industries run at their best: 77% of the world’s transaction revenue touches an SAP system.',
     description:
@@ -106,10 +107,38 @@ export default [
     website: 'https://www.cgi.com',
     tier: 'Networking',
     title: 'CGI',
-    category: 'CGI',
+    category: 'Networking',
     shortDesc:
       'CGI is among the largest IT and business consulting services firms in the world. We are insights-driven and outcome-based to help accelerate returns on your IT and business investments.',
     description:
       'Founded in 1976, CGI is among the largest IT and business consulting services firms in the world. We are insights-driven and outcome-based to help accelerate returns on your IT and business investments. In all we do, our goal is to build trusted relationships through client proximity, providing industry and technology expertise to help our clients meet the needs of their customers and citizens. The CGI story Business success isn’t just about where you’ll go and how you’ll get there. It’s also about who you’ll team with. That’s why we’re here: to be relied upon as an insightful and resourceful partner. We’re here to help by providing valuable insights, working together with clients to deliver positive outcomes. Trusted to listen to and understand clients’ specific business needs, we provide a global antenna based on facts, not hype, to help clients improve returns on IT and business investments. Our goal is to drive projects more accountably and responsively than any other company of our kind. We’re here to build durable relationships, not only as a capable business enabler, but as a caring neighbor. Organized by local proximity and strengthened through global capabilities, we help clients envision possibilities and seize opportunities, channeling innovation for practical use. We’re here to last and lead by staying true to who we are: united by a Dream, driven by our ownership culture, and dedicated to working in proximity with clients. Delivering comprehensive and scalable IT and business consulting services, we help clients achieve meaningful and sustainable outcomes. We are committed to making our story about you and your successful journey, with a pragmatic and purposeful value proposition: insights you can act on.',
+  },
+  {
+    id: 8,
+    alt: 'alt',
+    color: 'orange',
+    image: EY,
+    website: 'https://www.ey.com/en_ca',
+    tier: 'Networking',
+    title: 'EY',
+    category: 'Networking',
+    shortDesc:
+      'EY is a global leader in Consulting, Strategy & Transactions, Assurance and Tax services that delivers quality insights and services to build trust and confidence with our clients across the globe.',
+    description:
+      'EY is a global leader in Consulting, Strategy & Transactions, Assurance and Tax services that delivers quality insights and services to build trust and confidence with our clients across the globe. EY Vancouver consists of more than 526 people, who provide these services to public and private sector organizations based locally, throughout Canada and worldwide. Through our service lines and deep sector knowledge, we help our clients to capitalize on new opportunities and assess and manage risk to deliver responsible growth. Our high-performing, multidisciplinary teams help our clients achieve their strategies, solve their most difficult problems, fulfill regulatory requirements, keep investors informed and meet stakeholder needs. We believe a better working world is one where economic growth is sustainable and inclusive. We work continuously to improve the quality of all of our services, investing in our people and innovation. And we’re proud to work with others – from our clients to their stakeholders – to use our knowledge, skills and experience to help fulfill our purpose and create positive change.',
+  },
+  {
+    id: 9,
+    alt: 'alt',
+    color: 'yellow',
+    image: Microsoft,
+    website: 'https://www.microsoft.com/en-ca/',
+    tier: 'Networking',
+    title: 'Microsoft',
+    category: 'Networking',
+    shortDesc:
+      'Established in 1985, Microsoft Canada Inc. is the Canadian subsidiary of Microsoft Corp., the worldwide leader in software, services and solutions that help people and businesses realize their full potential.',
+    description:
+      'Established in 1985, Microsoft Canada Inc. is the Canadian subsidiary of Microsoft Corp. (Nasdaq "MSFT"), the worldwide leader in software, services and solutions that help people and businesses realize their full potential. Recognized as one of Canada\'s Great Places to Work, Microsoft Canada Inc. provides nationwide sales, marketing, consulting and local support services. Headquartered in Mississauga, Microsoft Canada has nine regional offices across the country dedicated to empowering people through great software. Microsoft Canada is a creative workplace which attracts the best and brightest talent in the IT industry who bring an ever evolving vision of the future to reality. Microsoft software helps businesses and consumers to reach their full potential, however they define it. Woven throughout daily life, whether it be work or play, Microsoft technologies flourish when they get into the hands of millions of Canadian partners and customers enabling innovation often in new ways.',
   },
 ];

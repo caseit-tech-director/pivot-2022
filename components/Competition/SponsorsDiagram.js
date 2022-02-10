@@ -22,7 +22,7 @@ import ScienceWorld from '../../public/images/sponsors/in-kind/ScienceWorld/Scie
 import StevesPoke from '../../public/images/sponsors/in-kind/steves-poke-bar.png';
 import StickerMule from '../../public/images/sponsors/in-kind/sticker-mule-logo-light-stacked.png';
 import MYST from '../../public/images/sponsors/in-kind/VAN_MYST_LOGO_FINALv5_HORIZONTAL-LOGO600px.jpeg';
-import ProductTeacher from '../../public/images/sponsors/product_teacher.png';
+import ProductTeacher from '../../public/images/sponsors/in-kind/product_teacher.jpeg';
 
 export default function Sponsors() {
   return (
@@ -199,7 +199,7 @@ export default function Sponsors() {
                     objectFit="contain"
                   />
                 </div>
-                {/* <div className="sponsor--image--wrapper">
+                <div className="sponsor--image--wrapper">
                   <Image
                     width="100px"
                     height="100px"
@@ -208,7 +208,7 @@ export default function Sponsors() {
                     layout="intrinsic"
                     objectFit="contain"
                   />
-                </div> */}
+                </div>
               </div>
             </div>
           </div>

@@ -37,6 +37,10 @@
   grid-column-end: $grid--end - 1;
 }
 
+.color--stroke--1, .color--stroke--2, .color--stroke--3{
+  display: flex;
+}
+
 .text--center {
   text-align: center;
 }
@@ -182,11 +186,17 @@ span.toggle--button {
 }
 
 .color--stroke--1, .color--stroke--2, .color--stroke--3{
-  display: none;
+  display: block;
 }
 
-@media only screen and (min-width: $largeQuery) {
+@media only screen and (max-width: $medQuery) {
   .color--stroke--1, .color--stroke--2, .color--stroke--3{
-    display: none;
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: $minQuery) {
+  .color--stroke--1, .color--stroke--2, .color--stroke--3{
+    display: none !important;
   }
 }

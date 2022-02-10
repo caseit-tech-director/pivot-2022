@@ -25,21 +25,21 @@ export default function ShowEventDescription() {
       </div>
       <div className={style['event--day--margin']}>
         <p className="body-2">
-          {MenuItems.DayOne.map((eventInfo, index) => (
+          {MenuItems.DayOne.map((item, index) => (
             <li
               key={index}
-              eventInfo={eventInfo}
+              eventInfo={item}
               className={
-                eventInfo.fulldesc.length > 0
+                item.fulldesc.length > 0
                   ? [style['']].join(' ')
                   : [style['active']].join(' ')
               }
             >
               <EventDescription
                 key={index}
-                eventInfo={eventInfo}
+                eventInfo={item}
                 className={
-                  eventInfo.fulldesc.length === 'none'
+                  item.fulldesc.length === 'none'
                     ? [style['']].join(' ')
                     : [style['active']].join(' ')
                 }
@@ -59,21 +59,21 @@ export default function ShowEventDescription() {
       </div>
       <div className={style['']}>
         <p className="body-2">
-          {MenuItems.DayTwo.map((eventInfo, index) => (
+          {MenuItems.DayTwo.map((item, index) => (
             <li
               key={index}
-              eventInfo={eventInfo}
+              eventInfo={item}
               className={
-                eventInfo.fulldesc.length > 0
+                item.fulldesc.length > 0
                   ? [style['']].join(' ')
                   : [style['active']].join(' ')
               }
             >
               <EventDescription
                 key={index}
-                eventInfo={eventInfo}
+                eventInfo={item}
                 className={
-                  eventInfo.fulldesc.length === 'none'
+                  item.fulldesc.length === 'none'
                     ? [style['']].join(' ')
                     : [style['active']].join(' ')
                 }
