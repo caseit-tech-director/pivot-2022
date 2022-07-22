@@ -4,7 +4,6 @@ import SectionHeader from '../Organisms/SectionHeader';
 import LargeLayout from '../Layout/LargeLayout';
 import DiscoverImage1 from '../../public/images/discover-opportunities/discover1.jpg';
 import DiscoverImage2 from '../../public/images/discover-opportunities/discover2.jpg';
-import DiscoverImage3 from '../../public/images/discover-opportunities/discover3.jpeg';
 import style from '../../styles/modules/_discover.module.scss';
 
 export default function DiscoverOpportunities(props) {
@@ -50,24 +49,6 @@ export default function DiscoverOpportunities(props) {
             </Link>
             <caption className="margin--top--xs subtitle-1 flex">
               {props.caption2}
-            </caption>
-          </div>
-          <div className={style['opportunity--content']}>
-            <Link href="/competition#virtualEvents">
-              <a>
-                <div className={style['image--content']}>
-                  <Image
-                    objectFit="cover"
-                    src={DiscoverImage3}
-                    width={408}
-                    height={306}
-                    alt={'Opportunity Image'}
-                  />
-                </div>
-              </a>
-            </Link>
-            <caption className="margin--top--xs subtitle-1 flex">
-              {props.caption3}
             </caption>
           </div>
         </div>

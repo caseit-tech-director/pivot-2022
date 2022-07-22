@@ -51,7 +51,6 @@ export default function Home() {
       <DiscoverOpportunities
         caption1={'$1400 Prize Pool'}
         caption2={'Network with Industry Professionals'}
-        caption3={'Virtual Events'}
       />
       <SponsorshipBanner />
       {/* <CardsModule /> */}

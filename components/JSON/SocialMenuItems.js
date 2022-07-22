@@ -8,5 +8,10 @@ export const SocialMenuItems = [
     name: 'facebook',
     href: 'https://www.facebook.com/PIVOTCaseCompetition/',
     alt: 'temp',
+  },
+  {
+    name: 'linkedin',
+    href: 'https://www.linkedin.com/company/pivot-mis-case-competition/',
+    alt: 'temp',
   }
 ];
