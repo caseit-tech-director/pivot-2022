@@ -20,7 +20,7 @@ export default function Competition() {
       <PrizeContainer />
       <Sponsors />
       <VirtualEvents />
-      <Timer countdownTimestampMs={1644652800000} />
+      {/* <Timer countdownTimestampMs={1644652800000} /> */}
       <Testimonials />
     </div>
   );

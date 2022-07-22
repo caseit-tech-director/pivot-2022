@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { ContactMenuItems } from '../JSON/ContactMenuItems';
 import { SocialMenuItems } from '../JSON/SocialMenuItems';
 import style from '../../styles/modules/_contact.module.scss';
-import { FaMapMarkerAlt, FaInstagram, FaFacebookSquare } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaInstagram, FaFacebookSquare, FaLinkedinIn } from 'react-icons/fa';
 
 import { FiMail } from 'react-icons/fi';
 
@@ -61,6 +61,13 @@ export default function ContactInformation() {
                     }
                   >
                     <FaFacebookSquare/>
+                  </div>
+                  <div
+                    className={
+                      'linkedin' == item.name ? style['active'] : style['inactive']
+                    }
+                  >
+                    <FaLinkedinIn/>
                   </div>
                 </a>
               </li>

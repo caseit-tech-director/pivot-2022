@@ -19,7 +19,7 @@
   display: -moz-box;
   display: flex;
   -moz-box-pack: justify;
-  justify-content: space-between;
+  justify-content: space-around;
   > div {
     margin-right: $sm-margin;
   }
