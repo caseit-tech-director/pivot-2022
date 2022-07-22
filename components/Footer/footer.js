@@ -4,7 +4,7 @@ import { useState } from 'react';
 import MediumLayout from '../Layout/MediumLayout';
 import style from '../../styles/modules/_footer.module.scss';
 import MenuItems from '../JSON/FooterMenuItems';
-import { FaInstagram, FaFacebookSquare } from 'react-icons/fa';
+import { FaInstagram, FaFacebookSquare, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,6 +63,9 @@ export default function Footer() {
                 </a>
                 <a href="https://www.facebook.com/PIVOTCaseCompetition/">
                   <FaFacebookSquare size={24} />
+                </a>
+                <a href="https://www.linkedin.com/company/pivot-mis-case-competition/">
+                  <FaLinkedin size={24} />
                 </a>
               </li>
             </ul>
